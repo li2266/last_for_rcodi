@@ -1,0 +1,74 @@
+{
+  "js": {
+    "errors": [
+      "ReferenceError: Can't find variable: $"
+    ],
+    "resourceErrors": [
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase4/ncdc.js failed to be loaded. Status: 404"
+    ],
+    "messages": []
+  },
+  "css": {
+    "errors": [],
+    "warnings": [
+      {
+        "line": "3",
+        "level": "0",
+        "message": "Property -webkit-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase4/style.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -moz-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase4/style.css"
+      },
+      {
+        "line": "5",
+        "level": "0",
+        "message": "Property -o-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase4/style.css"
+      },
+      {
+        "line": "11",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase4/style.css"
+      },
+      {
+        "line": "22",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase4/style.css"
+      },
+      {
+        "line": "35",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase4/style.css"
+      },
+      {
+        "line": "43",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase4/style.css"
+      }
+    ]
+  },
+  "html": [
+    "error: Element “title” not allowed as child of element “head” in this context. (Suppressing further errors from this subtree.)",
+    "error: Duplicate ID “map”.",
+    "info: The first occurrence of ID “map” was here.",
+    "error: Duplicate ID “map”.",
+    "info: The first occurrence of ID “map” was here.",
+    "error: End tag for  “body” seen, but there were unclosed elements.",
+    "error: Unclosed element “div”."
+  ]
+}

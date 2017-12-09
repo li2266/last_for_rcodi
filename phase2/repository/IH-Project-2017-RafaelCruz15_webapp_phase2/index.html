@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webapp_phase2</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<header id="start">
+		<div class="container">
+			<h1>Hello !!! ... Welcome to New York</h1>
+			<h4>Here you will find the perfect place to stay, according to all your needs</h4>
+		</div>
+	</header>
+</head>
+<body style="background-color: #A0D4FB;">
+	<div id="principal">
+		<div id="map"></div>
+	    <script async defer src="https://goo.gl/K69MVE"></script>
+	    <div id="options">
+	    	<h2 style="text-align: center">Filter your search</h2>
+	    	<ul>
+	    		<li>
+	    		    <h6>Price (USD)<h6/>
+					<select class="selectpicker">
+						<option value = 0-50> 0 - 50
+						<option value = 51-100> 51 - 100
+						<option value = 101-150> 101 - 150
+						<option value = 151-200> 151 - 200
+						<option value = 201-250> 201 - 250
+						<option value = 251-> 251 - and up
+					</select>
+				</li>
+				<li>
+				    <h6>Services</h6>
+					<label class="checkbox"><input type="checkbox"> Air Conditioner</label>
+					<label class="checkbox"><input type="checkbox"> Fitness Center</label>
+					<label class="checkbox"><input type="checkbox"> WiFi</label>
+					<label class="checkbox"><input type="checkbox"> Pool</label>
+					<label class="checkbox"><input type="checkbox"> Spa</label>
+					<label class="checkbox"><input type="checkbox"> Restaurant</label>
+				</li>
+				<li>
+					<h6>Stars</h6>
+					<select class="selectpicker">
+						<option value = 1> 1
+						<option value = 2> 2
+						<option value = 3> 3
+						<option value = 4> 4
+						<option value = 5> 5
+					</select>
+				</li>				
+	    	</ul>
+	    	<center><button class="btn">Search</button></center>
+	    	<label class="checkbox"><input type="checkbox"> See all hotels</label>
+			
+	    	<h2 style="text-align: center">Places of interest</h2>
+	    	<label class="checkbox"><input type="checkbox"> Tourist Places</label>
+			<label class="checkbox"><input type="checkbox"> Shopping Center</label>
+			<label class="checkbox"><input type="checkbox"> Restaurants</label>
+	    	<label class="checkbox"><input type="checkbox"> Parks</label>
+	    	<label class="checkbox"><input type="checkbox"> Libraries</label>
+	    	<label class="checkbox"><input type="checkbox"> Schools</label>
+	    	<label class="checkbox"><input type="checkbox"> Transport</label>
+	    	<label class="checkbox"><input type="checkbox"> Fitness Center</label>
+	    	<label class="checkbox"><input type="checkbox"> Pub and Disco</label>
+	    </div>    
+	</div>
+	<div id="data">
+		<h2>Curious Data</h2>
+		<li><a href="#">Theft Rate</a></li>
+		<li><a href="#">Murder Rate</a></li>
+		<li><a href="#">Climate Variation (Last 12 months)</a></li>
+		<li><a href="#">Unemployment rate</a></li>
+	</div>
+	<div id="tasas">
+		<h2>Site under Construction (Display of each item)</h2>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>

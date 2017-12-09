@@ -1,0 +1,42 @@
+
+body {
+
+  background-image: url(https://cdn-images-1.medium.com/max/2000/1*9vokNJYoZF0V2-cc6T_B8g.jpeg);
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  background-size: cover;
+
+  background-color: #464646;
+
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+
+#googleMapDiv, #buttonsDiv, #chartDiv{
+	width: 100%;
+	height: 75px;
+	background-color: grey;
+	margin-top: 20px;
+}
+
+#googleMap{
+  height: 400px;
+  width: 700px;
+ }
+
+#chartDiv {
+	height: 300px;
+}
+
+
+

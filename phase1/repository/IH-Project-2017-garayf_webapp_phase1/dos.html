@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		  <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title> Tutorial </title>
+</head>
+<body style="background-color:#000000;" >
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12" >
+				<div id="googleMapDiv" style="background-color:#000000;">
+				    <br>
+				    <h1 ALIGN=center style="color: white">What's the plan</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-4 col-md-4">
+				<div id="buttonsDiv" style="background-color:#000000;">
+					<button id="getDataButton" style="border: #B40404 1px solid; background-color: #B40404; color: white;">&nbsp; Obtener ubicacion &nbsp; </button>
+					<button id="updateTableButton" style="border: #B40404 1px solid; background-color: #B40404; color: white;">&nbsp; Actualizar &nbsp; </button>
+				</div>			
+			</div>
+		</div>
+		<div class="row">
+				<div class="col-md-6">
+					<div id="tableWrapper">
+						<div id="tableScroll">
+							<table>
+								<thead>
+									<tr>
+										<th colspan="2"> Viviendas disponibles </th>	
+									</tr>
+									<tr>
+										<th> Direccion</th>
+										<th> Precio </th>
+									</tr>
+								</thead>
+									<tbody id="mainTableBody">
+										
+									</tbody>
+							</table>
+						</div>
+				</div>
+				</div>	
+				<div class="col-md-6">
+					<div id="chartDiv">
+						
+					</div>
+				</div>
+		</div>
+	</div>
+	<br>
+       <div class="text-center"> 
+                  <button ALIGN=center style="border: #B40404 1px solid; background-color: #B40404; color: white;" onclick= "ch ()" >&nbsp;go back !&nbsp; </button>
+        
+              </div>
+	
+	
+	<!-- jQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <!-- custom script -->
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

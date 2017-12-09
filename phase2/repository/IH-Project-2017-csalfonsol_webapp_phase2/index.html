@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		  <!-- Custom Css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset = "UTF-8">
+	<title> NYU rent assistant </title>
+</head>
+<body>
+	<header> <!-- Encabezado principal -->
+		 <h1>Hello, ¡Welcome to NYU Stern School of Business! </h1>
+		 <p>We are proud to help you find the best place for live while you reach your dreams</p>
+	</header>
+
+	<div class="main-background">
+		 <div class="container-fluid">
+			<div class="row"> <!-- Fila con tres contenedores -->
+
+				<div class="col-md-6 col-lg-1"> <!-- Columna de botones sobre el mapa -->
+					<!-- Botón normal -->
+						<input id="hideButton" type="button" class="btn btn-primary" value="Hide Map" onclick="mapOpacity()"></input>
+						<input type="button" class="btn btn-primary" value="Center Map" ></input>
+
+				</div>
+				<div class="col-md-12 col-lg-7" id="googleMapContainer"> <!-- Columna que contiene el mapa -->
+
+				</div>
+				<div class=""> <!-- Columna interaccion con usuario -->
+
+				</div>
+
+			</div>
+	  </div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- Custom JS -->
+	<script type="text/javascript" src="index.js"></script>
+	<!-- Google Maps Api -->
+	<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4Iw8DCVCgc3UaxE71pBZa89irkFX4HxE&callback=initMap">
+  </script>
+</body>
+</html>

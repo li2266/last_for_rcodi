@@ -1,0 +1,150 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+#container1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: white;
+    font-size: 150%;
+    font-family: "Mitr";
+}
+
+.top-right1 {
+    position: absolute;
+    top: 8px;
+    right: 150px;
+    color: #FFFFFF;
+    font-size: 150%;
+    font-family: "Mitr";
+}
+
+.top-right2 {
+    position: absolute;
+    top: 8px;
+    right: 299px;
+    color: #FFFFFF;
+    font-size: 150%;
+    font-family: "Mitr";
+}
+
+.top-left1 {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: #FFFFFF;
+    font-size: 150%;
+    font-family: "Mitr";
+}
+
+.textoPrincipal {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 800%;
+    font-family: "Mitr";
+    font-weight: bold;
+    
+}
+
+#searchTitle {
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    color: black;
+    font-size: 300%;
+    font-family: "Mitr";
+    font-weight: bold;
+}
+
+#textoInfo1 {
+    color: black;
+    font-size: 300%;
+    font-family: "Mitr";
+    font-weight: bold;
+    
+}
+
+#textoInfo2 {
+    color: black;
+    font-size: 100%;
+    font-family: "Mitr";
+    left: 390px;
+}
+
+#map {
+    height: 500px;
+    width: 50%;
+}
+
+#searchRect {
+    background: #76A7FC;
+    width:50%;
+    height:500px;
+}
+
+#searchSchools {
+    position: absolute;
+    top: 150px;
+    right: 450px;
+    width:20%;
+    height:20px;
+}
+
+#searchRestaurant {
+    position: absolute;
+    top: 300px;
+    right: 450px;
+    width:20%;
+    height:20px;
+}
+
+#getDataButton {
+    position: absolute;
+    top: 350px;
+    right: 420px;
+}
+
+#searchFire{
+    position: absolute;
+    top: 200px;
+    right: 450px;
+    width:20%;
+    height:20px;
+}
+
+#searchATM{
+    position: absolute;
+    top: 200px;
+    right: 450px;
+    width:20%;
+    height:20px;
+}
+
+#searchCareer {
+    position: absolute;
+    top: 250px;
+    right: 450px;
+    width:20%;
+    height:20px;
+}
+
+#searchOpt {
+    position: absolute;
+    font-family: "Mitr";
+    font-size: 150%;
+}

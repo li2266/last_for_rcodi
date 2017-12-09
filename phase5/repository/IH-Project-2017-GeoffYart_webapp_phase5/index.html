@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Residence Rummager</title>
+    
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-9">	
+			<h1>Welcome to Residence Rummager!</h1>
+			<h6>We Rummage, You Reside!</h6>
+			<hr>
+		</div>
+		<div class="col">
+			
+		</div>
+	</div>
+	
+	<div class="row">
+		<!-- Display Map -->
+		<div id="map", class="col-8">
+			<script>
+				function initMap() {
+					var mapCenter = {lat: 40.7291, lng: -73.9965};
+					var map = new google.maps.Map(document.getElementById('map'), {
+						zoom: 12,
+						center: mapCenter
+					});
+					var marker = new google.maps.Marker({
+						position: mapCenter,
+						map: map
+					});
+				}
+			</script>
+			<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlMZbn8QNUIrqC1PmOTmqdp0uoIMRMEyo&amp;callback=initMap">
+			</script>
+		</div>
+		<!-- Allow Adjustment Options -->
+		<div id="criteria", class="col">
+			<h4>How concerned are you about:</h4>
+			<hr><br>
+			<h6>Price</h6>
+			<input id="getCrit1" type="range" min="1" max="10" value="5">
+			<h6 id="crit1Value">5/10</h6>
+			<br>
+			<h6>Location</h6>
+			<input id="getCrit2" type="range" min="1" max="10" value="5">
+			<h6 id="crit2Value">5/10</h6>
+			<br>
+			<h6>Safety</h6>
+			<input id="getCrit3" type="range" min="1" max="10" value="5">
+			<h6 id="crit3Value">5/10</h6>
+			<br>
+			<h6>Transportation</h6>
+			<input id="getCrit4" type="range" min="1" max="10" value="5">
+			<h6 id="crit4Value">5/10</h6>
+			<br>
+			<h6>Culture</h6>
+			<input id="getCrit5" type="range" min="1" max="10" value="5">
+			<h6 id="crit5Value">5/10</h6>
+			
+			<script>
+				document.getElementById("getCrit1").oninput = function() {
+					document.getElementById("crit1Value").innerHTML = this.value.concat("/10");
+				}
+				document.getElementById("getCrit2").oninput = function() {
+					document.getElementById("crit2Value").innerHTML = this.value.concat("/10");
+				}
+				document.getElementById("getCrit3").oninput = function() {
+					document.getElementById("crit3Value").innerHTML = this.value.concat("/10");
+				}
+				document.getElementById("getCrit4").oninput = function() {
+					document.getElementById("crit4Value").innerHTML = this.value.concat("/10");
+				}
+				document.getElementById("getCrit5").oninput = function() {
+					document.getElementById("crit5Value").innerHTML = this.value.concat("/10");
+				}
+			
+			</script>
+		</div>
+		<hr>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
+	<script src="index.js"></script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/*mapa y opciones*/
+#principal{
+ 	width: 1280px;
+ 	height: 560px;
+ 	/*border: 1px solid black;*/
+ 	margin:0 auto;
+ }
+
+ #map {
+    width: 800px;
+    height: 517px;
+    background-color: white;
+    float: left;
+}
+
+/*Welcome*/
+#start{
+ 	/*border: 1px solid black;*/
+ 	margin: 0 auto;
+ 	height: 120px;
+ 	text-align: center;
+ 	font-size: 80px;
+}
+
+#options{
+	width: 465px;
+	height: 527px;
+ 	/*border: 1px solid black;*/
+ 	float: right;
+}
+
+a{
+	text-decoration: none
+}
+
+header{
+	background:#2c3e50;
+	color:#fff;
+}
+
+.btn{
+	width: 200px;
+}
+
+#data{
+ 	width: 1280px;
+ 	height: 420px;
+ 	/*border: 1px solid black;*/
+ 	margin:0 auto;
+ }
+
+ #tasas{
+ 	position:absolute;
+ 	width: 850px;
+ 	height: 400px;
+	left: 450px;
+	top: 660px;
+ 	border: 1px solid black;
+ 	text-align: center;
+ }

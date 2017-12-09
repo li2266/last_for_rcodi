@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New York City!</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Mitr' rel='stylesheet'>
+</head>
+<body>
+    <!-- Imagen Principal................................. -->
+    <div class="container-fluid" id="container1">
+        <div class="row justify-content-md-center">
+            <img class="img-responsive" src="http://www.technocrazed.com/wp-content/uploads/2015/12/New-York-Wallpaper-Background-9.jpg">
+            <div class="textoPrincipal">
+                <u>NEW YORK</u>
+            </div>
+            <div class="top-right">Search</div>
+            <div class="top-right1">
+                <a style="color: white" href="#container3">NY Map</a>
+            </div>
+            <div class="top-right2">
+                <a style="color: white" href="#container5">Basic Info</a>
+            </div>
+            <div class="top-left1">IronHacks</div>
+        </div>
+    </div>
+    <!--.................................................. -->
+    <!-- Separador1....................................... -->
+    <div class="container-fluid" id="container2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <!--.................................................. -->
+    <!--.................................................. -->
+    <!-- Mapa Google...................................... -->
+    <div class="container-fluid" id="container3">
+        <div id="map"></div>
+        <script>
+            function initMap(){
+                var location ={lat: 40.712775, lng: -74.005973}
+                var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBciy5QDrNH-CzA3kfhvAL8MHHTFpVb6hw&callback=initMap">
+        </script>
+    </div>
+    <!--.................................................. -->
+    <!-- Separador2....................................... -->
+    <div class="container-fluid" id="container4">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <!--.................................................. -->
+    <!-- Basic Info....................................... -->
+    <div class="container-fluid" id="container5">
+        <div  align=center>
+            <u id="textoInfo1">New York City!</u>
+            <div class="row">
+                <div class="col-md-4" id="textoInfo2">
+                    <p><i>"New York is large, glamorous, easy-going, 
+                    kindly and incurious, but above all it is a 
+                    crucible – because it is large enough to be 
+                    incurious"</i></p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="row">
+            <!-- Imagen 1 -->
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="https://static.pexels.com/photos/374710/pexels-photo-374710.jpeg" target="_blank">
+                  <img src="https://static.pexels.com/photos/374710/pexels-photo-374710.jpeg" alt="Lights" style="width:100%">
+                  <div class="caption">
+                    <p>The city has an incomparable architecture, from
+                     the largest skyscrapers in the world to bars scotched in
+                     the basements</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Imagen 2 -->
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="https://static.pexels.com/photos/450597/pexels-photo-450597.jpeg" target="_blank">
+                  <img src="https://static.pexels.com/photos/450597/pexels-photo-450597.jpeg" alt="Lights" style="width:100%">
+                  <div class="caption">
+                    <p>Visit in just a few hours the most iconic places of
+                     the world</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Imagen 3 -->
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="https://i.pinimg.com/originals/84/94/ec/8494ecd8b4598c8b9f8bc6dc39d3f460.jpg" target="_blank">
+                  <img src="https://i.pinimg.com/originals/84/94/ec/8494ecd8b4598c8b9f8bc6dc39d3f460.jpg" alt="Lights" style="width:100%">
+                  <div class="caption">
+                    <p>Live the experience of seeing spectacular images in the city that
+                     never sleeps</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!--.................................................. -->
+    <!-- Separador3....................................... -->
+    <div class="container-fluid" id="container6">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <!--.................................................. -->
+    <!-- Tabla Datos...................................... -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="tableWrapper">
+                    <div id="tableScroll">
+                        <table>
+                                <tr>
+                                    <th colspan="2"> Total Housing Units By Occupancy Status And Tenure By Borough </th>
+                                </tr>
+                                <tr>
+                                    <th> Borough </th>
+                                    <th> Owner occupied</th>
+                                </tr>
+                                <tbody id="mainTableBody">
+                                </tbody>
+                        </table> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <button id="getDataButton"> Get Data </button>
+                <button id="updateTableButton"> Update Table </button>
+            </div>
+        </div>
+    </div>
+    <!--.................................................. -->
+    <!-- Separador4....................................... -->
+    <div class="container-fluid" id="container6">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <!--.................................................. -->
+    <!-- Jquery .......................................... -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!--.................................................. -->
+    <!-- Custom Js .......................................... -->
+    <!--.................................................. -->
+</body>
+</html>

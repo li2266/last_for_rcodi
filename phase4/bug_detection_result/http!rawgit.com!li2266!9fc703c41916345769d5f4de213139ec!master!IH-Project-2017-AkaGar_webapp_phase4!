@@ -1,0 +1,73 @@
+{
+  "js": {
+    "errors": [
+      "Error: Bootstrap dropdown require Popper.js (https://popper.js.org)"
+    ],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [],
+    "warnings": [
+      {
+        "line": "15",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-AkaGar_webapp_phase4/style.css"
+      },
+      {
+        "line": "21",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-AkaGar_webapp_phase4/style.css"
+      },
+      {
+        "line": "28",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-AkaGar_webapp_phase4/style.css"
+      },
+      {
+        "line": "36",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-AkaGar_webapp_phase4/style.css"
+      },
+      {
+        "line": "44",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-AkaGar_webapp_phase4/style.css"
+      },
+      {
+        "line": "51",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-AkaGar_webapp_phase4/style.css"
+      },
+      {
+        "line": "58",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-AkaGar_webapp_phase4/style.css"
+      }
+    ]
+  },
+  "html": [
+    "info: Attribute “width:” is not serializable as XML 1.0.",
+    "info: Attribute “100px,” is not serializable as XML 1.0.",
+    "info: Attribute “height:” is not serializable as XML 1.0.",
+    "info: Attribute “100px” is not serializable as XML 1.0.",
+    "error: Attribute “width:” not allowed on element “svg” at this point.",
+    "error: Attribute “100px,” not allowed on element “svg” at this point.",
+    "error: Attribute “height:” not allowed on element “svg” at this point.",
+    "error: Attribute “100px” not allowed on element “svg” at this point."
+  ]
+}

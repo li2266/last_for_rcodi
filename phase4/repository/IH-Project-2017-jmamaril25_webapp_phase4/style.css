@@ -1,0 +1,114 @@
+/* GOOGLE FONTS: ROBOTO */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* GLOBAL OVERRIDES */
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #404040;
+    overflow: hidden;
+}
+h5 {
+    font-size: 14pt;
+    font-weight: 500;
+}
+h6 {
+    font-size: 9pt;
+    color: #9e9e9e;
+}
+.container-fluid {
+    height: 100%;
+    width: 100%;
+}
+.row {
+    margin: 0;
+    height: 100%;
+}
+.row .col { 
+    padding: 0;
+    height: 100%;
+}
+
+/* NAVIGATION */
+nav {
+    height: 100%;
+    color: #404040;
+    padding: 10%;
+}
+.navigation {
+    background-color: #F5F5F6;
+}
+
+/* NAVIGATION - HEADER */
+#logo {
+    width: 100%;
+    height: auto;
+}
+#description {
+    font-size: 9pt;
+    line-height: 12pt;
+    text-align: justify;
+    margin: 0;
+}
+
+/* NAVIGATION - OPTIMAL */
+#optimal {
+    font-size: 9pt;
+    line-height: 9pt;
+    margin: 32px 0;
+}
+nav a { 
+    color: #00BBD3;
+}
+nav a:hover {
+    color: #FF7043;
+}
+
+/* NAVIGATION - FILTERS */
+#filters {
+    margin-top: 32px;
+}
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 10pt;
+    color: #00BBD3;
+}
+.dropdown-content li>span>label {
+    top: -10px;
+}
+#filter-tags {
+    line-height: normal;
+}
+.chip {
+    font-size: 7pt;
+    font-weight: 400;
+    padding: 0 10px;
+    display: inline-block;
+}
+.hidden {
+    display: none;
+}
+
+/* MAP */
+#map {
+    width: 100%;
+    height: 80%;
+}
+
+/* BRIEF */
+#brief {
+    width: 100%;
+    padding: 0 11.5px;
+}
+#brief-header {
+    display: inline-flex;
+}
+#subheader {
+    padding-left: 8px;
+    margin-top: 17px;
+}
+ul {
+    font-size: 8pt;
+}

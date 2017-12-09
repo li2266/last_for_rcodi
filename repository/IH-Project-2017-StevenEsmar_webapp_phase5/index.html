@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+     
+      #map {
+        height: 80%;
+      }
+      
+      html, body {
+        height: 70%;
+        margin: 40;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+      <body style="background-image:url('https://thenypost.files.wordpress.com/2017/04/new-york.jpg?quality=90&strip=all&w=1200')">
+     <h1 style="background-color:rgba(0, 127, 201, 2.9);">FIND THE PLACE TO LIVE</h1>
+   
+      
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: new google.maps.LatLng(40.7291,-73.9965),
+         
+        });
+   var marker = new google.maps.Marker({ 
+			position: {lat: 40.7291, lng: -73.9965}, 
+			icon: 'https://1.gravatar.com/avatar/abf91ed0571db699b9610bb75270d4e0?s=40&d=retro&r=G',
+			map: map,
+          });
+            var infowindow = new google.maps.InfoWindow({
+            content:"You are here ... and now we are going to find a place to live.!"
+            });	
+		    google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+            });
+ var trafficLayer = new google.maps.TrafficLayer();
+  trafficLayer.setMap(map);
+   
+  var bikeLayer = new google.maps.BicyclingLayer();
+  bikeLayer.setMap(map);
+  
+  var transitLayer = new google.maps.TransitLayer();
+  transitLayer.setMap(map);
+   
+        var script = document.createElement('script');
+    
+        script.src = 'https://catalog.data.gov/harvest/object/388fa44d-4f54-45bd-990b-fae48c638ed6';
+        document.getElementsByTagName('head')[0].appendChild(script);
+      }
+
+      
+      window.eqfeed_callback = function(results) {
+        
+       
+      }
+    </script>
+    <script async defer
+    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRyVqZOz03B7yOkpyEcwhjBqAb5GDtW_I&callback=initMap">
+    </script>
+  </body>
+</html>

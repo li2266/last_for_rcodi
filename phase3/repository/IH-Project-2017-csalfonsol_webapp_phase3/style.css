@@ -1,0 +1,75 @@
+#googleMapContainer {
+	width: 100%;
+	height: 650px;
+	/*margin-top: 135px;*/
+}
+
+.black-separator{
+	height: 5px;
+	background-color: black;
+}
+
+input{
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.main-header{
+	/*background: url("background.jpg");*/
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: rgba(46, 64, 83, 0.8);
+	color: rgba(255, 183, 77, 0.75);
+	text-align: center;
+}
+
+.user-header{
+  text-align: center;
+	background-color: rgba(46, 64, 83, 0.8);
+	color: rgba(255, 183, 77, 0.75);
+  padding-right: 0px;
+  padding-bottom: 50px;
+}
+
+.no-padding{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#hideButton{
+	width: 90%;
+}
+
+#centerButton{
+	width: 90%;
+}
+
+
+#buttonsContainer{
+	background-color: rgba(96, 64, 53, 0.5);
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+}
+
+#showButton{
+	font-size: 25px;
+	height: 70px;
+	width: 80%;
+}
+
+body {
+	background: url("https://sso.stern.nyu.edu/web/images/stern1.jpg");
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+p{
+	padding-top: 15px;
+	font-size: 25px;
+}
+
+h1{
+  font-family: cursive;
+	font-weight: bold;
+}

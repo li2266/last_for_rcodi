@@ -1,0 +1,135 @@
+/*Font import*/
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* CSS "native" objects edit */
+
+body {
+    color: #444;
+    font-family: 'Raleway', serif;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    background-image: url("https://i.imgur.com/IK6vDwO.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+}
+
+html{
+    height: 100%;
+}
+
+/* CSS edit by "class" */
+
+/*Navigation bar*/
+.navbar{
+    background-color: #1f2f3a;
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid #4c9cb4;
+    padding:1rem;
+    z-index:12;
+}
+
+/*Navigation button*/
+.btn-primary{
+    background-color:transparent;
+    text-align:center;
+    cursor:pointer;
+    border:0;
+    float:right;
+    color:white;
+}
+
+.btn-primary:hover{
+    background-color:transparent;
+    text-align:center;
+    cursor:pointer;
+    border:0;
+    color:white;
+}
+
+.btn-primary:active{
+    background-color:transparent !important; 
+    text-align:center;
+    cursor:pointer;
+    border:0;
+    color:white;
+}
+
+.btn-primary:focus{
+    background-color:transparent;
+    text-align:center;
+    cursor:pointer;
+    border:0;
+    color:white;
+}
+
+.divisions{
+    text-align:center;
+    background-color:#1f2f3a;
+    line-height:0;
+    color:white;
+    border-top: 2px solid #4c9cb4;
+    border-bottom: 2px solid #4c9cb4;
+    padding:0;
+}
+
+.chart{
+    padding: 2rem 3rem;
+    background-color:#eceff2;
+    height: 550px;
+    width:100%;
+    text-align:center;
+}
+
+.container{
+    width:100%;
+}
+
+svg{
+    height:inherit;
+    width:inherit;
+    float:center;
+    align-self:center;
+}
+
+/* colorcitos :3
+#4c9cb4
+#1f2f3a
+#788594
+#eceff2
+#5e5c64
+*/
+
+/* CSS edit by ID */
+
+/*Transparent div*/
+#transparent{
+    height:100%;
+}
+
+/*map div*/
+#map {
+    height: 90%;
+}
+     
+/*Welcome div*/
+#title1{
+    margin: -9rem 0px 0px 0px;
+    text-align:center;
+    color: #FAFAFA;
+}
+
+#preferences{
+    padding: 2rem 3rem;
+    background-color:#eceff2;
+}

@@ -1,0 +1,6 @@
+$(document).ready(function () {
+    $("col_one").hover(function () {
+        $(this).css
+    })
+})
+

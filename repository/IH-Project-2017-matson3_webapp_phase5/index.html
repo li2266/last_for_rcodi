@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<script src="https://d3js.org/d3.v4.min.js"  charset="utf-8"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="locations.js"></script>
+		<script src="ncdc.js"></script>
+		<!--<script src="zillow.js"></script>-->
+		<script src="scripts.js"></script>
+		<title>Title</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	</head>
+	
+	<body>
+		<div id="map">
+			<iframe src="https://www.zillow.com/homes/for_sale/Manhattan-New-York-NY-10012/61626_rid/pricea_sort/40.734617,-73.990291,40.723738,-74.005741_rect/15_zm/"></iframe>
+		</div>
+		<div id="nycClimate">
+			<h1>New York Climate</h1>
+			<div id="nycClimateData">
+			</div>
+			
+			<!--<button onclick="countryDropDown()" class="dropbtn">Country</button>
+				<div id="countrySelector" class="dropdown-content">
+					<input type="text"
+						placeholder="Search..."
+						id="countryInput"
+						onkeyup="filterCountry()">
+				</div>
+			<button onclick="stateDropDown()" class="dropbtn">State</button>
+				<div id="stateSelector" class="dropdown-content">
+					<input type="text"
+						placeholder="Search..."
+						id="stateInput"
+						onkeyup="filterState()">
+				</div>
+			<button onclick="cityDropDown()" class="dropbtn">City</button>
+				<div id="citySelector" class="dropdown-content">
+					<input type="text"
+						placeholder="Search..."
+						id="cityInput"
+						onkeyup="filterCity()">
+				</div>-->
+			
+			<br>
+			<button type="button"
+			onclick="window.open('https://www.zillow.com/homes/for_sale/globalrelevanceex_sort/40.735323,-73.990614,40.724445,-74.006063_rect/15_zm/', '_blank').focus(); "
+			>Get Properties</button>
+		</div>
+		
+		
+		
+		<script src="map.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEaGdg2nPLE2gmULj7JbGinyxKbm45sRg&callback=initMap" async defer></script>
+		<script src="chart.js"></script>
+	</body>
+</html>

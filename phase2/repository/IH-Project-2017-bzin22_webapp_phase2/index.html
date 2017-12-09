@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parking Bot</title>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href = "https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- link to style.css in file -->
+  </head>
+  
+  <body>
+      <div class = "container">
+           <h1>
+             <br>
+             San Francisco's Very Own: <br>
+             Parking Bot!!
+             <br>
+             **Insert Logo Here**
+           </h1>
+           
+           <p class = "userInput1">
+               &nbsp; 
+               &nbsp;
+               <forms id = "userInput1" name = "userInput1">
+                      <input id = "button" type = "button" value = "What Are We?" onClick = Click1();>
+                      <input id = "button" type = "button" value = "Meet the Developer" onClick = Click2();>
+                      <input id = "button" type = "button" value = "Explore the App!" onClick = Click3(); ><br>
+               </forms>
+               <br>
+           </p>
+           
+           <h2 class = "AboutUsHeading">
+               &nbsp; <!-- &nbsp &nbsp -->
+               What Are We?
+           </h2>
+           
+           <p class = "AboutUs">
+              Having trouble finding parking spots in the big city? Fear not! Save time and energy with Parking Bot! With this app, you can select your current location and be able to find nearby parking spaces that have unused parking meters on them! That way, you'll never have to waste gas, time and energy looking for a place to park. Instead, you can just head straight to your desired location, hassle free! 
+           </p>
+           
+           <h2 class = "DeveloperHeading">
+               &nbsp;
+               Meet the Developer:
+           </h2>
+           
+           <p class = "Developer">
+               &nbsp;
+               IronHacker
+           </p>
+           
+           <h2 class = "ExploreAppHeading">
+               &nbsp;
+               Explore the App!
+           </h2>
+           
+           <p class = "textInput">
+               &nbsp;
+               Drag your mouse to move across the map! <br>
+               &nbsp;
+               Enter your current Location to find Available parking spaces! <br>
+               &nbsp; <input id = "text" type = "text" >
+               &nbsp; <input id = "button" type = "button" value = "Go!">
+           </p>
+           <br>
+     </div> 
+     
+        <div id="map">
+            
+        </div>
+        
+        <script src="index.js">
+            
+        </script>
+    
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDehNREVCDoh4zP6Ucy4f2rLPzeFMxxg6Y&callback=initMap"
+        async defer></script>
+        
+  </body>
+</html>

@@ -1,0 +1,25 @@
+body {
+    color: #444;
+    font-family: "Lato", sans-serif;
+}
+
+.niceHeader{
+    color: white;
+    background-color: #13124f;
+    padding-left: 20px;
+}
+
+.info h3{
+    text-transform: uppercase;
+}
+
+.info{
+    font-size: 24px;
+    color: white;
+    background-color: #f61067;
+}
+
+#mapContainer{
+    width: 100%;
+    height: 500px;
+}

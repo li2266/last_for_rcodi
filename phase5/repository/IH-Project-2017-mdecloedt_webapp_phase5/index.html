@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<Style>
+
+
+
+}
+
+#h2 {
+text-align: center; <h2>
+}
+/*This will make the width of the image span the full page */
+#img {
+width: 100%; 
+}  
+#borderimg { 
+border: 10px solid transparent;
+padding: 10px;
+border-image: url(http://www.uvassociates.in/sites/default/files/images/borders/Purple-black-funky-checker-rectangular-powerpoint-border.png) 30 round;
+}
+#map {
+height: 400px;
+width: 100%;
+}
+</Style>
+
+
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NYU Housing Search</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html" style = "font-size: 20px">Home</a></li>
+      <li><a href= "Map.html" style = "font-size: 20px">Map</a></li>
+      <li><a href="Listing.html" style = "font-size: 20px">Listings</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+</head>
+
+<body>
+<div class="container">
+</div>
+<script src="https://p5js.org/assets/js/p5.min.js"></script>
+<script src="index.js"></script>
+ 
+<img id="header" src="https://www.uniconexed.org/wp-content/uploads/2016/03/logo-nyu-stern.jpg"
+alt="NYU Stern School of Business" height="250">
+
+<h2 style="text-align:center;"
+}
+id="borderimg"><p></p>
+<p style="background-color:White;">
+<img src="http://images.clipartpanda.com/stack-of-books-clipart-ncEXyp4cA.png" 
+alt="NYU Stern School of Business" width="130" height="50">
+Affordable and Safe Housing Near the NYU Stern School of Business</p>
+</h2>
+
+</br>
+</br>
+</br>
+
+
+
+
+
+<script>
+        function displayParsedData(data){
+          /* Working with the 'data' object (not string) here, now we can access the different properties available.*/
+          text = '<b>Name: </b>' + data.list[0].name + '<br/>';
+          text += '<b>message: </b>' + data.message + '<br/>';
+          text += '<b>Current Temperature: </b>' + data.list[0].main.temp + ' F<br/>';
+          text += '<b>Weather Conditions: </b>' + data.list[0].weather[0].description + '<br/>';
+          $('#parsed_json').append(text);
+        }
+      </script>
+
+      <script>
+        function test1() {
+          getWeather(function (data) {
+              $("#raw_json").html('<h2>callback</h2><pre>' + JSON.stringify(data, null, 2) + '</pre>');
+              displayParsedData(data);          
+          });
+        }
+
+        function getWeather(callback) {
+          var weather = 'http://api.openweathermap.org/data/2.5/weather?q=New+York,US&appid=51a4693d2600750a5644ac53c9e265df&units=imperial';
+          $.ajax({
+            dataType: "jsonp",
+            url: weather,
+            success: callback
+          });
+        }
+      </script>
+
+
+      <script>
+      $(document).ready(function (){
+          $("#btn382").click(function(){       
+              /* set no cache */
+              $.ajaxSetup({ cache: false });
+
+              $.getJSON("weather.json", function(data){
+                  for (var team in data) {
+                    var html = [];
+                    html = '<div class="item"><b>Team: </b>' + data[team].Teams + '<br/>';
+                    html += '<b>Lat: </b>' +data[team].Lat + '<br/>';
+                    html += '<b>Lon: </b>' + data[team].Lon + '<br/>';
+                    html += '<b>Weather: </b>' + data[team].Weather + '<br/></div>';
+                    $("#div381").append(html);
+                  }
+                  console.log(data);
+              })
+              .error(function(jqXHR, textStatus, errorThrown){ /* assign handler */
+                  /* alert(jqXHR.responseText) */
+                  alert("error occurred!");
+              });
+          });
+      });
+      </script>
+
+    </head>
+    <body>
+      <div id="example-section38">   
+      </div>
+
+      <div id="raw_json"></div>
+
+
+      <button onclick="test1();">Current Weather</button>
+    </body>
+
+
+
+
+
+<div class="jumbotron text-center"> 
+
+     <h3>My Goal</h3><br>
+        <style>
+            h3{
+                text-decoration: underline;
+                }
+         </style>
+    <h5 align = "left">
+   To help you find your best housing choice from different helpful criteria</h5>
+   
+<div class="jumbotron text-center"> 
+
+     <h3>About</h3><br>
+        <style>
+            h3{
+                text-decoration: underline;
+                }
+         </style>
+    <h5 align = "left">
+   Ironhacks Coder Purdue University 2017  </h5>
+   <h5 align = "left">
+      I am not affiliated with any University, webiste, or information involved on this page 
+   </h5>
+   
+      <div class="jumbotron text-center"> 
+
+     <h3>How to Explore</h3><br>
+        <style>
+            h3{
+                text-decoration: underline;
+                }
+         </style>
+    <h5 align = "left">
+   In the Navbar at the top of the page is where you can explore more</h5>
+<h5 align = "left">Under Maps is where you can explore the area around NYU Stern School of Busniness</h5>
+<h5 align = "left">Under listings is where you can find more information about places to live</h5>
+   
+<script type="text/javascript" async defer
+
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

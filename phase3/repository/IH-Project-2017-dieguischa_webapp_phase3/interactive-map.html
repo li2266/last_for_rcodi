@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>NYU Rent house helper </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" 
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+		  integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+		  crossorigin="anonymous">
+ 
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="//d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+<div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" id="navBrand" href="index.html">NYU Rent house helper</a>
+  
+  <div class=" navbar" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="interactive-map.html">Interactive Map</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about-author.html">About the author</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+    
+<div class="after-navbar map">
+    
+    
+</div>
+    
+         <div class="row">
+            <a name="top"></a> 
+            <div class="col-md-6">
+         
+                    <div id="googleMapContainer"></div>
+                
+                <div class="row" id="mapMarkerOptions">
+                    <button class="MarkerOptions" id="ShowMarkerB">Show Borough locations</button>
+                    <button class="MarkerOptions" id="HideMarkerB">Hide Borough locations</button>
+                </div>
+                <div style="margin-left:10px;margin-bottom:-20px">
+                    <p>Show results in:</p>
+                </div> 
+                <div class="row" id="mapLocationOptions">
+                    
+                    
+                    <button class="LocationOptions" id="LocBronx" onclick="showResultsIn('Bronx')">Bronx</button>
+                    <button class="LocationOptions" id="LocBrook" onclick="showResultsIn('Brooklyn')">Broooklyn</button>
+                    <button class="LocationOptions" id="LocMan"   onclick="showResultsIn('Manhattan')">Manhattan</button>
+                    <button class="LocationOptions" id="LocQuee"  onclick="showResultsIn('Queens')">Queens</button>
+                    <button class="LocationOptions" id="LocSI"    onclick="showResultsIn('Staten Island')">Staten Island</button>
+                </div>   
+                <div class="row" id="mapLocationOptions">
+                    
+                    
+                    <button class="ReCenter" id="ReCenter" onclick="reCenter()">Re-center</button>
+                    
+                </div> 
+            </div>
+             
+            <div class="col-md-6" id="info" style="">
+                <div class="row" style="height:100%">
+                    
+                    <div class="row" style="height:50%;width:75%;margin-left:10px">
+                     <div class="col-md-6" id="checkboxs">
+                        Check the landmarks you want to see on the map: <br>
+                        <input type="checkbox" id="cboxmus" onchange="showMuseums()"> Museums <br>
+                        <input type="checkbox" id="cboxart" onchange="showGalleries()"> Art Gallerys <br>
+                        <input type="checkbox" id="cboxatm" onchange="showATMs()"> ATMs <br>
+                        <input type="checkbox" id="cboxbike" onchange="showBikeRoutes()"> Bicycle Routes <br>
+                        <input type="checkbox" id="cboxdmv" onchange="showDMVs()" > DMVs <br>
+                     </div>  
+                      <div   class="col-md-5" >
+                      Budget range ($/month): <input type="text" name="Budget" value="0"> 
+                      <input type="text" name="Budget" value="10000"><br>
+                      <input type="checkbox" id="cboxmus" value="first_checkbox">Carte blanche<br>
+                      Distance range (Miles): <input type="text" name="Distance" value="0"> 
+                      <input type="text" name="Budget" value="5"><br>
+                      <input type="checkbox" id="cboxmus" value="first_checkbox"> I don't care I own a car<br>
+                      <button class="" id="">Submit</button>
+                     </div>  
+                    </div>
+                <div class="row" style="height:50%;width:75%;margin-left:10px">
+                    <a href="d3-graphics.html">Click here  </a>, to see the weather behavior in NYC
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+        <div class="row">
+            <div id="recomendations">
+            once we enable recomendations they will appear here
+            </div>
+        </div>
+         <div class="row" id="recommendationOptions">
+                <button class="MarkerOptions recom" id="#" onclick="#top">Show recomendations on map</button>
+                
+        </div>
+        </div>
+	<script src="index.js">
+	    
+	</script>
+	<script>
+	 var header = document.querySelector('header');
+     var section = document.querySelector('section');   
+	    
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWeqVunTsSNB7UG5ihDd99RmEu_ULkoMY&callback=initMap"
+    async defer></script>
+   
+</body>
+
+</html>

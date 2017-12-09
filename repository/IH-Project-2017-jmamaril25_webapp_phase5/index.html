@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Safe House</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/K2HOgz7.png">
+        <!-- MATERIALIZE CSS: Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col s3">
+                    <!-- SIDEBAR NAVIGATION -->
+                    <nav class="navigation">
+                        <img id="logo" src="https://i.imgur.com/Gf07gdC.png" alt="safe_house">
+                        <p id="description"><strong>Safe House</strong> is an online hub to inform incoming students in the NYC area about housing rentals near the NYU Stern School of Business. We provide information on local musuems, subway routes, and more. We are commited to helping you find an affordable and safe place to get you comfortable navigating in the city.</p>
+                        <!-- FILTER EDITOR -->
+                        <div id="filters">
+                            <h5>Map Filters:</h5>
+                            <div class="input-field">
+                            	<select id='choices' multiple>
+                            		<option value="" disabled selected>Toggle Filters Here:</option>
+                            		<option value="1">Safety</option>
+                            		<option value="2">Subway</option>
+                            		<option value="3">Traffic</option>
+                            		<option value="4">Bike Paths</option>
+                            		<option value="5">Museums</option>
+                            		<option value="6">Career Centers</option>
+                            		<option value="7">Farmer's Markets</option>
+                            	</select>
+                            </div>
+                            <p>Once a filter is added from the dropdown above, click on the pins for more details.</p>
+                            <h6>Active Filters:</h6>
+                            <div id="filter-tags">
+                                <div class="chip hidden" id="rental">Housing Rentals</div>
+                                <div class="chip hidden" id="safety">Safety</div>
+                                <div class="chip hidden" id="subway">Subway</div>
+                                <div class="chip hidden" id="traffic">Traffic</div>
+                                <div class="chip hidden" id="bike-paths">Bike Paths</div>
+                                <div class="chip hidden" id="museums">Museums</div>
+                                <div class="chip hidden" id="career-centers">Career Centers</div>
+                                <div class="chip hidden" id="farmers-markets">Farmer's Markets</div>
+                            </div>
+                        </div>
+                        <!-- HOUSING DATA -->
+                        <div id="optimal">
+                            <h5><b>Recommended House Rentals:</b></h5>
+                            <ul id="listings"></ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- GOOGLE MAPS LOCATION -->
+                <div class="col s6">
+                    <div id="map"></div>
+                </div>
+                <div class="col s3">
+                    <div id="brief">
+                        <h4>Daily Briefing</h4>
+                        <h6>A daily update of Manhattan, NY.</h6>
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Weather</span>
+                                <ul id="weather"></ul>
+                            </div>
+                        </div>
+                        <div class="card-panel">
+                            <a class="twitter-timeline" href="https://twitter.com/nycgov?ref_src=twsrc%5Etfw">Tweets by nycgov</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JQUERY JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- MATERIALIZE JS: Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <!-- D3.JS -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <!-- TWITTER JS -->
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <!-- GOOGLE MAPS API -->
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh9KJJ2-gqECjxl6UAginZ0uxA9Tb4AxE&callback=initMap"></script>
+        <!-- CUSTOM JS -->
+        <script src="index.js"></script>
+    </body>
+</html>

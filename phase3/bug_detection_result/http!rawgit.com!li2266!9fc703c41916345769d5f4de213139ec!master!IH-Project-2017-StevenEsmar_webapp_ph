@@ -1,0 +1,60 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "4",
+        "errorType": "parse-error",
+        "context": "#cuadro",
+        "errorSubtype": "exp",
+        "skippedString": "3366",
+        "type": "value",
+        "message": "Value Error :  background-color (nullcolors.html#propdef-background-color)\n        \n                                3366 is not a background-color value :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-StevenEsmar_webapp_phase3/index.html"
+      },
+      {
+        "line": "9",
+        "errorType": "parse-error",
+        "context": "#cuadro1",
+        "errorSubtype": "exp",
+        "skippedString": "660000",
+        "type": "value",
+        "message": "Value Error :  background-color (nullcolors.html#propdef-background-color)\n        \n                                660000 is not a background-color value :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-StevenEsmar_webapp_phase3/index.html"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "5",
+        "level": "0",
+        "message": "You should add a 'type' attribute with a value of 'text/css' to the 'style' element",
+        "type": "style-type",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-StevenEsmar_webapp_phase3/index.html"
+      },
+      {
+        "line": "16",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-StevenEsmar_webapp_phase3/index.html"
+      },
+      {
+        "line": "50",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-StevenEsmar_webapp_phase3/index.html"
+      }
+    ]
+  },
+  "html": [
+    "error: Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.",
+    "error: Stray start tag “script”.",
+    "error: End tag for  “html” seen, but there were unclosed elements.",
+    "error: Unclosed element “div”."
+  ]
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seeker</title>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href = "https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- link to style.css in file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+     <!-- Jquery source code -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  </head>
+  
+  <body background = "http://supernovathemes.com/wp-content/themes/supernovathemes/images/bg/b17.png">
+      <div class = "container">
+           <h1 id = "title">
+             <br>
+             <strong style="position:absolute; TOP:30px; LEFT:180px; WIDTH:50px; HEIGHT:50px"> Seeker </strong>
+           </h1>
+           <img style="position:absolute; TOP:25px; LEFT:10px; WIDTH:150px; HEIGHT:150px" id = "logo" src='https://i.imgur.com/8vnve4h.jpg' />
+           <p class = "userInput1">
+               &nbsp; 
+               &nbsp;
+               <forms id = "userInput1" name = "userInput1">
+                      <input style="position:absolute; TOP:100px; LEFT:510px;" class="Button" id = "button1" type = "button" value = "About Us" onClick = click();>
+                      <input style="position:absolute; TOP:100px; LEFT:625px;" class="Button" id = "button2" type = "button" value = "Popular Locations" onClick = Click2();>
+                      <input style="position:absolute; TOP:100px; LEFT:795px;" class="Button" id = "button3" type = "button" value = "Search Filtered Locations" onClick = Click3(); ><br>
+               </forms>
+               <br>
+           </p>
+            <h1 id = "title">
+             
+             <strong style="position:absolute; TOP:30px; LEFT:1000px; WIDTH:50px; HEIGHT:50px"> Seeker </strong>
+           </h1>
+           <img style="position:absolute; TOP:25px; LEFT:1285px; WIDTH:150px; HEIGHT:150px" id = "logo" src='https://i.imgur.com/8vnve4h.jpg' />
+           
+           <h2 class = "AboutUsHeading">
+               &nbsp; <!-- &nbsp &nbsp -->
+               About Us
+           </h2>
+           
+           <p class = "AboutUs">
+              Are you a current student moving to New York City? Do you need an affordable place to thrive in? Are you worried about the decision-making of choosing a new home? Fear not! Seeker is here to help!   
+            </p>
+           
+           <p class = "textInput">
+               <div class = "words">
+               &nbsp; <b class = "best" >Best Rated Locations:</b>
+               <p><a href="https://www.zillow.com/homedetails/10-Shore-Blvd-Brooklyn-NY-11235/112080963_zpid/?fullpage=true" target="_blank">10 Shore Blvd: $1695<small>/month</small></a></p>
+               <p><a href="https://www.zillow.com/homedetails/466-3rd-Ave-Brooklyn-NY-11215/30584755_zpid/?fullpage=true" target="_blank">466 3rd Ave: $1995<small>/month</small></a></p>
+               <p><a href="https://www.zillow.com/homedetails/183-Congress-St-APT-4R-Brooklyn-NY-11201/2127278305_zpid/?fullpage=true" target="_blank">183 Congress St APT 4R: $2100<small>/month</small></a></p>
+               <p><a href="https://www.zillow.com/homedetails/625-Carroll-St-2-Brooklyn-NY-11215/2099581740_zpid/?fullpage=true" target="_blank">625 Carroll St #2: $2500<small>/month</small></a></p>
+               &nbsp; <b class = "best"> Safest Locations: </b> <br>
+               <p><a href="https://www.zillow.com/homedetails/327-E-54th-St-APT-A-New-York-NY-10022/2106538728_zpid/?fullpage=true" target="_blank">327 E 54th St APT A: $1825<small>/month</small></a></p>
+               <p><a href="https://www.zillow.com/homedetails/339-E-57th-St-APT-1C-New-York-NY-10022/2126519264_zpid/?fullpage=true">339 E 57th St APT 1C: $1895<small>/month</small></a></p>
+               <p><a href="https://www.zillow.com/homedetails/1057-2nd-Ave-APT-4B-New-York-NY-10022/2092605835_zpid/?fullpage=true" target="_blank">1057 2nd Ave APT 4B: $1900<small>/month</small></a></p>
+               <p><a href="https://www.zillow.com/homedetails/987-1st-Ave-9-New-York-NY-10022/2092027535_zpid/?fullpage=true" target="_blank">987 1st Ave # 9: $1975<small>/month</small></a></p>
+               &nbsp; <b class = "best"> Cheapest Locations: </b> <br>
+               <p><a href="https://www.zillow.com/homedetails/33-Arden-St-APT-52-New-York-NY-10040/2112554762_zpid/?fullpage=true" target="_blank">33 Arden St APT 52: $1325<small>/month</small></a></p>
+               <p><a href="https://www.zillow.com/homedetails/500-W-165th-St-New-York-NY-10032/2107341881_zpid/?fullpage=true" target="_blank">500 W 165th St: $1325<small>/month</small></a></p>
+               <p><a href="https://www.zillow.com/homedetails/165-Sherman-Ave-APT-4C-New-York-NY-10034/2110051537_zpid/?fullpage=true" target="_blank">165 Sherman Ave APT 4C: $1400<small>/month</small></a></p>
+               <p><a href="https://www.zillow.com/homedetails/304-W-30th-St-APT-2-New-York-NY-10001/2105515370_zpid/?fullpage=true" target="_blank">304 W 30th St APT 2: $1450<small>/month</small></a></p>
+               </div> 
+               &nbsp;
+               <h2 class = "ExploreAppHeading">
+               &nbsp;
+               Explore the App!
+               </h2>
+               Drag your mouse to move across the map! 
+               <!--
+               &nbsp; <input id = "text" type = "text" >
+               &nbsp; <input class="Button" id = "button4" type = "button" value = "Go!" onClick = click();>
+               -->
+           </p>
+           
+          
+            <div id="brief">
+                <h4>What's the Weather?</h4>
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">New York City Forecast</span>
+                        <ul id="weather"></ul>
+                    </div>
+                </div>
+            </div>
+          
+           
+     </div> 
+       
+        
+       
+         <script src="index.js"></script>
+         
+         <h1>
+             &nbsp; Location Filters: <br>
+            <h5>
+                 &nbsp; Click into your preferences to discover nearby locations!
+            </h5> <br>
+            &nbsp; <input class="Button" id = "button5" type = "button" value = "Popular Art Galleries" onClick = click()> 
+            &nbsp; <input class="Button" id = "button6" type = "button" value = "City Wifi Hotspots" onClick = click();>        
+            &nbsp; <input class="Button" id = "button7" type = "button" value = "Movie Theatres" onClick = click();> 
+            &nbsp; <input class="Button" id = "button8" type = "button" value = "Stores and Markets" onClick = click();>   
+            &nbsp; <input class="Button" id = "button9" type = "button" value = "Subway Stations" onClick = click();>
+            &nbsp; <input class="Button" id = "button10" type = "button" value = "Subway Lines" onClick = click();>  
+            &nbsp; <input class="Button" id = "button11" type = "button" value = "Reset" onClick = click();> <br> <br> 
+         </h1>
+     </div>
+     
+     
+    <div id="map">
+        
+    </div>
+    
+    <script src="index.js">
+        
+    </script>
+   
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDehNREVCDoh4zP6Ucy4f2rLPzeFMxxg6Y&callback=initMap"
+    async defer></script>
+        
+  </body>
+</html>

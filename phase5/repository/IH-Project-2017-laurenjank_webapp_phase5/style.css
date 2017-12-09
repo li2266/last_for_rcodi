@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    color: black;
+    font-family: Georgia, serif;
+    background-color: white;
+ 
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}

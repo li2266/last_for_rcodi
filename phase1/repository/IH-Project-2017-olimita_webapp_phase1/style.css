@@ -1,0 +1,17 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+#selectores{
+    height: 700px;
+}
+.orange{
+    padding: 2%;
+    width:98%;
+    background-color: white;
+    border-color: orange;
+}
+#mapita{
+  width: 100%;
+  height: 700px;
+}

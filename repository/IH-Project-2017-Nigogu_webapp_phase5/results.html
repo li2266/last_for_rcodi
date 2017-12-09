@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>NYU Renting Places Finder</title>
+  <!-- Bootrstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <!-- Custom css -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- Font -->
+  <!-- link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" -->
+</head>
+
+<body>
+  <div id="headerres">
+    <h2>NYU Renting Places Finder - IronHacks 2017</h2>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <div id="googleMapDiv"></div>
+      </div>
+      <div class="col-md-4">
+        <div id="options">
+          <ul class="list-group">
+            <li class="list-group-item">Rent option #1.</li>
+            <li class="list-group-item">Rent option #2.</li>
+            <li class="list-group-item">Rent option #3.</li>
+            <li class="list-group-item">Rent option #4.</li>
+            <li class="list-group-item">Rent option #5.</li>
+            <li class="list-group-item">Rent option #6.</li>
+            <li class="list-group-item">Rent option #7.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="criteria">
+        <label for="budget">Budget (in USD): </label>
+        <input type="number" name="budget" id="budget" value="100">
+        <label class="checkbox-inline">
+          <input type="checkbox" id="checkhouses" value="houses"> Show houses
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="checkmuseums" value="museums"> Show museums
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="checkgalleries" value="art"> Show art galleries
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="checkfiremen" value="firemen"> Show firemen stations
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="checkatm" value="ATMs"> Show ATMs
+        </label> <br/>
+        <button type="button" class="btn btn-primary" id="updatemap">Update Map</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="chart"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row">
+          <div class="chart"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footerresults">
+        <p>Nicolás Gómez Gutiérrez - Universidad Nacional de Colombia</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- JQuery -->
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  </script>
+  <script type="text/javascript" src="data.js"></script>
+
+  <!-- Google Maps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcbJCulkQ2a6ey4dZ-Gs18o-M73TOyseI&callback=initMap">
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "28",
+        "errorType": "parse-error",
+        "context": "#slidecontainer",
+        "errorSubtype": "exp",
+        "skippedString": "100",
+        "type": "zero",
+        "message": "Value Error :  width (nullvisudet.html#propdef-width)\n        \n                                only 0 can be a unit. You must put a unit after your number :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      },
+      {
+        "line": "50",
+        "errorType": "parse-error",
+        "context": ".slider::-webkit-slider-thumb",
+        "errorSubtype": "exp",
+        "skippedString": "none",
+        "type": "noexistence-at-all",
+        "message": "Property appearance doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "16",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      },
+      {
+        "line": "33",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      },
+      {
+        "line": "37",
+        "level": "0",
+        "message": "Property -webkit-appearance is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      },
+      {
+        "line": "41",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      },
+      {
+        "line": "44",
+        "level": "0",
+        "message": "Property -webkit-transition is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      },
+      {
+        "line": "48",
+        "level": "0",
+        "message": "::-webkit-slider-thumb is an unknown vendor extended pseudo-element",
+        "type": "vendor-ext-pseudo-element",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      },
+      {
+        "line": "49",
+        "level": "0",
+        "message": "Property -webkit-appearance is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      },
+      {
+        "line": "54",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      },
+      {
+        "line": "58",
+        "level": "0",
+        "message": "::-moz-range-thumb is an unknown vendor extended pseudo-element",
+        "type": "vendor-ext-pseudo-element",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      },
+      {
+        "line": "62",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-whipplem123_webapp_phase4/style.css"
+      }
+    ]
+  },
+  "html": [
+    "info: Attribute “float:” is not serializable as XML 1.0.",
+    "error: Attribute “float:” not allowed on element “img” at this point.",
+    "error: Attribute “left” not allowed on element “img” at this point.",
+    "error: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images."
+  ]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NYUroomie</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--<script src="index.js"></script> -->
+    <style>
+      #map {
+        width: 100%;
+        height: 600px;
+        background-color: black;
+      }
+      
+    </style>
+    
+</head>
+<body>
+    <div>
+        <h1 id='NYU_title'>NYU Stern School of Business</h1>
+       <!-- <button id="btn" onclick="initMap()">Show</button>-->
+       <button class="btn btn-primary" id="musRoute" title ="Route to Museum">
+						Museum
+					</button>
+		<button class="btn btn-primary" id="bikeRoute" title ="Bike Routes">
+						Bike
+					</button>
+		<button class="btn btn-primary" id="bankAtm" title ="Bank ATM">
+						ATM
+					</button>
+    </div>
+    <div id="map"></div>
+    <!-- <script>initMap();</script> -->
+    
+    
+    <script src="index.js"></script>
+    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxBPTVCkUGiqiBbQHKSIZbDFcWbO_xxeI
+&callback=initMap" async defer></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    position: relative;
+}
+
+#map {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background: black;
+}

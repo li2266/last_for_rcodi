@@ -1,0 +1,43 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+    margin: 5px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+
+hr {
+    background-color: blue;
+    margin: 3px;
+    width: 90%;
+    float: left;
+}
+
+input {
+    width: 70%;
+    float: left;
+}
+
+button {
+    width: 20%;
+    float: left;
+}
+
+#map {
+	height: 350px;
+	width: 50%;
+    float: right;
+}
+
+#criteria {
+    height: 350px;
+    width: 50%;
+    float: left;
+}
+
+#visualizations {
+    width: 100%;
+}

@@ -1,0 +1,26 @@
+body {
+  background: url("https://wallpaperscraft.com/image/new_york_sunset_skyscrapers_trees_58965_3840x2400.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+th{
+    color:white;
+    border: 2px solid white;
+    text-align: center;
+}
+#map {
+    height: 400px;
+    width:  400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+tr {
+    background-color: white;
+    text-align: center;
+    text-decoration-color: black;
+    border-color: black;
+}

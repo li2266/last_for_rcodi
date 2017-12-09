@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>New York City Neighborhoods</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #map{
+            width: 100%;
+            height: 400px;
+            background-color: grey;
+        }
+    </style>
+   	<script type="text/javascript">
+	function initMap(){
+		var mapDiv = document.getElementById('map');
+		var map = new google.maps.Map(mapDiv, {
+			center: {lat: 40.7291, lng: -73.9965},
+			zoom: 12});
+		var marker = new google.maps.Marker({ //Line 1
+			position: {lat: 40.7291, lng: -73.9965}, //Line2: Location to be highlighted
+			map: map,//Line 3: Reference to map object
+			title: 'NYU Stern School of Business' //Line 4: Title to be given
+		})
+	}
+</script>
+
+</head>
+
+
+<body>
+    <h1>New York City Neighborhoods</h1>
+    <p1>This website will help you to find the best neighborhood for you!
+
+
+
+    <h3>NYU Stern School of Business</h3>
+    <div id ="map"></div>
+    <div class="container"></div>
+    <script src="index.js"></script>
+    <p><a href="page2.html">Click here to find your new neighborhood!</a> </p>
+
+</body>
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBw1NVSv33jp7MpIEioZthyhy5iXZ45ho&callback=initMap">
+</script>
+</html>

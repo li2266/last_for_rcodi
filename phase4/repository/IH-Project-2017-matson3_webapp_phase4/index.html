@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<script src="https://d3js.org/d3.v3.min.js"  charset="utf-8"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>-->
+		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
+		<script src="locations.js"></script>
+		<script src="ncdc.js"></script>
+		<script src="zillow.js"></script>
+		<script src="scripts.js"></script>
+		<title>Title</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	</head>
+	
+	<body>
+		<div id="map">
+			<iframe src="https://www.zillow.com/homes/for_sale/Manhattan-New-York-NY-10012/61626_rid/pricea_sort/40.734617,-73.990291,40.723738,-74.005741_rect/15_zm/"></iframe>
+		</div>
+		<div id="nycClimate">
+			<h1>New York Climate</h1>
+			<div id="nycClimateData">
+			</div>
+			<!--<button onclick="countryDropDown()" class="dropbtn"> Test </button>
+			<div id="CountrySelector" class="dropdown-content">
+				<a href="#test">Test</a>
+			</div>-->
+		</div>
+		
+		<script src="map.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEaGdg2nPLE2gmULj7JbGinyxKbm45sRg&callback=initMap" async defer></script>
+	</body>
+</html>

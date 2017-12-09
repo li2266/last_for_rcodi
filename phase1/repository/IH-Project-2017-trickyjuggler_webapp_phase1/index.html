@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Seeker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<div class="container-fluid" id="topBar">
+	    <div class="jumbotron" id="jumbo">
+	    	<h1 class="display-3">Home Seeker</h1>
+		    <p class="lead">Looking for a new home.</p>
+	    </div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8">
+				<!--map-->
+				<div id="myMap" >
+    				<script async defer
+      					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO1wD2l1maTziXFpqnhoeJTq6IrELT4mE&callback=initMap">
+   					 </script>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<!--Info-->
+				<div id="site_info">
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<!--Renting List, prices-->
+			</div>
+			<div class="col-sm-6">
+				<!--Other Renting Data-->
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

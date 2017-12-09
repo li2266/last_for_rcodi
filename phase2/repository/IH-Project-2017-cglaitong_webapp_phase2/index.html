@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" 
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+	crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>IronHacks 2017 cglaitong</title>
+</head>
+<body>
+	
+	<div class="jumbotron nomarginbot">
+		<div class="centrardoscinco">
+	  		<h1>Purdue – UNAL Gold IronHacks 2017</h1>
+		</div>
+ 
+	</div>
+	<div class="container-fluid">
+		<div class ="main row">
+			<div class="centrartres col-md-8" >
+				<div class="page-header">
+		  			<div class="containe-fluidr">
+                      <h2>Criterios de seleccion para lugar de renta</h2>
+                      <div class="btn-group btn-group-justified">
+                        <div class="btn-group">
+                          <button type="button" class="btn  bc" onclick=" showCareerMarkers()">Career Ctr</button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn  bc" onclick=" showVacMarkers()">Vacc loc</button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn  bc" onclick=" showDCPofficeMarkers()">DCP offices</button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn  bc" onclick="showgallerieMakers()">Galleries</button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn  bc" onclick= "showalfuelMakers()">AltFuel Sta</button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class=" btn  bc " onclick="showmuseumMakers()">Museums</button>
+                        </div>
+                      </div>
+                    </div>
+		  		</div>	
+		  			
+				<div id="map">
+
+
+
+					
+
+		    		
+		  		</div>
+				
+			</div>
+
+			<div class ="col-md-4">
+				<h2 class="">En este espacio se presentara informacion relevante relacionada con los criterios para la seleccion del lugar de renta</h2>
+				
+				
+			</div>
+
+		</div>
+	</div>		
+	
+
+
+
+
+
+    <script type="text/javascript"> 
+
+    	var map;
+
+    	function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: new google.maps.LatLng(40.7291,-73.9965),
+          mapTypeId: 'terrain'
+          
+        });
+        var latLng = new google.maps.LatLng(40.7291,-73.9965);
+        var marker = new google.maps.Marker({
+	            position: latLng,
+	            map: map,
+	            icon: 'https://cdn2.iconfinder.com/data/icons/location-map-simplicity/512/university_school-64.png'
+          });
+          /* google.maps.event.addListener(marker, 'click', function() {
+                    if (marker.getVisible()){
+                      marker.setVisible(false); 
+                  } else{
+                    marker.setVisible(true); 
+
+
+                        }
+             });*/
+
+             run();
+
+    	}
+
+    	function run(){
+
+			vac(map);
+			career(map);
+			DCPoffice(map);
+			gallerie(map);
+			museum(map);
+			alfuel(map);
+			   		
+    	}
+
+    </script>
+
+
+
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<!-- Custom JS -->
+	<script type="text/javascript" src="index.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFTTOZFnZN48o0qeUe1s__h4oDVb3mjN0&callback=initMap">
+    </script>
+</body>
+</html>
+	 
+
+ 	

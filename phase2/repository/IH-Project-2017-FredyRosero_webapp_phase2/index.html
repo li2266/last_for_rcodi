@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>    
+    <script src='https://googlemaps.github.io/js-marker-clusterer/src/markerclusterer.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div id="map"></div>
+        <div id="info">
+            <div id="address">Address: <span></span> </div>
+            <div id="price">Price: <span></span> /mo</div>
+            <div id="zUrl"><a target="_blank">zillow.com/homedetails</a></div>
+        </div>
+    </div>
+    <script src="map.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5ReumdaQ7d0NmiWuyfE1ezCEvVbRz99o&callback=initMap">
+    </script>    
+</body>
+</html>

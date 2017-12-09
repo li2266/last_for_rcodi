@@ -1,0 +1,33 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+	background-color: lightgray;
+}
+
+h4 {
+	margin: 0px;
+}
+
+h6 {
+	margin: 0px
+}
+
+hr {
+    margin: 3px;
+    width: 90%;
+    float: left;
+}
+
+input {
+    width: 70%;
+    float: left;
+}
+
+button {
+    width: 55px;
+    float: left;
+}

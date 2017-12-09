@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find your second home</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" 
+       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+       integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+       crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+      <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" rel="stylesheet">
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  </head>
+  <body>
+
+<!-- <div class="general_content"> -->
+  
+
+    <div class="container-fluid" id= "my_container">
+
+            <div class="row"  id="header1">
+              <div class="col-sm-12" >
+
+                  <strong>FIND YOUR SECOND HOME </strong>
+                  <h4>Search a place </h4>
+              </div>
+            </div>
+
+            <div class="row" >
+              <div class="col-sm-12" >
+                  <nav id="header" >
+                      <ul class="col-md-12">
+                          <li class="col-md-4" ><a href="index.html">Search</a>
+
+                          </li>
+                          <li class="col-md-4" ><a>Discover</a>
+                          </li>
+                          <li class="col-md-4"><a href="index.html">About</a>
+                          </li>
+                        </ul>
+                  </nav>
+
+              </div>
+            </div>
+
+            <div class="row" id="searchs">
+                  <div class="col-md-4" >
+                      <div class="myform-top">
+                          <div class="myform-top-left">
+                            <h3>Search by topics</h3>
+                              <p>You can use the following filters to see them on the map</p>
+                          </div>
+                          <div class="myform-top-right">
+                            <i class="fa fa-key"></i>
+                          </div>
+                      </div>
+
+                      <div class="myform-bottom">
+
+                      <button type="submit" class="search_button">Economic places</button>
+                      <button type="submit" class="search_button">Security</button>
+                      <button type="submit" class="search_button">Green</button>
+                      </div>
+                  </div>
+
+                  <div class="col-sm-8" id="map_content">
+                    <div id="map"></div>
+
+                  </div>
+
+            </div>
+
+     </div>
+
+
+
+
+    </div>  
+
+<!-- </div> -->
+
+
+    
+
+
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOntN9g36iQqcAhsDd8iErZCwnGq7DvnI&callback=initMap"
+    async defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  </body>
+</html>

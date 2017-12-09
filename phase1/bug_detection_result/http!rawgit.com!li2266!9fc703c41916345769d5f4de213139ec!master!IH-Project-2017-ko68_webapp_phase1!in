@@ -1,0 +1,14 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [],
+    "warnings": []
+  },
+  "html": [
+    "error: Attribute “scr” not allowed on element “script” at this point."
+  ]
+}

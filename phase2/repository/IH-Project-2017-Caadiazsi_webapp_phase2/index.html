@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FINDaPLACE</title>
+    <link rel="stylesheet" 
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+		  crossorigin="anonymous">	
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style= "background-color: #61A2DA">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 title_space">
+                <div id = "logo_row">
+                    <h1 id= "title">FINDaPLACE</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 places_space">
+                <div class="row">
+                    <div id="searchbutton_row">
+                        <button type="button" class="btn btn-danger">Search</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="tableWrapper">
+					<div id="tableScroll">
+						<table>
+							<thead>
+								<tr>
+									<th colspan="2"> Available Places </th>	
+								</tr>
+								<tr>
+									<th> Location </th>
+									<th> Prices </th>
+								</tr>
+								<tbody id="mainTableBody">
+									
+								</tbody>
+							</thead>
+						</table>
+					</div>
+				</div>
+                </div>
+            </div>
+            <div class="col-sm-6 map_space">
+                <div id="map_row">
+                </div>
+            </div>
+            <div class="col-sm-1 buttons_space">
+                <div id="buttons_row">
+                    <button id="restaurants_button"> <i class="glyphicon glyphicon-cutlery"></i></button>
+                    <button id="parking_button"> <i class="glyphicon glyphicon-road"></i> </button>
+                    <button id="schools_button"> <i class="glyphicon glyphicon-pencil"></i> </button>
+                    <button id="transport_button"> <i class="glyphicon glyphicon-plane"></i> </button>
+                    <button id="fire_button"> <i class="glyphicon glyphicon-fire"></i></button>
+                    <button id="police_button"> <i class="glyphicon glyphicon-tower"></i></button>
+                    <button id="crimerate_button"> <i class="glyphicon glyphicon-bullhorn"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  			crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="index.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcUbIZpqrtZCpgxGB-cGDz0YSb3-0KELI&callback=initMap">
+    </script>
+</body>
+</html>

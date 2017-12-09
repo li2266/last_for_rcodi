@@ -1,0 +1,43 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [],
+    "warnings": [
+      {
+        "line": "5",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase1/index.html"
+      },
+      {
+        "line": "11",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase1/index.html"
+      }
+    ]
+  },
+  "html": [
+    "error: Element “head” is missing a required instance of child element “title”.",
+    "error: Bad value “#New Listings” for attribute “href” on element “a”: Illegal character in fragment: space is not allowed.",
+    "error: Bad value “#my saves” for attribute “href” on element “a”: Illegal character in fragment: space is not allowed.",
+    "error: Attribute “gesture” not allowed on element “iframe” at this point.",
+    "error: The “frameborder” attribute on the “iframe” element is obsolete. Use CSS instead.",
+    "error: The “align” attribute on the “h1” element is obsolete. Use CSS instead.",
+    "error: The “align” attribute on the “h2” element is obsolete. Use CSS instead.",
+    "error: Element “style” not allowed as child of element “div” in this context. (Suppressing further errors from this subtree.)",
+    "error: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.",
+    "error: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.",
+    "error: End tag for  “body” seen, but there were unclosed elements.",
+    "error: Unclosed element “div”.",
+    "info: Consider using the “h1” element as a top-level heading only (all “h1” elements are treated as top-level headings by many screen readers and other tools).",
+    "info: Consider using the “h1” element as a top-level heading only (all “h1” elements are treated as top-level headings by many screen readers and other tools).",
+    "info: Consider using the “h1” element as a top-level heading only (all “h1” elements are treated as top-level headings by many screen readers and other tools)."
+  ]
+}

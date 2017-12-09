@@ -1,0 +1,60 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/js/jquery.js failed to be loaded. Status: 404",
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/js/jquery.fitvids.js failed to be loaded. Status: 404",
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/js/bootstrap.min.js failed to be loaded. Status: 404",
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/js/holder.js failed to be loaded. Status: 404",
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/js/gmaps.js failed to be loaded. Status: 404",
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/js/lightbox.min.js failed to be loaded. Status: 404",
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/js/main.js failed to be loaded. Status: 404",
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/js/wow.min.js failed to be loaded. Status: 404"
+    ],
+    "messages": [
+      "Google Maps API warning: NoApiKeys https://developers.google.com/maps/documentation/javascript/error-messages#no-api-keys",
+      "Google Maps API warning: SensorNotRequired https://developers.google.com/maps/documentation/javascript/error-messages#sensor-not-required"
+    ]
+  },
+  "css": {
+    "errors": [],
+    "warnings": [
+      {
+        "line": "3",
+        "level": "0",
+        "message": "Property -webkit-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/style.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -moz-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/style.css"
+      },
+      {
+        "line": "5",
+        "level": "0",
+        "message": "Property -o-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/style.css"
+      },
+      {
+        "line": "10",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/style.css"
+      },
+      {
+        "line": "28",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-zhao744_webapp_phase1/style.css"
+      }
+    ]
+  },
+  "html": []
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Seeker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body onload="loadApp()">
+	<div class="container-fluid" id="topBar">
+	    <div class="jumbotron" id="jumbo">
+	    	<h1 class="display-3">Home Seeker</h1>
+		    <p class="lead">Looking for a new home.</p>
+	    </div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3">
+				<!--Filters-->
+				<div class="card" style="height: 98%" id="minicard">
+					<div class="card-body">
+						<h4 class="card-title" align="center">Filters!</h4>
+    					<p class="card-text">Select the options that most interest you.</p>
+						<form name="form1">
+						<label class="custom-control custom-checkbox">
+  							<input type="checkbox" class="custom-control-input" name="ArtGalleries">
+  							<span class="custom-control-indicator"></span>
+  							<span class="custom-control-description">Art Galleries</span>
+						</label>
+						<br>
+						<label class="custom-control custom-checkbox">
+  							<input type="checkbox" class="custom-control-input" name="Museums">
+  							<span class="custom-control-indicator"></span>
+  							<span class="custom-control-description">Museums</span>
+						</label>
+						<br>
+						<label class="custom-control custom-checkbox">
+  							<input type="checkbox" class="custom-control-input" name="Schools">
+  							<span class="custom-control-indicator"></span>
+  							<span class="custom-control-description">Schools</span>
+						</label>
+						<br>	
+						Max Price: <br>$ <input type="number" name="price" min="0" value="0" style="width: 80%" id="myPrice"><br>	
+						</form>
+						<button class="btsendData" id="sendData">Search</button> 
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-9">
+				<!--map-->
+				<div id="map" >
+    				<script async defer
+      					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO1wD2l1maTziXFpqnhoeJTq6IrELT4mE&callback=initMap">
+   					 </script>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<div class="container-fluid" style="margin-bottom: 20px;">
+	<div class="tab">
+  		<button class="tablinks" onclick="changeTab(event, 'tab1')" id="defaultOpen">Tab 1</button>
+  		<button class="tablinks" onclick="changeTab(event, 'tab2')">Tab 2</button>
+  		<button class="tablinks" onclick="changeTab(event, 'tab3')">Tab 3</button>
+	</div>
+
+	<div id="tab1" class="tabcontent">
+  		<h3>Climate</h3>
+  		<p>Tab 1</p>
+	</div>
+
+	<div id="tab2" class="tabcontent">
+  		<h3>Tab 2</h3>
+  		<p>Tab 2.</p> 
+	</div>
+
+	<div id="tab3" class="tabcontent">
+  		<h3>Tab 3</h3>
+ 		<p>Tab 3</p>
+	</div>
+</div>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

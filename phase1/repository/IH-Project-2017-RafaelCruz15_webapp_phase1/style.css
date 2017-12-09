@@ -1,0 +1,46 @@
+body {
+	background-color: #FF0000;
+	color: #444;
+    font-family: Arial, sans-serif;
+}
+
+/*map and options*/
+#principal{
+ 	width: 1280px;
+ 	height: 520px;
+ 	/*border: 1px solid black;*/
+ 	margin:0 auto;
+ }
+
+/*Welcome*/
+#inicio{
+	width: 1280px;
+ 	/*border: 1px solid black;*/
+ 	margin: 0 auto;
+ 	height: 120px;
+ 	text-align: center;
+ 	font-size: 80px;
+}
+
+#mensaje{
+	width: 1280px;
+	height:50px;
+ 	/*border: 1px solid black;*/
+ 	margin:0 auto;
+ 	text-align: center;
+}
+
+#map {
+    width: 800px;
+    height: 517px;
+    background-color: white;
+    float: left;
+  }
+
+#options{
+	width: 465px;
+	height: 517px;
+ 	/*border: 1px solid black;*/
+ 	float: right;
+}
+

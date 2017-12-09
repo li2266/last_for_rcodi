@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #map {
+            height: 500px;
+            width: 700px;
+           
+        }
+        body, html {
+            height: 100%;
+             margin: 0;
+             font: 400 15px/1.8 "Lato", sans-serif;
+             color: #777;
+        }
+
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+             position: relative;
+             opacity: 0.5;
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+
+        }
+        .bgimg-1 {
+             background-image: url(http://www.commonapp.org/files/school/image/NYU_CommonApp_HeaderImage2.jpg);
+             height: 60%;
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>NYU Stern School of Business Student Housing Search</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Makes it mobile friendly-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:rgb(209,229,255)">
+    <div class="bgimg">
+     <!--<img src= "http://www.stern.nyu.edu/sites/default/files/assets/images/uat_024994.jpg"  alt="NYU Stern School of Business" title="NYU Stern School of Business">
+      </div>  <!--http://newyork.carpediem.cd/data/afisha/o/42/fe/42fe683c54.jpg"-->   
+    <div class="caption">
+         <br>
+         <br>
+         <br>
+         <span class="border">HOUSE QUEST</span><br>
+        
+         <br>
+         <span class="border2">Student housing aid for the NYU <br><br>Stern School of Business <br><br> New York</span>
+         </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class = "navbar">
+    <ul class="breadcrumb" style= "background-color:rgb(250, 240, 209)">
+    <li class="active"><span class="glyphicon glyphicon-home"></span><a href="#Home">Home</a></li>
+    <li><span class = "glyphicon glyphicon-globe"></span><a href="#Map">View Housing Map</a></li>
+    <li><span class="glyphicon glyphicon-user"></span><a href="#Preferences">Select Preferences</a></li>
+  </ul>
+  </div>
+         
+ 
+
+
+<div class = "tab-content"> 
+    <div id = "Home" style="padding: 5px 50px">
+        <h1 style="padding: 5px 50px">What is important to <strong>you</strong>?</h1>
+        <h4 style="padding: 5px 60px">Are you looking to save money, live in an area with low crime, or be close to shops and parks? Click on the icons to see the best housing options for each characteristic.</h4>
+       <br>
+        <div class="row" style="padding 5px 20px">
+             <div class="col-sm-4"><a href="affordability.html">
+                    <span style="font-size:10em" class="glyphicon glyphicon-piggy-bank" alt="Affordability" title="Affordability"></span>
+                    </a></div>
+                
+             <div class="col-sm-4"><a href="safety.html">
+                    <span style="font-size: 10em" class="glyphicon glyphicon-lock" alt="Safety" title="Safety"></span>
+                    </a></div>
+             <div class="col-sm-4"><a href="community.html">
+                    <span style="font-size:10em" class="glyphicon glyphicon-tree-deciduous" alt="Community" title="Community"></span>
+                    </a></div>
+             
+        </div>
+    </div>
+    <div id = "Map">
+     <h3>New York City Map</h3>
+     <div id="map"></div>
+     <script>
+      function initMap() {
+        var uluru = {lat: 40.7291, lng: -73.9965};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+     </script>
+     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY2VTdm16PGmdaV6qjGDZoUrQrVcKbg80&callback=initMap">
+     </script>
+     <button type="button" id="btn">Get Climate Data</button>
+     <script
+         src="https://code.jquery.com/jquery-3.2.1.js"
+         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+         crossorigin="anonymous"></script>
+     <script src="index.js"></script>
+    </div>
+    <div id = "Preferences">
+        <p> Rank your preferences!</p>
+    </div>
+    </div>
+   
+    <!--Add short description-->
+   
+</body>
+</html>

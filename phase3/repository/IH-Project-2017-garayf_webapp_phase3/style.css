@@ -1,0 +1,169 @@
+
+body {
+  
+  background-image: url(https://cdn-images-1.medium.com/max/2000/1*9vokNJYoZF0V2-cc6T_B8g.jpeg);
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  background-size: cover;
+
+  background-color: #464646;
+  
+ 
+
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+
+#googleMapDiv, #buttonsDiv, #chartDiv{
+	width: 100%;
+	height: 75px;
+	background-color: grey;
+	margin-top: 20px;
+}
+
+#googleMap{
+  height: 400px;
+  width: 700px;
+ }
+
+#chartDiv {
+	height: 300px;
+}
+
+.vertical-menu2 {
+    width: 100%; /* Set a width if you like */
+}
+
+.vertical-menu2 a {
+    background-color: #000000; 
+    color: black; 
+    display: block; 
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu2 a:hover {
+    background-color: #353333;
+}
+
+
+.vertical-menu {
+    width: 100%; /* Set a width if you like */
+}
+
+.vertical-menu a {
+    background-color: #C7C4D1; 
+    color: black; 
+    display: block; 
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #00000;
+}
+
+.vertical-menu a.active {
+    background-color: #B40404;
+    color: white;
+}
+
+.menunavicon{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000000;
+    opacity: .99;
+    
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("https://cdn-images-1.medium.com/max/2000/1*9vokNJYoZF0V2-cc6T_B8g.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    opacity: 1;
+}
+
+.spinner {
+  margin: 300px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear;
+    }
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #C72704;
+  border-radius: 100%;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+.navicon {
+	height: 30px;
+	width: 40px;
+	margin: 15px;
+	border-top: 6px solid #B40404;
+	border-bottom: 18px double #B40404;
+	
+	font-size:0;
+}
+

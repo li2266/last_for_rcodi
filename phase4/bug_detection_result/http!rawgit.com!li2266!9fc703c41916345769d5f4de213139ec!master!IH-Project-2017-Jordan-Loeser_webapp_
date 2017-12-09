@@ -1,0 +1,466 @@
+{
+  "js": {
+    "errors": [
+      "ReferenceError: Can't find variable: Set"
+    ],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "101",
+        "errorType": "invalidparam",
+        "message": "Sorry, the at-rule @-moz-keyframes is not implemented.",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "109",
+        "errorType": "invalidparam",
+        "message": "Sorry, the at-rule @-webkit-keyframes is not implemented.",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "135",
+        "errorType": "invalidparam",
+        "message": "Sorry, the at-rule @-moz-keyframes is not implemented.",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "145",
+        "errorType": "invalidparam",
+        "message": "Sorry, the at-rule @-webkit-keyframes is not implemented.",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "202",
+        "errorType": "parse-error",
+        "context": ".c-data-container .bar",
+        "errorSubtype": "exp",
+        "skippedString": "steelblue",
+        "type": "noexistence-at-all",
+        "message": "Property fill doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "204",
+        "errorType": "parse-error",
+        "context": ".c-data-container .bar:hover",
+        "errorSubtype": "exp",
+        "skippedString": "brown",
+        "type": "noexistence-at-all",
+        "message": "Property fill doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "209",
+        "errorType": "parse-error",
+        "context": ".c-data-container .axis path, .c-data-container .axis line",
+        "errorSubtype": "exp",
+        "skippedString": "none",
+        "type": "noexistence-at-all",
+        "message": "Property fill doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "210",
+        "errorType": "parse-error",
+        "context": ".c-data-container .axis path, .c-data-container .axis line",
+        "errorSubtype": "exp",
+        "skippedString": "#000",
+        "type": "noexistence-at-all",
+        "message": "Property stroke doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "211",
+        "errorType": "parse-error",
+        "context": ".c-data-container .axis path, .c-data-container .axis line",
+        "errorSubtype": "exp",
+        "skippedString": "crispEdges",
+        "type": "noexistence-at-all",
+        "message": "Property shape-rendering doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "8",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"
+      },
+      {
+        "line": "9",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"
+      },
+      {
+        "line": "10",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"
+      },
+      {
+        "line": "11",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"
+      },
+      {
+        "line": "14",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"
+      },
+      {
+        "line": "15",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"
+      },
+      {
+        "line": "16",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"
+      },
+      {
+        "line": "17",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600"
+      },
+      {
+        "line": "8",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "context": "body",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "9",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "14",
+        "level": "2",
+        "message": "Redefinition of margin-bottom",
+        "context": "h1",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "20",
+        "level": "2",
+        "message": "Redefinition of margin-bottom",
+        "context": "h2",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "23",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "27",
+        "level": "2",
+        "message": "Redefinition of margin-bottom",
+        "context": "h3",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "36",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "41",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "53",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "54",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "63",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "65",
+        "level": "0",
+        "message": "Property -webkit-animation-name is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "66",
+        "level": "0",
+        "message": "Property -webkit-animation-duration is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "67",
+        "level": "0",
+        "message": "Property -webkit-animation-iteration-count is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "68",
+        "level": "0",
+        "message": "Property -webkit-animation-timing-function is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "69",
+        "level": "0",
+        "message": "Property -moz-animation-name is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "70",
+        "level": "0",
+        "message": "Property -moz-animation-duration is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "71",
+        "level": "0",
+        "message": "Property -moz-animation-iteration-count is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "72",
+        "level": "0",
+        "message": "Property -moz-animation-timing-function is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "73",
+        "level": "0",
+        "message": "Property -ms-animation-name is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "74",
+        "level": "0",
+        "message": "Property -ms-animation-duration is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "75",
+        "level": "0",
+        "message": "Property -ms-animation-iteration-count is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "76",
+        "level": "0",
+        "message": "Property -ms-animation-timing-function is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "83",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "84",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "86",
+        "level": "0",
+        "message": "Property -webkit-animation-name is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "87",
+        "level": "0",
+        "message": "Property -webkit-animation-duration is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "88",
+        "level": "0",
+        "message": "Property -webkit-animation-iteration-count is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "89",
+        "level": "0",
+        "message": "Property -webkit-animation-timing-function is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "90",
+        "level": "0",
+        "message": "Property -moz-animation-name is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "91",
+        "level": "0",
+        "message": "Property -moz-animation-duration is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "92",
+        "level": "0",
+        "message": "Property -moz-animation-iteration-count is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "93",
+        "level": "0",
+        "message": "Property -moz-animation-timing-function is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "94",
+        "level": "0",
+        "message": "Property -ms-animation-name is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "95",
+        "level": "0",
+        "message": "Property -ms-animation-duration is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "96",
+        "level": "0",
+        "message": "Property -ms-animation-iteration-count is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "97",
+        "level": "0",
+        "message": "Property -ms-animation-timing-function is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "98",
+        "level": "0",
+        "message": "Property -o-transition is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "122",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "156",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "164",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "183",
+        "level": "1",
+        "message": "Same color for background-color and border-bottom-color",
+        "context": ".c-welcome-message",
+        "type": "same-colors",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "183",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "189",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      },
+      {
+        "line": "214",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-Jordan-Loeser_webapp_phase4/style.css"
+      }
+    ]
+  },
+  "html": []
+}

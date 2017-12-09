@@ -1,0 +1,86 @@
+body {
+    color: black;
+    font-family: Arial, sans-serif;
+    height:100%;
+    width: 100%;
+    margin: 0;
+}
+
+.bgimg { 
+    background-image: url(http://www.commonapp.org/files/school/image/NYU_CommonApp_HeaderImage2.jpg);
+    height: 60%; 
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    /*position: relative;*/
+    /*opacity:0.9;*/
+    /*width: 100%;*/
+}
+.caption {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption .border {
+  background-color: #111;
+  color: #fff;
+  padding: 15px;
+  font-size: 50px;
+  letter-spacing: 10px;
+  text-align:center;
+  width: 100%;
+  opacity: 0.75;
+}
+.caption .border2 {
+  background-color: #111;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  letter-spacing: 10px;
+  text-align:center;
+  width: 100%;
+  opacity: 0.75;
+}
+.h1 {
+    color: black;
+    text-align: center;
+}
+.h4{
+    color:black;
+    text-align: center;
+}
+
+.btn{
+    color: black;
+    width: 50%;
+    height: 100%;
+    
+}
+.map {
+    width: 500px;
+    height: 500px;
+    
+}
+.h3 {
+    color: black;
+    text-align: center;
+    
+}
+.p {
+    text-align:center;
+    padding: 15px;
+}
+.panel-heading {
+    text-align:center;
+    
+}
+.panel-body {
+    text-align:center;
+}
+.arcpath{
+    stroke: #fff
+    
+    
+}

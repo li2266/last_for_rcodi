@@ -1,0 +1,105 @@
+<html>
+<font face="helvetica">
+Hi IronHacker, <br><br> 
+Thanks for submitting your app! We really enjoyed evaluating your application. The feedback below should help you improve your application! It will not influence the score of your final solution, so don't worry!  We evaluate your application in three dimensions: Technology, InfoVis and Novelty. We use objective techniques for doing that (e.g. code error detection techniques, establish evaluation methods for usability, etc.) and our judges are all experts and well trained.  
+<br>
+<br>
+You will find <b>two tables</b> below. The first table (Table 1) reports the results of the evaluations of your app in all three dimensions. The second table (Table 2) reports a performance score for each dimension as a <b>corresponding percentile rank</b>. A percentile rank achieved by  you indicates the percentage of participants in your hacking contest who achieved a lower performance than you. 
+</font>
+<br>
+
+<font face="helvetica">
+<br>
+<b>Table 1: Your results</b> <br><br>
+		<table border="0" cellspacing="1" align="left" frame="hsides" rules="all" width="100%" style="margin-bottom:20px">
+			<tr>
+				<th width="10%"><font color="orange">Results for</font></th>
+				<td width="50%" colspan="1">lennwgs</td>
+				<th width="30%" colspan="1"><font color="orange">Time</font></th>
+				<td width="10%" colspan="1">Mon Nov 27 11:42:28 2017</td>
+			</tr>
+			<tr>
+				<th>Performance Dimension</th>
+				<th>Description</th>
+				<th>Measure type</th>
+				<th>Your Result</th>
+			</tr>
+			<tr>
+				<th rowspan="2"><font color="orange">Technology</font></th>
+				<td>(1) Error rating: We evaluate the quality of your code by counting the errors and diving it by the total number of lines of code. The lower the value the better your code. </td>
+				<td>Error rating</td>
+				<td>2.08%</td>
+			</tr>
+			<tr>
+				<td>(2) Tech requirements: You are expected to meet all 10 technological requirements specified in the challenge <a href="http://www.ironhacks.com/task">description</a>. All requirements are equally weighted. The more more requirements you meet the better </td>
+				<td>Number of technology requirements met  </td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<th rowspan="2"><font color="orange">InfoVis</font></th>
+				<td>(1)User requirements:  We evaluate the fulfillment of user requirements specified in the challenge <a href="http://www.ironhacks.com/task">description</a>. All 5 requirements are equally weighted.</td>
+				<td>Number of user requirements met</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				
+				<td>(2)Usability: We evaluate 
+				<br>(1.1) System affordance: Does the application offer recognizable elements and interactions that can be understood by the user?
+				<br> (2.2) Cognitive workload: Is the number of alternatives from which the user can choose appropriate?
+				<br> (2.3) Functionality: Would a potential user have to memorize a lot of information and make many steps in the app to carry the task?<br> You can achieve a score from 0 to 18 for usability. All three dimensions are equally weighted. </td>
+				<td>Usability points achieved</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<th rowspan="2"><font color="orange">Novelty</font></th>
+				<td rowspan="2">Adding new data sets definitely makes your app stand out from the rest.<br>  We evaluate three aspects: (1) Are you using new datasets? (2) How relevant is the new data for the user? (3) How novel is the visualization that you are using? We evaluate each dataset individually and average across all datasets used. For each data set you can achieve up to 9 points. The more points the better.   </td>
+				<td>Number of new datasets</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>Total points for novelty </td>
+				<td>0</td>
+			</tr>
+		</table>
+</font>
+<br>
+
+
+<br>
+<br>
+<font face="helvetica">
+<br>
+<b>Table 2: Summary: Your Percentile Scores</b> <br><br>
+
+Remember, that a percentile rank for a score indicates the percentage of participants who participated in the hack and received a lower score. The percentile ranks for all these three scores are based on the scores of all participants within your hacking group.  
+Please visit <a href="http://www.ironhacks.com/scores">www.ironhacks.com/scores</a> to compare your results with those of others, and see how others with a similar percentile score do in all three dimensions.
+<br><br>
+		<table border="0" cellspacing="1" align="left" width="100%" frame="hsides" rules="rows" style="margin-bottom:20px">
+			<tr>
+				<td><font color="orange"><b>Dimension</b></font></td>
+				<td><b><font color="orange">Technology</font></b></td>
+				
+				<td><b><font color="orange">InfoVis</font></b></td>
+				<td><b><font color="orange">Novelty</font></b></td>
+			</tr>
+			<tr>
+				<td><b>Percentile Score</b></td>
+				<td>62.96%</td>
+				
+				<td>40.74%</td>
+				<td>0.0%</td>
+			</tr>
+		</table>
+</font>
+
+
+<I>CONFIDENTIALITY NOTE</I>: This information is confidential and should not be shared with other participants in your hack! Follow the rules of IronHacks and do not share this information. <br><br>
+
+Keep in mind: This evaluation does not affect your standing in the final phase! Keep moving, improving, and be creative! Great prizes are waiting for you. And even if you do not make it to the top, we have prizes for winning spirit and also community spirit. So it's worth working hard! <br><br>
+
+If you have any further questions, please let us know: opendigital@purdue.edu <br><br>
+
+
+Happy Hacking, <br>
+The IronHacks Team
+</html>

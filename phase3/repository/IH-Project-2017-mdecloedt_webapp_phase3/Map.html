@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+    
+<title></title>
+<link rel="stylesheet" href="style.css">
+<Style>
+
+
+
+}
+
+#h2 {
+text-align: center; <h2>
+}
+/*This will make the width of the image span the full page */
+#img {
+width: 100%; 
+}  
+#borderimg { 
+border: 10px solid transparent;
+padding: 10px;
+border-image: url(http://www.uvassociates.in/sites/default/files/images/borders/Purple-black-funky-checker-rectangular-powerpoint-border.png) 30 round;
+}
+#map {
+height: 500px;
+width: 100%;
+}
+</Style>
+
+
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NYU Housing Search</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html" style = "font-size: 20px">Home</a></li>
+      <li><a href= "Map.html" style = "font-size: 20px">Map</a></li>
+      <li><a href="Listing.html" style = "font-size: 20px">Listings</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+</head>
+
+</h2>
+<button id="btn1">Park Suggestion</button>
+<button id="btn2">Movies</button>
+<button id="btn3">Art</button>
+<button id="btn0">Get External Content</button>
+<br/>
+<br/>
+<div id="map"></div>
+<br/>
+<br/>
+
+
+<script type="text/javascript">
+function initMap() {
+var location = {lat: 40.7291, lng: -73.9965};
+var map = new google.maps.Map(document.getElementById('map'), {
+zoom: 13,
+center: location
+});
+   
+var marker = new google.maps.Marker({
+position: location,
+map: map
+
+  
+  
+});
+ 
+var bikeLayer = new google.maps.BicyclingLayer();
+bikeLayer.setMap(map);
+}
+window.onload = initMap;
+</script>
+<script type="text/javascript" async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5WbZPlm4mKUnC2FQmfs1zObA4tE2KmjQ">
+</script>
+<script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

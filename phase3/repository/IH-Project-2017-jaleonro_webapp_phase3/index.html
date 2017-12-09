@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+	<!-- Bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		  <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+	<title> Version One </title>
+</head>
+<body>
+    <div class="row section" id="header">
+        <h1>
+            FIND THE BEST PLACE TO LIVE
+        </h1>
+        </div >
+    <div class="row" id="main">
+        <div class="col-sm-8 col-md-8 col-lg-8">
+            <div class="section" id="map">
+                 </div>
+            </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="section" id="sideBar">
+                
+                <form>
+                    <div class="form-group formsInputs">
+                        <input type="email" class="form-control" 
+                        id="inputBudget" aria-describedby="emailHelp"
+                        placeholder="What's your budget?">
+                        </div>
+                        <button type="button" class="btn btn-primary 
+                        btn-lg btn-block" id="enterBudget" 
+                        onclick="getCheapestOption()">Enter</button>
+                    </form>
+                    <h5 style="color: #129CF3;">Enter the priority according to the importance 
+                         that each criterion has for you. (0 to 10)</h5>
+                    <form>
+                    <div class="form-group formsInputs">
+                        <input type="email" class="form-control" 
+                        id="inputPriorityCriteria1" aria-describedby="emailHelp"
+                        placeholder="Criteria 1">
+                         <input type="email" class="form-control" 
+                        id="inputPriorityCriteria2" aria-describedby="emailHelp"
+                        placeholder="Criteria 2">
+                         <input type="email" class="form-control" 
+                        id="inputPriorityCriteria3" aria-describedby="emailHelp"
+                        placeholder="Criteria 3">
+                        </div>
+                        <button type="button" class="btn btn-primary 
+                        btn-lg btn-block" id="enterPriorities">Enter</button>
+                    </form>
+                 </div>
+    </div>
+    </div>
+	<!-- jQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <!-- custom script -->
+  <script src="index.js"></script>
+  <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=
+    AIzaSyCPK8QpDd6VFf13Mp0ndZzRO6ZpocJXWko&callback=initMap"
+    async defer></script>
+</body>
+</html>

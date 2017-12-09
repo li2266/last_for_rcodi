@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title> NYU </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+   
+      
+   
+    <script type="text/javascript">
+	function initMap(){
+		var mapDiv = document.getElementById('map');
+		var map = new google.maps.Map(mapDiv, {
+			center: {lat: 40.7291, lng: -73.9965},
+			zoom: 12});  
+		var marker = new google.maps.Marker({ 
+			position: {lat: 40.7291, lng: -73.9965},
+			map: map,
+			title: 'NYU Stern School of Business'
+		});
+	}
+  </script>
+  </head>
+  <body>
+      
+    <div class = "header">
+        <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+    			<a href="">Index</a>
+    		</nav>
+        	<h1 > NYU Stern School of Business </h1>
+        
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="hh">
+                
+            </div>    
+        </div>    
+    </div>
+    <div class="all">
+        <div class="row">
+            
+            <div class="col-sm-4">
+                <div class="left">
+                    <script>var a = 0; </script>
+                    <button class="btn btn-danger" onclick="$('#map').animate({opacity: a},'slow'); a = a * -1 + 1">Show map/Hide map</button>
+                    <br>
+                    <br>
+                    <p>"Contrary to what you might think, New York City is the greenest city in America. The 843-acre Central Park, the most famous park in the city, is actually only the 5th largest. Jog, walk, bike, in-line skate, horseback ride, ice skate, rent row boats, play basketball, softball, soccer, tennis, enjoy special events and festivals in the city’s 1,700 parks and playgrounds, or just kick back and people-watch."</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img class="img-responsive" src="https://www.documentary.org/images/magazine/2005/Manhattan_Nov2005.jpg">
+                </div> 
+            </div>    
+            <div class="col-sm-8">
+                <div class="right">
+                    <div class = "img">
+                        <img class="img-responsive" src="https://www.documentary.org/images/magazine/2005/Manhattan_Nov2005.jpg">
+                    </div>
+                    <div id="map"></div>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC4lO1PjOC9xzRaOK86FJoht6VBFYcsB8&callback=initMap">
+                    </script>
+                    <button type="button" class="btn btn-primary">Rental Houses</button>
+                    <button type="button" class="btn btn-primary">Areas Of Interest</button>
+                    <button type="button" class="btn btn-primary">Police Precincts</button>
+                    <button type="button" class="btn btn-primary">Firehouses</button>
+                    <button type="button" class="btn btn-primary">Hotels</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    
+                    
+                </div>    
+            </div>
+             
+        </div>
+    </div>
+   
+  </body>
+
+</html>

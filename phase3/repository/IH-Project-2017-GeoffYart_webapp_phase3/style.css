@@ -1,0 +1,40 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    background-image: url("http://blog.gembaacademy.com/wp-content/uploads/2009/03/searching.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right; 
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+
+h4 {
+	background-color: white;
+	margin: 0px;
+}
+
+h6 {
+    background-color: white;
+	margin: 0px
+}
+
+hr {
+    margin: 3px;
+    width: 90%;
+    float: left;
+}
+
+input {
+    width: 70%;
+    float: left;
+}
+
+button {
+    width: 55px;
+    float: left;
+}

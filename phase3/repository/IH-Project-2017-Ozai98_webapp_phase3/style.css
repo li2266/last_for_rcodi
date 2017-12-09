@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 10.0em;
+}
+
+.border{
+  background-color: black;
+  height: 200px;
+  border-color: black;
+}
+
+#map {
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+
+#startText {
+  margin: auto;
+  text-align: center;
+  color: black;
+  display: none;
+}
+
+#tabs {
+  /*display: none;*/
+}
+.container-fluid{
+  border-color: black;
+}

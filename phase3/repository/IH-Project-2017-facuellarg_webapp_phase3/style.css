@@ -1,0 +1,17 @@
+#formulario{
+	margin-top:5%;
+}
+#map{
+	height:400px;
+	visibility:hidden;
+}
+#buttons{
+	size: 100%;
+	width: 100%;
+	margin-left:75%;
+	visibility:hidden;
+}
+.but{
+	margin-bottom: 5px;
+
+}

@@ -1,0 +1,57 @@
+
+<!--Google Map API Key: AIzaSyARx-tF4rAKMAcsCFBlDSidXdAICQZ8EE>-->
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous">
+        </script>
+        <script src="index.js">
+        </script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script type="text/javascript">
+	function initMap(){
+		var mapDiv = document.getElementById('map');
+		var map = new google.maps.Map(mapDiv, {
+			center: {lat: 40.7291, lng: -73.9965},
+			zoom: 12});
+		var marker = new google.maps.Marker({ //Line 1
+			position: {lat: 40.7291, lng: -73.9965}, //Line2: Location to be highlighted
+			map: map,//Line 3: Reference to map object
+			title: 'Purdue University' //Line 4: Title to be given
+		})
+	}
+	</script>
+	 
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDezdB4TLhGKcSzrIAAoW5hspqhdrN46kY&callback=initMap"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <hr>
+        <div id="heading">
+        <h1><center>NYU Student Location Lookup</center></h1>
+        </div>
+        <hr>
+        <center><button class="action" id="Proximity"     onclick="proximityApi()">Campus Proximity</button>
+         <button class="action" id="Safety"        onclick="safetyApi()">Community Safety</button>
+        <button class="action" id="Affordability" onclick="budgetApi()">Affordability</button>
+        <button class="action" id="Recreation"    onclick="recApi()">Recreational Centers</button>
+        <button class="action" id="Dining"        onclick="diningApi()">Fine Dining</button><br>
+        </center>
+        <center><br>
+        <div id="selection">
+        Proximity: <span id="proximityValue">25</span>
+        <input type="range" min="0" max="50" value="25" step="5" onclick="proximityAPI(this.value)" class="slider"/><br><br>
+        Safety:<span id="safetyValue">25</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+        <input type="range" min="0" max="50" value="25" step="5" onclick="safetyAPI(this.value)" class="slider"/><br><br>
+        Affordability:<span id="budgetValue">25</span>
+        <input type="range" min="0" max="50" value="25" step="5" onclick="budgetAPI(this.value)" class="slider"/><br><br>
+        Rec Center:<span id="recValue">25</span>
+       <input type="range" min="0" max="50" value="25" step="5" onclick="recAPI(this.value)" class="slider"/><br><br>
+        Fine Dining:<span id="diningValue">25</span>
+        <input type="range" min="0" max="50" value="25" step="5" onclick="diningAPI(this.value)" class="slider"/><br>
+        
+         </div>
+         </center>
+         <div id="map"></div>
+       </body>
+</html>

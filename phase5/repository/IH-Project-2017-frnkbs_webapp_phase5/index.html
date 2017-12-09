@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find me a safe and affordable place to rent</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md  fixed-top bg-white">
+	<div class="container">
+		<a class="navbar-brand" href="#"><img src="data:image/png;base64,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" border="0" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+		</ul>
+		</div>
+	</div>
+    </nav>
+    <section class="description-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 center">
+                    <h2 class="featurette-heading">Find me a safe and affordable place to rent</h2>
+                    <p>Find me a safe and affordable place to rent near the NYU Stern School of Business, New York</p>
+                    <hr class="sinborde h30">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="area-map pt-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 center">
+                    
+                </div>
+                <div class="col-lg-8 center">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="text-center pt-30">
+        <div class="container">
+            <p class="float-right"><a href="#">Back to top</a>
+            </p>
+            <p>&copy; 2017 Company, Inc. &middot; </p>
+        </div>
+    </footer>
+    
+<script>
+	      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: new google.maps.LatLng(40.7291,-73.9965),
+          mapTypeId: 'terrain'
+        });
+/*
+        // Create a <script> tag and set the USGS URL as the source.
+        var script = document.createElement('script');
+        // This example uses a local copy of the GeoJSON stored at
+        // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
+        script.src = 'https://data.cityofnewyork.us/api/views/hg8x-zxpr/rows.json';
+        document.getElementsByTagName('head')[0].appendChild(script);
+        */
+        map.data.loadGeoJson(
+            'https://data.cityofnewyork.us/api/views/hg8x-zxpr/rows.json');
+
+      }
+          // Retrieve our data and plot it
+     window.eqfeed_callback = function(data, textstatus) {
+          $.each(data, function(i, entry) {
+              var marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(entry.location_1.coordinates[1], 
+                                                   entry.location_1.coordinates[0]),
+                  map: map,
+                  title: location.name
+              });
+          });
+    }
+
+      // Loop through the results array and place a marker for each
+      // set of coordinates.
+      /*
+      window.eqfeed_callback = function(results) {
+        for (var i = 0; i < results.features.length; i++) {
+          var coords = results.features[i].geometry.coordinates;
+          var latLng = new google.maps.LatLng(coords[1],coords[0]);
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+          });
+        }
+      } */
+//-->
+</script>
+<script language="JavaScript">
+<!--
+document.writeln("<script async defer src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyBRzGXvGJmTj9ckYaFoJNoehYdbTMcZwG4&callback=initMap\"></script>");
+//-->
+</script>
+    
+    <!-- Bootstrap core JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
+
+</body>
+</html>

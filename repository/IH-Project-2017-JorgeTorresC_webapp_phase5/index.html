@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- boostrap 3.7-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>IronHacks</title>
+    <!-- Hoja de estilos-->
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+      <div class="fullcontenedor">
+        <div class="scontenedor">
+          <div class="container"><!-- Div contenedor de las opciones -->
+            <div class="row text-center">
+              <h3>UNAL 2017</h3>
+            </div>
+          </div>
+          <!-- Div para el mapa -->
+          <div class="container">
+            <div class="row">
+              <div id="googleMap" ></div>
+            </div>
+          </div>
+          <div class="cleaner">
+          	<button id="DeleteData" type="button" class="btn-primary btn-block ">Clean Map</button>
+          </div>
+
+          <div class="container">
+            <div class="row ptb-20">
+              <div class="col-lg-12">
+                <button id="verprecios" type="button" class="btn-primary btn-block">Rental Values</button>
+              </div>
+              <div class="col-lg-6">
+                <div id="tableWrapper"><!-- Tabla completa-->
+                    <div id="tableScroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Total Rental Values</th>
+                                </tr>
+                                <tr>
+                                    <th> Date </th>
+                                    <th> Value </th>
+                                </tr>
+                            </thead>
+                                <tbody id="mainTablePrecios">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div id="tableWrapper">
+                	<div id="tableScroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Located Housing</th>
+                                </tr>
+                                <tr>
+                                    <th> Street Name </th>
+                                    <th> postcode </th>
+                                </tr>
+                            </thead>
+                                <tbody id="mainTableLocated">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container"><!-- Div contenedor de las opciones -->
+            <div class="row pt-10">
+              <div class="col-lg-6">
+                <button id="vercolegios" type="button" class="btn-primary btn-block ">View Schools</button>
+                <div id="tableWrapper"><!-- Tabla completa-->
+                    <div id="tableScroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2"> Total Schools in Manhattan</th>
+                                </tr>
+                                <tr>
+                                    <th> Scholls </th>
+                                    <th> Number Crimes per College </th>
+                                </tr>
+                            </thead>
+                                <tbody id="mainTableBody">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <button id="verhabitantes" type="button" class="btn-primary btn-block">View Populate</button>
+                <div id="tableWrapper"><!-- Tabla completa-->
+                    <div id="tableScroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Total Populate 2010</th>
+                                </tr>
+                                <tr>
+                                    <th> Borough </th>
+                                    <th> Populate </th>
+                                </tr>
+                            </thead>
+                                <tbody id="mainTableHabitantes">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container">
+          <span class="ir-arriba">Up</span>
+            <div class="row ptb-20">
+              <div class="col-lg-6">
+              	<button id="verMuseos" type="button" class="btn-primary btn-block">View Museums</button>
+                <div id="tableWrapper"><!-- Tabla completa-->
+                    <div id="tableScroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Museums</th>
+                                </tr>
+                                <tr>
+                                    <th> Name </th>
+                                    <th> Phone </th>
+                                </tr>
+                            </thead>
+                                <tbody id="mainTableMuseum">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <button id="verGranjas" type="button" class="btn-primary btn-block ">View Farmers</button>
+                <div id="tableWrapper"><!-- Tabla completa-->
+                    <div id="tableScroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2"> Farmers in Manhattan</th>
+                                </tr>
+                                <tr>
+                                    <th> Farmer </th>
+                                    <th> Street Name </th>
+                                </tr>
+                            </thead>
+                                <tbody id="mainTableFarmers">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="container-fluid"></footer>
+    <!-- JQuery -->
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPUZ7v0-m5sPmoOoItIuE7YBqhGOaut4o&callback=myMap"></script>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>NY Rents</title>
+</head>
+
+<body>
+	<header class="header" id="header">
+		<!-- Header Start -->
+		<div class="container">
+			<h1>Welcome To NY Rents</h1>
+			<ul class="intro-phrase">
+				<li>We are your go-to place to find the best place to stay while your visit to NYU.</li>
+			</ul>
+			<a class="link" href="#visualization">Start Looking</a>
+		</div>
+	</header>
+	<!-- Header End -->
+
+	<nav class="navbar navbar-default"  id="test">
+		<!-- Main Nav Start-->
+		<div class="container-fluid">
+			<div class="container-fluid">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand visible-xs-block text-center" style="float: none;" href="#">Navigation</a>
+				<div class="collapse navbar-collapse" id="navbar-collapsed">
+					<ul class="main-nav">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#visualization">Visualization</a></li>
+						<li><a href="#google-map">Map</a></li>
+						<li><a href="#TBD">TBD</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Main Nav End -->
+	
+	<section class="main-section" id="visualization">
+		<!-- Main Section Start -->
+		<div class="container">
+			<h2>Visualization</h2>
+			<h6>Choose from the different filter options to tailor your experience.</h6>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6">
+					<div class="visualization-list">
+						<div class="visualization-list-col">
+							<h3>Parks &amp; Recreation</h3>
+							<p>How intersted are you in parks or other types of recreation? (Such as cinema theaters, sports, libraries ,etc)</p>
+							
+						</div>
+						<div class="visualization-list-col">
+							<input type="checkbox" id="basket_checkbox" name="parks" value="parks">
+							<label for="parks_checkbox">Basketball</label>
+							<input type="checkbox" id="tennis_checkbox" name="parks" value="parks">
+							<label for="parks_checkbox">Tennis</label>
+							<input type="checkbox" id="volley_checkbox" name="parks" value="parks">
+							<label for="parks_checkbox">Volleyball</label>
+						</div>
+						<div class="visualization-list-col">
+							<button id="getParksDataButton">Show Parks</button>
+						</div>
+					</div>
+					<div class="visualization-list">
+						<div class="visualization-list-col">
+							<h3>Modes of Transportation</h3>
+							<p>What modes of transportation do you prioritize? (Bicycle, Train, Bus, Taxi, etc).</p>
+							<input type="checkbox" id="transportation_checkbox" name="transportation" value="transportation">
+							<label for="transportation_checkbox">Future Option</label>
+						</div>
+					</div>
+					<div class="visualization-list">
+						<div class="visualization-list-col">
+							<h3>Street Lighting</h3>
+							<p>Depending on the schedule you have and the hour of arrival, lighting is a very important aspect to arrive safely to your destination.</p>
+							<input type="checkbox" id="lighting_checkbox" name="lighting" value="lighting">
+							<label for="lighting_checkbox">Future Option</label>
+						</div>
+					</div>
+					<div class="visualization-list">
+						<div class="visualization-list-col">
+							<h3>Crime Rates</h3>
+							<p>Nobody likes crimes, but there's no denying that is ever-present. Up to what point are you comfortable with possible crimes around you?</p>
+							<input type="checkbox" id="crime_larceny_checkbox" name="larceny" value="larceny">
+							<label for="crime_larceny_checkbox">Larceny</label>
+							<input type="checkbox" id="crime_robbery_checkbox" name="robbery" value="robbery">
+							<label for="crime_robbery_checkbox">Robbery</label>
+							<input type="checkbox" id="crime_forgery_checkbox" name="forgery" value="forgery">
+							<label for="crime_forgery_checkbox">Forgery</label>
+						</div>
+						<div class="visualization-list-col">
+							<button id="getCrimeDataButton">Show Crime Ocurrences</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-sm-6">
+					<div class="visualization-list">
+						<div class="visualization-list-col">
+							<h3 id="graph_title">Graph</h3>
+							<svg id="infoChart">
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Main Section End -->
+
+	<section class="container map-section" id="google-map">
+		<!-- Map Section Start -->
+		<h2>Map</h2>
+		<h6>See what are the best housing options according to your preferences.</h6>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 map-container">
+				<div id="googleMapContainer">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Map Section End -->
+	
+	<footer class="footer">
+	<!-- Footer Start -->
+		<div class="container">
+			<span class="copyright">&copy; NY Rents.</span>
+		</div>
+	</footer>
+	<!-- Footer End -->
+	
+	<!-- JQuery -->
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous">
+	</script>
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- D3.JS -->
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<!-- Own JS -->
+	<script type="text/javascript" src="main.js"></script>
+	<!-- Google Maps API -->
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsa7PQ2j4QM0exh0UirrQsiaGkY8-QpQw&callback=initMap">
+	</script>
+</body>
+
+</html>

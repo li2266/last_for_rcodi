@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rent Locations Near NYU Stern School of Business</h1>
+        <p>Drag the slider to prioritize safety (left) vs affordability (right)</p>
+        <div id = "slidecontainer">
+            <input type = "range" min = "0" max = "10" value = "5" class = "slider" id = "mySlider">
+        </div>
+        <!--<p>Safe Affordable</p>-->
+        <button id="btn">Submit</button>
+        <h3>Safest rent location</h3>
+        <p>The safest rent location will go here</p>
+        <h3>Cheapest rent location</h3>
+        <p>The cheapest rent location will go here</p>
+        <h3>Suggested rent locations</h3>
+        <p>The three rent locations according to the user's slider input will go here</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

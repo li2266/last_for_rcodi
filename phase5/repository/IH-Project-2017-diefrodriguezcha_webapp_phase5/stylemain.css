@@ -1,0 +1,112 @@
+body, html, #wrapper {
+    color: #444;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+#mapContainer{
+    width: 100%;
+    height: 95%;
+    margin-top: -25px;
+    position: absolute;
+}
+
+.homeNavbar{
+  background-color: #002868;
+  color: white;
+  height: 70px;
+  position: relative;
+}
+
+.navbar-right {
+    color:white;
+    font-size:20px;
+}
+
+.homeFooter{
+  background-color: #002868;
+  color: white;
+  height: 10px;
+  position: relative;
+}
+
+.backPanel{
+  position: relative;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+  float: right;
+  margin: 10px 20px;
+  padding: 15px 20px;
+}
+
+.schoolBtn, .schoolBtn:hover{
+  color: white;
+  background-color: #bf0a30;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dropdown-menu{
+  overflow-y: scroll;
+  height: 370px;
+  cursor: pointer;
+}
+
+#panelsWrapper{
+  float: right;
+  width: 30%;
+  height: 100%;
+  /*position: absolute;*/
+}
+
+#currentlyAtPanel{
+  display: none;
+}
+
+#controlPanel{
+  display: none;
+}
+
+#schoolName .caret{
+  float: right;
+  margin-top: 10px;
+}
+
+#additionalPanel{
+  display: none;
+}
+.weatherLogo{
+  width: 130px;
+  height: 130px;
+  float: left;
+}
+
+.suggestion{
+    font-size:15;
+    font-weight: normal;
+    text-transform:none;
+    text-align:center;
+}
+
+/*---------------- Filters classes -------------------*/
+.backArrow{
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.filterBtn{
+  margin: 5px 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.btn-center{
+  text-align: center;
+}

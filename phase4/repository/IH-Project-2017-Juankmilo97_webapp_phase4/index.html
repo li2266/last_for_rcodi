@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" 
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+		  integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+		  crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <title>My First WebSite</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body background="https://media.timeout.com/images/103531855/image.jpg">
+        <div class="container-fluid">
+            <h1>NYU Stern School of Business</h1>
+                    
+            <div class"row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="googleMapContainer">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div id="tableWrapper">
+					   <div id="tableScroll">
+						<table>
+							<thead>
+								<tr>
+									<th colspan="2"> List of Places to Live in New York </th>	
+								</tr>
+								<tr>
+									<th> Place </th>
+									<th> Price </th>
+								</tr>
+							</thead>
+							<tbody id="mainTableBody">
+									
+							</tbody>
+						</table>
+						<button id="getPlaces">Get Places</button>
+                        <button id="updatePlaces">Update Places</button>
+					   </div>
+				    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- jQuery -->
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        
+        <!-- Custom JS -->
+        <script type="text/javascript" src="index.js"></script>        
+        <script src="index.js"></script>
+        
+        <!-- Google Maps -->
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCENRpnk3TsZcDxf5KwR6gWZlhM71UhFZs&callback=onGoogleMapResponse">
+        </script>
+        
+    </body>
+</html>

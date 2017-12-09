@@ -1,0 +1,11 @@
+body{
+	background-color: #2E64FE;
+	margin: auto;
+}
+
+#map{
+	margin-top: 20px;
+	width: 1000px;
+	height: 500px;
+	margin: auto;
+}

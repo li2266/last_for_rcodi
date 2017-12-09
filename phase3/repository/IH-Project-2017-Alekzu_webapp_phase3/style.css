@@ -1,0 +1,9 @@
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}

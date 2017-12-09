@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <title>FindMeHome</title>
+        <script type="application/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="application/javascript"></script>
+    </head>
+    <body>
+        <div id="wrapper" style="width: 100%; height: 100%; position: relative;">
+            <div id="map"></div>
+            <div id="over_map" style="position: absolute">
+                <div class="menu">
+                    <table id="table" class="hidden">
+                        <tr>
+                            <th>City</th>
+                            <th>Status</th>
+                        </tr>
+                    </table>
+                    <table class="data" style="width: 100%; height: 100%">
+                        <thead>
+                            <tr>
+                                <th>best places to live</th>
+                            </tr>
+                        </thead>
+                        <tbody style="width: 100%">
+                            <tr id="wheather" style="width: 100%">
+                                <th>
+                                    <span class="today1">Today's Weather:</span>
+                                    <span id="today2" class="today2"></span>
+                                </th>
+                            </tr>
+                            <tr style="width: 100%">
+                                <th></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--                    <button>Obtener Datos</button>-->
+
+                </div>
+                <table class="dataDiv">
+                    <thead style="width: 100%;">
+                        <tr style="width: 100%;">
+                            <th class="dataButtons">
+                                <button id="getData"  onclick="getWeather()" style="padding-left: 0; margin-left: 0;">Get Data</button>
+                            </th>
+                            <th class="dataButtons">
+                                <button id="Update" onclick="getDirection()">Update</button>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+                <!--
+<div class="options">
+<div id="overlay">
+<button class="button">Obetner Datos</button>
+</div>
+</div>
+-->
+            </div>
+        </div>
+
+        <script src="location.js"></script>
+        <script src="main.js"></script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWtHnv1nl33pvl1tWU-YJ7IOqGklDC1pc&callback=initMap">
+        </script>
+        <!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
+    </body>
+</html>

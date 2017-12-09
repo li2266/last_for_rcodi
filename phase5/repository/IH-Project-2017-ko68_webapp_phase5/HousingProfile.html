@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>NYU Housing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<div class="jumbotron text-center">
+  <h1>
+     <span class="glyphicon glyphicon-tent"></span>
+      <b>Hounder</b>
+    </h1>
+     <h3 style = "color: #cc66ff"><b>NYU Off Campus Student Housing</b></h3>
+<style>
+    .jumbotron
+{
+background-color:   #008fb3;
+margin-bottom: 0;
+}
+</style>
+
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">HOUNDER</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html" style = "font-size: 20px">Home</a></li>
+      <li class="active"><a href= "HousingProfile.html" style = "font-size: 20px">Housing Search</a></li>
+    </ul>
+  </div>
+
+<div>
+<style>
+button.accordion {
+    background-color:#cc99ff;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: #008fb3;
+    text-align: center;
+    outline: #008fb3;
+    font-size: 20px;
+    transition: 0.4s;
+    margin:0px;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: white;   
+    font-size:25px;
+    text-align: center;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+   background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+
+<button class="accordion" style = "line-height: 5px">     
+<span class="glyphicon glyphicon-pencil"></span>
+<b>Housing Profile</b> <br>
+<h2 id = "startInstructions" style="color:#4d4d4d; font-size: 18px; text-align: center">Start by clicking here to create a Housing Profile!</h2> 
+
+</button>
+
+<div id= "rentRange" class="panel" align= "center" style = "font-size: 15px">
+     Rental Budget:  <input type="text" id="txtPriceMax"> <br><br>
+  
+<br><button id = "submitbtn" class="btn btn-primary center-block" onclick= "submitFunction()">Submit</button>
+
+<style>
+div.panel{
+     transition: max-height 0.2s ease-in;
+}
+</style>
+ </div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+</div>
+</nav>
+
+
+
+ <!--Results Table  -->
+ <div id = "resultstable" style = "padding-right: 100px; height: 400px; width: 100%" align = "right">
+    <br>
+    <br>
+    <br>
+  <style>
+tr:nth-child(odd) {
+    background-color: #0000;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+th {
+    border: 3px solid #52527a;
+    text-align: center; 
+    padding: 8px;}
+ 
+</style>
+
+<table>
+  <tr>
+    <th colspan="2" style="background-color: #ff0080"><h2><b>Housing Match</b></h2></th>
+  </tr>
+  
+  
+   <tr>
+       <!--RENT API-->
+   <th>Median Rent <br> ( $ per month)</th>
+   <th>
+     <li id = "rentInfo" class = "rentInfo" style = "list-style-type:none"></li>
+      </tr>
+   
+   <tr>
+       <th>Address</th>
+       <th                     id = "address" class = "address" style = "list-style-type:none"></th>
+       
+              </tr>
+   
+  
+       <!--SAFETY API-->
+    <th>General New York Safety Information</th>
+     <th >
+         <ul style = "list-style-type:none">
+         <li id = "deathA" class = "deathA">Assaults: </li>
+         <li id = "deathB" class ="deathB">Alcohol Abuse:</li>
+          </ul>
+          </th>
+          
+    </tr>
+    <tr>
+    <th>Notes</th>
+     <th>Please feel free to use the map filters or even edit your housing profile.</th>
+    </tr>
+ 
+    
+</table>
+
+
+
+<!--RESULTS BUTTONS-->
+<h2 style= "padding-right: 280px">
+    <a data-toggle="tooltip" data-placement="top" title="Get more results like this">
+        <span  class="glyphicon glyphicon-thumbs-up" onclick="acceptReject()"></span>  
+    </a>        
+    <a data-toggle="tooltip" data-placement="top" title="Reject this house">
+        <span style= "padding-left: 150px" class="glyphicon glyphicon-thumbs-down" onclick="acceptReject()"></span>
+    </a>
+    <a data-toggle="tooltip" data-placement="top" title="Print to save results">
+      <span style= "padding-left: 100px" id= "print" onclick="printPage()" class="glyphicon glyphicon-print" ></span><br>
+     
+  <script>
+     function printPage()
+        {
+      window.print();
+          }
+   </script>
+   </a>
+</h2>
+</div>
+
+
+
+
+
+<!--D3 WEATHER CIRCLE-->
+
+
+    <script src = "index.js"></script>
+ <script src="https://d3js.org/d3.v4.min.js"></script>
+ <script scr= "style.css"></script>
+  <script id = "circle">
+   var canvas = d3.select("body")
+                    .append("svg")
+                    .attr("width",300)
+                    .attr("height",80);
+                    
+    var circle = canvas.append("circle")
+                        .attr("cx", 100)
+                        .attr("cy", 75)
+                        .attr("r", 75)
+                        .attr("fill", "#ffcc00")
+                        .attr("align", "right");
+
+    </script> 
+
+  <style>
+      .temp{
+          font-size: 35px;
+         padding-left: 10px;
+      }
+  </style>
+  <p id = "temp" class = "temp" ></p>
+    <script>
+  $("#temp").text(temperature());
+</script>
+
+
+
+<!--WEATHER API DATA-->
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style> 
+#panel, #flip {
+    padding: 4px;
+    text-align: center;
+    background-color: #99ddff;
+    border: solid 2px #29293d;
+    width: 30%;
+}
+
+#panel {
+    padding: 20px;
+    display: none;
+}
+</style>
+<a data-toggle="tooltip" data-placement="top" title="Click for detailed weather info">
+<div id="flip" onclick = "weather()"><b>~Local Forecast~</b></div>
+</a>
+<div id="panel" class="panel-body"></div>
+
+
+
+
+
+<!--MAP-->
+ <div style = "padding-left: 180px">
+      	<button id= "filter" style="height:35px;width:200px;font-size:15px"> <a href="javascript:showhide('mapFilter')"> 
+    		<b>Transportation Filters <span class="glyphicon glyphicon-chevron-down"></span></b>
+		</a></button>
+		</div>
+
+    	<div id="mapFilter" style="display:none;">
+    	         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <div class="main-wrapper" style = "padding-left: 180px">
+                <div class="controls-wrapper flex-display">
+                    <div class="results-container">
+                        <div class="toggles">
+                            <input type="checkbox" name="bike" id="bike"><label for="bike" class="toggle-item"><b>Bike Lanes</b></label><br>
+                            <input type="checkbox" name="train" id="train"><label for="train" class="toggle-item"><b>Traffic</b></label><br>
+                            <input type="checkbox" name="transit" id="transit"><label for="transit" class="toggle-item"><b>Transit Routes</b></label><br>
+                </div>
+                    </div>
+                    <style>
+                        .toggles{
+                            padding-left: 20px;
+                        }
+                    </style>
+                    <div class="results-controls-container b"> </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+             }
+   </style>
+
+    <script>
+       function showhide(id) {
+       	var x = document.getElementById(id);
+       	x.style.display = (x.style.display == 'block') ? 'none' : 'block';
+     }
+     
+     </script>
+  
+    
+    <script>
+        function initMap() {
+        var NYU = {lat:  40.7291, lng: -73.9965};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: NYU
+        });
+        var marker = new google.maps.Marker({
+          position: NYU,
+          map: map,
+          
+         /*  var marker = new google.maps.Marker({
+             position: rentalLocation(),
+             map: map,
+             */
+        });
+        
+    var bikeLayer = new google.maps.BicyclingLayer();
+    var trafficLayer = new google.maps.TrafficLayer();
+    var transitLayer = new google.maps.TransitLayer();
+
+    $("#bike").click(function() {
+        if ($(this).is(':checked'))
+            bikeLayer.setMap(map); // show
+        else
+            bikeLayer.setMap(null); // hide
+    });
+
+    $("#train").click(function() {
+        if ($(this).is(':checked'))
+            trafficLayer.setMap(map); // show
+        else
+            trafficLayer.setMap(null); // hide
+    });
+
+    $("#transit").click(function() {
+        if ($(this).is(':checked'))
+            transitLayer.setMap(map); // show
+        else
+            transitLayer.setMap(null); // hide
+    });
+      }
+        
+ </script>  
+
+      <div id="map" class="flex-display"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJevqR-Hz9MT56mTnIxQomdUI2U7oqGLY&callback=initMap">
+    </script> <br> 
+</body>
+</html>

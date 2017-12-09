@@ -1,0 +1,15 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [],
+    "warnings": []
+  },
+  "html": [
+    "info: Consider avoiding viewport values that prevent users from resizing documents.",
+    "error: Element “head” is missing a required instance of child element “title”."
+  ]
+}

@@ -1,0 +1,26 @@
+body {
+    color: #732;
+    font-family: Arial, sans-serif;
+    background: red;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    background: teal;
+}
+.text {
+  color: white;
+}
+#after_submit {
+	visibility: hidden;
+	background: #ff5459;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 20px;
+	font-size: 30px;
+}

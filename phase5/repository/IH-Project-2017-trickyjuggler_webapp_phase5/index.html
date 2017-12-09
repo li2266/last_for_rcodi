@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Home Seeker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body onload="loadApp()">
+
+	<div class="loader" id="loading"></div>
+
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="mynavbar">
+  		<a class="navbar-brand" href="#">Home Seeker</a>
+ 		 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    			<div class="navbar-nav">
+      				<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+    			</div>
+  			</div>
+  		<span class="navbar-text">
+      		Looking for a new home
+    	</span>
+	</nav>
+
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-sm-3">
+				<!--Filters-->
+				<div class="card" style="height: 98%" id="minicard">
+					<div class="card-body">
+						<h4 class="card-title" align="center">Filters!</h4>
+    					<p class="card-text">Select the options that most interest you.</p>
+						<form name="form1">
+							<label class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" name="ArtGalleries">
+  								<span class="custom-control-indicator"></span>
+  								<span class="custom-control-description">Art Galleries</span>
+							</label>
+							<br>
+							<label class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" name="Museums">
+  								<span class="custom-control-indicator"></span>
+  								<span class="custom-control-description">Museums</span>
+							</label>
+							<br>
+							<label class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" name="Schools">
+  								<span class="custom-control-indicator"></span>
+  								<span class="custom-control-description">Schools</span>
+							</label>
+							<br>	
+							Min Price: <br>$ <input type="number" name="price" min="0" value="0" style="width: 80%; margin-bottom: 20px;" id="myPrice"><br>	
+							Sort: </br>
+								<label class="custom-control custom-radio">
+  								<input id="radio1" name="sorter" type="radio" class="custom-control-input" checked="checked">
+  								<span class="custom-control-indicator"></span>
+ 								 <span class="custom-control-description">By Price</span>
+								</label>
+								<label class="custom-control custom-radio">
+ 								 <input id="radio2" name="sorter" type="radio" class="custom-control-input">
+ 								 <span class="custom-control-indicator"></span>
+ 								 <span class="custom-control-description">By Distance</span>
+								</label>
+						</form>
+						<button class="btsendData" id="sendData">Search</button> 
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-9">
+				<!--map-->
+				<div id="map" >
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="container-fluid" style="margin-bottom: 20px;">
+
+		<div class="tab">
+  			<button class="tablinks" onclick="changeTab(event, 'tab1')" id="defaultOpen">Rental List</button>
+  			<button class="tablinks" onclick="changeTab(event, 'tab2')"" id="proper" >Property Info</button>
+  			<button class="tablinks" onclick="changeTab(event, 'tab3')">Climate</button>
+		</div>
+
+		<div id="tab1" class="tabcontent">
+			<div id="tablewrapper">
+				<div id="tablescroll">
+					<table id="mytable" style="width: 100%;">
+						<thead>
+							<tr>	
+								<th>Address</th>
+								<th>Distance</th>
+								<th>Price (USD)</th>
+								<th>Zpid</th>
+							</tr>
+						</thead>
+						<tbody id="tablebody"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div id="tab2" class="tabcontent" style="overflow: scroll;">
+			<div id="picture" hidden></div>
+			<div id="properInfo">	
+  				<h3>Property Info</h3>
+  				<p>Nothing to show here.</p> 
+			</div>
+		</div>
+
+		<div id="tab3" class="tabcontent">
+			<p>Daily precipitation in metric units.</p>
+			<svg id="graph" width="100%" height="500px"></svg>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="index.js"></script>
+	<script async defer
+    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO1wD2l1maTziXFpqnhoeJTq6IrELT4mE&callback=initMap">
+   	</script>
+</body>
+</html>

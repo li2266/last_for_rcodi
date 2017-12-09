@@ -1,0 +1,25 @@
+
+.chart {
+    height: 90px;
+    background-color: blue;
+    padding-right: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#options {
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+#googleMapDiv {
+	height: 400px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+header{
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+}

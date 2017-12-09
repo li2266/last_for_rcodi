@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Find a home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <a name="start"></a>
+  <div class="navbar">
+    <div class="container">
+      <nav>
+        <a href="index.html"><button class="btn" type="button" id="home-button">Home</button></a>
+        <button class="btn" type="button">Help</button>
+        <a href="#find"><button class="btn" type="button" name="button">Find</button></a>
+        <a href="#map-href"><button class="btn" type="button">Map</button></a>
+        <a href="#info"><button class="btn" type="button">Info</button></a>
+
+      </nav>
+    </div>
+  </div>
+
+  <div class="white-space"></div>
+
+  <div id="banner" class="section">
+    <div class="container">
+      <div id="welcome-text">
+        <h1>Welcome to New York!</h1>
+        <h2>Let's find a home for you</h2>
+      </div>
+    </div>
+  </div>
+  <h5 id="scroll-down-text">SCROLL DOWN</h5>
+
+  <a name="info"></a>
+  <div id="info" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 img-hover">
+          <a href="https://www.nycgo.com/" target="_blank"><img class="img-responsive" src="https://github.com/evilcucaracha/Purdue-UNAL-IronHacks-2017/blob/master/Images/ny-skyline.jpg?raw=true"></a>
+        </div>
+        <div class="col-md-6 img-hover">
+          <a href="http://www.stern.nyu.edu/" target="_blank"><img class="img-responsive" src="https://github.com/evilcucaracha/Purdue-UNAL-IronHacks-2017/blob/master/Images/stern-logo.jpg?raw=true"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a name="map-href"></a>
+
+  <div id="map-section" class="section" class="dark-section">
+    <div class="container">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <a name="find"></a>
+  <div id="find" class="section" class="light-section">
+
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD301Q0qSIjEhtdDPjW6hK5yAXkFtnHguQ&callback=initMap"
+  async defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+
+<footer>
+  <h6>Rubén Camilo Buelvas Villa - EvilCucaracha</h6>
+</footer>
+
+</html>

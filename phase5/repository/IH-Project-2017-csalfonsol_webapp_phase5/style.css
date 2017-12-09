@@ -1,0 +1,135 @@
+#googleMapContainer {
+	width: 100%;
+	height: 650px;
+
+}
+
+#tableWrapper {
+	height: 390px;
+  position: relative;
+  width:100%;
+}
+
+#tableScroll {
+	height: 390px;
+  overflow: auto;
+  margin-top:20px;
+}
+
+#table {
+	display: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.tableHeader{
+	background-color: #722D24;
+	text-align: center;
+	font-size: 20px;
+}
+
+.tableBody{
+	cursor: pointer;
+	color: #F1ECD7;
+	background-color: #182044;
+}
+
+.black-separator{
+	height: 5px;
+	background-color: black;
+}
+
+input{
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.main-header{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: rgba(46, 64, 83, 0.8);
+	color: rgba(255, 183, 77, 0.85);
+	text-align: center;
+}
+
+.bottom-header{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: rgba(255, 183, 77, 0.85);
+	text-align: center;
+}
+
+a {
+	font-family: cursive;
+	font-weight: bold;
+
+}
+
+.main-header p{
+	font-style: oblique;
+}
+
+.no-padding{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#hideButton{
+	width: 90%;
+}
+
+#centerButton{
+	width: 90%;
+}
+
+#hidePlacesButton{
+	width: 90%;
+}
+
+#buttonsContainer{
+	background-color: rgba(96, 64, 53, 0.5);
+	padding-left: 0px;
+	padding-right: 0px;
+	text-align: center;
+}
+
+#userContainer{
+	text-align: center;
+	font-weight: bold;
+	background-color: rgba(46, 64, 83, 0.9);
+	color: rgba(255, 183, 77, 0.75);
+  padding-right: 0px;
+	padding-bottom: 10px;
+	height: 100%;
+}
+
+#showButton{
+	font-size: 25px;
+	height: 70px;
+	width: 80%;
+}
+
+#information{
+	display: none;
+	font-weight: bold;
+	font-size: 35px;
+
+}
+
+body {
+	background: url("https://www.metromba.com/wp-content/uploads/2013/03/NYU-Stern.jpg");
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+p{
+	padding-top: 15px;
+	font-size: 25px;
+}
+
+h1{
+  font-family: cursive;
+	font-weight: bold;
+}

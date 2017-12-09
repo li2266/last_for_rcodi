@@ -1,0 +1,29 @@
+body{
+    color: goldenrod;
+    font-size: 34px;
+    font-family: 'Pacifico', cursive;
+}
+/* no existen comentarios de una sola linea como en java en css*/
+h1, h2{
+	margin: 10px;
+}
+
+p{
+	margin: 50px;
+}
+
+.textoResaltado{
+	color: cyan;
+	font-weight: 700;
+	font-family: tahoma;
+}
+
+a{
+	color: #333333;
+	text-decoration: none;
+	border: none;
+}
+
+a:hover{
+	color: #cccccc;
+}

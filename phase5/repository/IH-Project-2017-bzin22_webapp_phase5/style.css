@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    
+}
+/* button animations */
+.Button:hover {
+	background: #732;
+	border: 2px solid green;
+	color: black;
+	cursor: pointer;
+
+}
+
+.Button {
+	background: green;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .5s;
+	margin-top: 15px;
+}
+#logo {
+    border-radius: 10px;
+}
+#title {
+    font-family: Comic Sans MS, sans-serif;
+    font-style: italic;
+    font-size: 75px;
+    font-weight: bold;
+}
+#map {
+    height: 150%;
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: left;
+}
+.ExploreAppHeading {
+    text-align: left;
+}
+.Developer {
+    color: white;
+    text-align: left;
+}
+.textInput {
+    color: white;
+    text-align: left;
+}
+#weather{
+    border-width: 10px;
+    color: blue;
+    background: transparent;
+}
+#brief {
+    background-color: transparent;
+    width: 30%;
+    max-height: 68%;
+    padding: 8px 24px;
+    overflow: scroll;
+    position: absolute;
+    TOP: 340px;
+    LEFT:850px;
+}
+#brief h4 {
+    color:green;
+}
+.card{
+    background: transparent;
+}
+.card-content{
+    background: #181819;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+}
+.card-title{
+    background: transparent;
+    color: blue;
+}
+.weather-icon {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+ul {
+    font-size: 14pt;
+}
+.words {
+  color: green;
+}
+.best{
+    font-size: 20pt;
+}
+.AboutUsHeading {
+    text-align: left;
+}
+
+.AboutUs {
+  color: white;
+  text-align: center;
+}
+.userInput1 {
+    text-align: center;
+}
+html, body {
+    height: 80%;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,11 @@
+body {
+color: #8B008B;
+font-family: Verdana, sans-serif;
+background: url("https://www.housingwire.com/ext/resources/images/editorial/A-New-Big-Images/states/New-York-City.jpg?1453402066");
+width: 100%;
+}
+
+.container {
+width: 100%;
+max-width: 1500px;
+}

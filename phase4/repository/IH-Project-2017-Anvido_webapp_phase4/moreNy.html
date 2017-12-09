@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>NYH - More abuot NY</title>
+    <!-- Materialize Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="styleMNY.css">
+    <!-- Icons Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google fonts Bad Script -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bad+Script">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper blue-grey darken-2">
+        <a href="index.html" class="brand-logo">NYHouses</a>
+        <a id="navInfo" href="#" data-activates="mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="findHome.html">Find your home</a></li>
+          <li><a href="moreNy.html">More abuot NY</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="findHome.html">Find your home</a></li>
+          <li><a href="moreNy.html">More abuot NY</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <p>In this section you see more information about New York for example Climate, Security and others.</p>
+        <figure>
+          <svg id="tempChart"></svg>
+          <figcaption>Maximum and minimum temperature</figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer class="page-footer blue-grey darken-4">
+      <div class="container">
+        <div class="row">
+          <ul>
+            <li><label class="white-text">Bogota, Colombia</label></li>
+            <li><label class="white-text">Phone: +57 3103105469</label></li>
+            <li><label class="white-text">Email: adgonzalezo@unal.edu.co</label></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- Materialize Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- Custom script -->
+    <script type="text/javascript" src="moreNy.js"></script>
+  </body>
+</html>

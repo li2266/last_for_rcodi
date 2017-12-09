@@ -1,0 +1,51 @@
+body{
+  color : #202020;
+  background-color: white;
+  font-family: Verdana;
+}
+.image{
+  width: 100%;
+  background-image: url("https://media.timeout.com/images/103444978/image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+h2{
+  font-size: 32px;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 42px;
+  color:#ECEBE4;
+  font-weight: 600;
+}
+
+.caption h1 .image {
+  position: relative;
+  top: 50px;
+  width: 50px;
+  margin: 0 auto:
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.navigation li.place {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}

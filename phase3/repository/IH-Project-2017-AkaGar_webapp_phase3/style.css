@@ -1,0 +1,66 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+    background-color: #add8e6;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    column-count: 5;
+}
+h1 {
+    text-align: center;
+    color: #2f4f4f;
+}
+
+#map {
+    height: 300px;
+    width: 500px;
+    background-color: grey;
+    margin: 0 auto;
+}
+
+#col_one {
+    float: left;
+    width: 20%;
+    background-color: red;
+    text-align: center;
+    
+}
+
+#col_two {
+    float: left;
+    width: 20%;
+    background-color: green;
+    text-align: center;
+}
+
+
+#col_three {
+    float: left;
+    width: 20%;
+    background-color: yellow;
+    text-align: center;
+}
+
+#col_four {
+    float:left;
+    width: 20%;
+    background-color: purple;
+    text-align: center;
+}
+
+#col_five {
+    float: left;
+    width: 20%;
+    background-color: white;
+    text-align: center;
+}
+
+.column {
+    display: inline-block;
+    margin: 0px;
+    height: 100px;
+}

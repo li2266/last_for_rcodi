@@ -1,0 +1,102 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+
+
+#googleMapDiv{
+	width: 100%;
+	height: 600px;
+	background-color: grey;
+	margin-top: 20px;
+    padding: none;
+}
+
+.header{
+    
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+
+#navBarDiv{
+	width: 100%;
+	height: 500px;
+	margin-top: 20px;	
+}
+ 
+ #carouselNY{
+    margin-top: 90px;
+ }
+
+.carousel-inner{
+	width: 100%;
+    height: 500px;
+	background-color: black;
+
+    margin: auto;
+
+}
+.carousel-inner img{
+    width: 100%;
+    margin: auto;
+}
+
+.btn{
+	background-color: transparent;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+}
+
+
+.btn:active{
+    background: #58FAF4;
+    color: white;
+    box-shadow: -1px 1px 10px 0.5px rgba(4,87,87,1);
+} 
+
+.btn:focus{
+    background: #F5A9A9;
+    color: white;
+    box-shadow: -1px 1px 10px 0.5px rgba(4,87,87,1);
+} 
+.btn:hover{
+	background: #58FAF4;
+	color:white;
+	box-shadow: -1px 1px 10px 0.5px rgba(4,87,87,1);
+
+} 
+
+
+@media screen and (max-width: 768px){
+    /* For desktop: */
+    .carousel-inner {
+        height:200px;
+    }
+    #logo{
+        height: 10px;  
+    }
+}
+
+@media screen and (width: 768px){
+    .carousel-inner {
+        height:300px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) and (min-width: 769px){
+
+    .carousel-inner {
+        height:400px;
+    }
+}

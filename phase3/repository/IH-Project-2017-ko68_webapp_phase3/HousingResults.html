@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #map {
+            height: 500px;
+            width: 85%;
+             }
+    </style>
+    
+  <title>NYU Housing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>
+     <span class="glyphicon glyphicon-tent"></span>
+      <b>Hounder</b>
+    </h1>
+<style>
+    .jumbotron
+{
+background-color:   #008fb3;
+margin-bottom: 0;
+}
+</style>
+
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">HOUNDER</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html" style = "font-size: 20px">Home</a></li>
+      <li class="active"><a href= "HousingProfile.html" style = "font-size: 20px">Housing Search</a></li>
+      <li><a href="WishList.html" style = "font-size: 20px">Wish List</a></li>
+      <li><a href="Cart.html" style = "font-size: 20px">Cart</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+    .column {
+    float: left;
+    padding-left: 30px;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 50%;
+  padding-left: 15%;
+ 
+}
+</style>
+<h1 style = "padding-left: 30px">
+    <i class="glyphicon glyphicon-cloud"></i>
+    <b>Current Weather</b>
+    </h1>
+ <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script>
+   //test for D3 picture/diagram
+   var canvas = d3.select("body")
+                    .append("svg")
+                    .attr("width", 600)
+                    .attr("height", 600)
+                    .attr("align", "right");
+    var circle = canvas.append("circle")
+                        .attr("cx", 200)
+                        .attr("cy", 200)
+                        .attr("r", 150)
+                        .attr("fill", "violet");
+  /*                  
+    //weather data with D3
+  d3.js("__________", function (data){})
+       var canvas =  d3.select("column right")
+                    .append("svg")
+                    .attr("width", 500)
+                    .attr("height", 700);
+                    
+                    canvas.selectALL("rect")
+                    .data(data)
+                    .enter()
+                        .append("rect")
+                        .attr("width", function(d){return d. * 20;})
+                        .attr("height", 50)
+                        .attr("y", function(d, i){return i*50;})
+                        .attr("fill", "blue");
+                        */
+   </script>
+   
+
+
+<div class="row">
+ <div class="column left">
+<div class="container">
+     <div id="map"></div>
+    <script>
+      function initMap() {
+        var NYU = {lat:  40.7291, lng: -73.9965};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: NYU
+        });
+        var marker = new google.maps.Marker({
+          position: NYU,
+          map: map
+        });
+
+         var trafficLayer = new google.maps.TrafficLayer();
+                trafficLayer.setMap(map);
+
+         var transitLayer = new google.maps.TransitLayer();
+             transitLayer.setMap(map);
+             
+        var bikeLayer = new google.maps.BicyclingLayer();
+             bikeLayer.setMap(map);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJevqR-Hz9MT56mTnIxQomdUI2U7oqGLY&callback=initMap">
+    </script> <br> 
+    </div>
+    </div>
+
+  <div class="column right">
+               <!--once button is clicked gets weather api data-->
+ <script src="index.js"> </script>   
+<button onclick="weather()" id = "id_btn5">Weather Data</button> 
+<button onclick="crime()" id = "id_btn5">Safety Data</button> 
+<button onclick="availableHousing()" id = "id_btn5">Units Available Data</button> 
+<button onclick="buildingUnits()" id = "id_btn5">Area Availability Data</button>
+
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+   <script scr = "js3.js"></script>
+   
+   
+    </div>
+     </div> 
+    </body>
+    </html>
+      

@@ -1,0 +1,103 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+    background: url("http://www.stern.nyu.edu/sites/default/files/assets/images/uat_025583.jpg");
+}
+.action
+{
+    background-color: darkviolet;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 12px;
+    transition-duration: 0.2s;
+   
+}
+.action:hover {
+    background-color: white;
+    color: black;
+    padding:30px;
+}
+#header
+{
+    background-color: black;
+    color:white;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 250px;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+*{
+    box-sizing: border-box;
+}
+#m
+{
+    width:100%;
+    height:100%;
+}
+.header {
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center;
+}
+.column {
+    float: left;
+    padding: 10px;
+    height: 900px;
+}
+.column.selection {
+ 
+    width: 20%;
+    height:50%;
+    background-color: darkviolet;
+    color: white;
+}
+.column.top2 {
+ 
+    width: 20%;
+    height:50%;
+    background-color: darkviolet;
+    color: white;
+}
+.column.map {
+    width: 60%;
+    height:100%;
+    
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 600px) {
+    .column.selection, .column.map {
+        width: 100%;
+    }
+}

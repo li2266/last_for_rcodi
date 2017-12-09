@@ -1,0 +1,14 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+#mainMap{
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}

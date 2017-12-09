@@ -1,0 +1,239 @@
+{
+  "js": {
+    "errors": [
+      "TypeError: undefined is not a function (evaluating '$(\"#labelBtn1\").tooltip()')",
+      "TypeError: undefined is not an object (evaluating 'dir.lat')",
+      "TypeError: undefined is not an object (evaluating 'dir.lat')"
+    ],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "4",
+        "errorType": "parse-error",
+        "context": ".fa",
+        "errorSubtype": "exp",
+        "skippedString": "auto",
+        "type": "noexistence-at-all",
+        "message": "Property text-rendering doesn't exist :",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "errorType": "invalidparam",
+        "message": "Sorry, the at-rule @-webkit-keyframes is not implemented.",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-font-smoothing is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -moz-osx-font-smoothing is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-animation is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-animation is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of font-size",
+        "context": ".fa",
+        "type": "redefinition",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "8",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase2/style.css"
+      },
+      {
+        "line": "13",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase2/style.css"
+      },
+      {
+        "line": "23",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase2/style.css"
+      },
+      {
+        "line": "39",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase2/style.css"
+      },
+      {
+        "line": "0",
+        "level": "2",
+        "message": "font-family: You are encouraged to offer a generic family as a last alternative",
+        "context": ".fa",
+        "type": "no-generic-family",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase2/style.css"
+      }
+    ]
+  },
+  "html": []
+}

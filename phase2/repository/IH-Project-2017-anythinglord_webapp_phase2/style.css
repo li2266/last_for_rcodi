@@ -1,0 +1,119 @@
+body{
+  /*background: url(https://s1.postimg.org/3fdqrcod5r/trips.jpg);*/
+  background-size: 600px;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+}
+#googleMapContainer{
+  width:100%;
+  height: 500px;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+header{
+  text-align: center;
+}
+/*Menu Desplegable*/
+header nav{
+	background:#528FD5;
+	/*No permite que las secciones queden mal acomodadas*/
+	/*Desaparecer el contenido que sobrepasa el contenedor*/
+	overflow:hidden;
+}
+/*Quitar las viñetas de las listas de las listas*/
+header ul {
+	list-style:none;
+}
+/*los elementos se apilan a la izquierda*/
+header nav ul li{
+	float: left;
+}
+
+header nav ul li a{
+	padding: 10px 20px;
+	/*Muestra cada uno de los menus*/
+	display: block;
+	color:#fff;
+	text-decoration:none;
+}
+/*Diseño del menu despegable*/
+.nav li a{
+	background:#528FD5;
+	text-decoration:none;
+	padding: 10px 15px;
+	display:block;
+}
+.nav > li {
+	/*los elementos se apilan a la izquierda*/
+	float:left;
+}
+.nav li ul {
+	display:none;
+	background:#528FD5;
+	position:absolute;
+	min-width:
+}
+.nav li:hover > ul {
+	display:block;
+}
+header nav ul li a:hover {
+	background:#75ACEC
+}
+/*Fin Diseño menu desplegable*/
+
+/*Header main and footer*/
+header, .main, footer{
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+.container .row .main .articles{
+	width: 68.5%;
+	margin-right:0.5%;
+	float:left;
+}
+aside{
+  width: 50%;
+  float: left;
+  margin-top: 22px;
+  /*padding: 0px;*/
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+/*New Row*/
+#FirstOption{
+  background: #42cbf4;
+
+}
+#SecondOption{
+  background: rgb(71, 142, 164);
+}
+.container .col-md-6{
+  margin-top: 30px;
+  width:30%;
+  height: 300px;
+  text-align: center;
+}
+
+footer {
+	background: #42cbf4;
+	color:#fff;
+	clear: both;
+	padding: 10px,0px;
+	text-align: center;
+}
+
+/*Need a table for a Data*/
+table{
+	width: 75%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}	
+
+table, th, td{
+	padding: 6px;
+	border: 1px solid black;
+	text-align: center;
+}

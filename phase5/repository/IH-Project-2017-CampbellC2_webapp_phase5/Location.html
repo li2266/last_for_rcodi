@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #57068c;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
+    
+<div class="topnav">
+  <a class="home" href="Home.html"
+  >Home</a><a class="Listings" href="Listings.html"> Listings</a>
+  <a href="Location.html">My Location</a>
+  <a href="SignUp.html" >Sign Up</a>
+  <a href="Login.html">Log in</a>>
+</div>
+<div>
+    <header>
+    <h1 align="center">Your Location</h1>
+    </header>
+    <article>
+    <h2 align="center">Find Climate trends!</h2><br>
+    <input type="text" value="https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=doRMwddOULFMSILRqfSNGYQjllwowDyQ"><br><input type=submit>
+    </article>
+</div>
+<title>Your Location</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.7291,lng:-73.9965},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLLyjq5OBCwNpDzLX9bA8_n6FIkz5_MRE&callback=initMap"
+    async defer></script>
+    <div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(40.729054, -73.996526),
+    zoom: 7,
+    panControl: true,
+    zoomControl: true,
+    mapTypeControl: true,
+    scaleControl: true,
+    streetViewControl: true,
+    overviewMapControl: true,
+    rotateControl: true   
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+</body>
+</html>

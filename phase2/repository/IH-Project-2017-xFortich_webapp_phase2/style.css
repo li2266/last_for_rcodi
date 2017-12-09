@@ -1,0 +1,73 @@
+html, body, #mainMap, #mainCont, #mainRow{
+    height: 100%;
+}
+
+p{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.bkblack{
+    background-color: black;
+}
+
+.bkgray{
+    background-color: gray;
+}
+
+.marTop{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.icoImported{
+    max-width: 100%;
+    height: auto;
+}
+
+.backColor{
+    background-color: #FBFBFB;
+    height: 100%;
+    width: 100%;
+}
+
+.backPrimeroColoroso{
+    background-color: #FAB9AC;
+}
+
+.backSegondoColoroso{
+    background-color: #7BBC53;
+}
+
+.backTerceroColoroso{
+    background-color: #DE6736;
+}
+
+.backCurtoColoroso{
+    background-color: #67C1EC;
+}
+
+.backQuintoColoroso{
+    background-color: #E6B90D;
+}
+
+
+.topBound{
+    height: 7%;
+}
+
+.midBound{
+    height: 83%;
+}
+
+.lowerBound{
+    height: 7%;
+}
+
+#pbar{
+    height: 3%;
+    width: 0%;
+}
+
+#pporcentaje{
+    width: 0%;
+}

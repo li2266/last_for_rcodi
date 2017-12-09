@@ -1,0 +1,2 @@
+var budget;
+var range;

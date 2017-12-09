@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <title>New York's Finest</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar navbar-default homeNavbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img src="https://i.imgur.com/9T46QPI.png" />
+        </div>
+        <ul class="nav navbar-nav navbar-right navLink">
+          <li ><a href="#" class="navLink">About Us</a></li>
+          <li class="navLink"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class ="panel panel-default">
+                <div class ="panel-body panelHeader">
+                    <h3>This is Map: Your new friend on The Big Apple</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="mapContainer"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+          <div class="secondColumn">
+            <div class="panel panel-default">
+              <div class="panel-body panelHeader">
+                <h3>YOU'RE CURRENTLY AT ....</h3>
+              </div>
+              <div id="currentlyAtPanel" class="panel-body infoPanel"></div>
+             <!-- <div class="panel-body">*Don't worry if your school doesn't appear, we'll add more soon !<br>
+              *Neighborhood Outline shows a visual aproximation of how large is the neighborhood you in!</div>-->
+            </div>
+
+
+                  <div class="dropdown div-inline">
+                    <button id="schoolName" class="btn schoolBtn dropdown-toggle" type="button" data-toggle="dropdown"><p></p><span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a class="selectSchool">New York University (NYU)</a></li>
+                      <li class="divider"></li>
+                      <li><a class="selectSchool">Columbia University</a></li>
+                      <li><a class="selectSchool">Fordham University</a></li>
+                      <li><a class="selectSchool">Julliard School</a><li>
+                      <li><a class="selectSchool">St. John's University</a></li>
+                      <li><a class="selectSchool">Fashion Institute of Technology</a></li>
+                      <li><a class="selectSchool">Parsons School of Design</a></li>
+                      <li><a class="selectSchool">Pace University</a></li>
+                      <li><a class="selectSchool">Baruch College</a></li>
+                      <li><a class="selectSchool">The City College of New York</a></li>
+                      <li><a class="selectSchool">Pratt Institute</a></li>
+                      <li><a class="selectSchool">Hunter College</a></li>
+                      <li><a class="selectSchool">John Jay College of Criminal Justice</a></li>
+                      <li><a class="selectSchool">Borough of Manhattan Community College</a></li>
+                      <li><a class="selectSchool">LaGuardia Community College</a></li>
+                      <li><a class="selectSchool">The New School</a></li>
+                      <li><a class="selectSchool">New York Film Academy</a><li>
+                      <li><a class="selectSchool">New York City College of Technology</a><li>
+                    </ul>
+                  </div>
+                  <button id="toggleHood" class="btn schoolBtn"> Neighborhood Outline </button>
+                  <button id="getWeatherDataBtn" class="btn schoolBtn" data-toggle="collapse"
+                  data-target="#weatherPanel" disabled> Weather Data</button>
+                  <div id="weatherPanel" class="panel-collapse collapse">
+                    <div class="panel-body infoPanel">
+
+                      <!--<img class="weatherLogo" src="https://i.imgur.com/futpmh7.png"/>-->
+
+                      The temperature in these days is ...<img class="weatherLogo" src="https://i.imgur.com/futpmh7.png"/><br><br>
+                      Max: <span id="tMax"></span>°C<br>
+                      Min: <span id="tMin"></span>°C<br>
+                      Avg: <span id="tAvg"></span>°C<br><br>
+                      And if you go outside you might encounter: <br>
+                      <div id="currentWeatherList"></div>
+
+                    </div>
+                  </div>
+                  <button id="artGalleriesBtn" class="btn schoolBtn">Art Galleries</button>
+                  <button id="WiFiSpots" class="btn schoolBtn">WiFi Spots</button>
+                  <button id="hospitalsBtn" class="btn schoolBtn">Hospitals</button>
+                  <button id="museumsBtn" class="btn schoolBtn">Museums</button>
+                  <button id="subwayBtn" class="btn schoolBtn">Subway Stations</button>
+
+                  <div class="panel-body panelHeader">
+                    <h3>CLICK THE MARKERS IN THE MAP FOR MORE INFO !</h3>
+                  </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery  -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <!--  Google Maps -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm4CyWaG7Dc4Oep8wLxEgl2fsZ2waeLu8&callback=onGoogleMapResponse">
+    </script>
+</body>
+</html>

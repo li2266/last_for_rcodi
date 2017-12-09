@@ -1,0 +1,79 @@
+body{
+	font-family: lato;
+	background-color: #3498db;
+}
+
+html {
+    margin:0;
+    padding:0;  
+}
+
+
+#FirstBar{
+	background-color: #2C3E50;
+	height: 60px; 
+	border-radius: 0%;
+	border-color: #2C3E50;
+}
+
+#Services,#Language,#USD,#BrandName{
+	color:white;
+}
+
+#LeftRow{
+	background-color: #E74C3C;
+	height: 200px;
+}
+
+#RightRow{
+	background-color: blue;
+	height: 200px;
+}
+
+#DateText{
+	background-color: #ECF0F1;
+	height: 30px;
+	width: 102%;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+
+#DateArrival{
+	margin-top: 5px;
+	text-align: left;
+}
+
+#DateHosts{
+	background-color: green; 
+	height: 50px;
+	width: 102%;	
+}
+
+#DateSelector{
+	margin-top: 7px;
+	width: 80%;
+	border-radius: 0%;
+	margin-left:70px; 
+}
+
+#huespedes{
+	background-color: pink;
+	margin-top: 7px;
+}
+
+
+#DropdownHosts{
+	width: 70%;
+	height: 34px;
+	background-color: navy;
+}
+
+
+#prueba{
+	background-color: pink;
+}
+

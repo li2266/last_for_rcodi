@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		  <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Best place to rent!</title>
+</head>
+<body>
+		<nav id="FirstBar" class="navbar navbar-default">
+			<a href="#" class="navbar-brand" id="BrandName">Rent NYU!</a>
+			<ul class="nav navbar-nav" id="BarList" align="right">
+				<li>
+					<a href="#" id="Services">
+						Services
+					</a>
+				</li>
+				<li>
+					<a href="#" id="Language">
+						Language
+					</a>
+				</li>
+				<li>
+					<a href="#" id="USD">
+						USD
+					</a>
+				</li>
+				<li>
+					<a href="#" id="USD">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="row">	
+			<div class="col-md-7 padding-0">
+				<div class="container-fluid" id="LeftRow">
+					<div class="container-fluid" id="DateText">
+						<p id="DateArrival">Select your date of arrival</p>
+				</div>	
+
+				<div class="container-fluid" id="DateHosts">
+    <div class="row">
+        <div class='col-lg-6'>
+        	<div class="container-	" id="prueba">
+
+            <div class="form-group" id="DateSelector">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class='col-lg-6'>
+      <div class="container-fluid" id="huespedes">
+      <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">No Hosts
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">1 Host</a></li>
+      <li><a href="#">2 Hosts</a></li>
+      <li><a href="#">3 Hosts</a></li>	
+    </ul>
+  </div>
+      </div>
+</div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+
+</div>	
+
+					</div>
+				</div>
+
+				<div class="col-md-5 padding-0">
+				<div class="container-fluid" id="RightRow">
+					<h1>Here goes map</h1>
+					</div>
+				</div>
+			</div>
+		
+	
+</body>
+</html>

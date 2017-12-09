@@ -1,0 +1,26 @@
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.brand-logo{
+  font-family: "Bad Script";
+  margin-left: 16px;
+}
+
+#tempChart{
+  height: 300px;
+  width: 80%;
+}

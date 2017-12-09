@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent Finder</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Rent Locations Near NYU Stern School of Business</h1>
+        <p>Here is the School of Business</p>
+        <div id = "map"></div>
+        <script type="text/javascript">
+    	function initMap(){
+    		var mapDiv = document.getElementById("map"); //Line 1: Save reference to div element where map would be shown
+    		var map = new google.maps.Map(mapDiv, {//Line 2: Create Map object passing element reference, center and zoom as parameters
+    			center: {lat: 40.7292, lng: 73.9965}, //This is Purdue University's Location
+    			zoom: 12});
+    	}
+        </script>
+        <script type="text/javascript">
+    	function initMap(){
+    		var mapDiv = document.getElementById("map");
+    		var map = new google.maps.Map(mapDiv, {
+    			center: {lat: 40.7292, lng: -73.9965},
+    			zoom: 15});
+    		var marker = new google.maps.Marker({ //Line 1
+    			position: {lat: 40.7292, lng: -73.9965}, //Line2: Location to be highlighted
+    			map: map,//Line 3: Reference to map object
+    			title: 'NYU School of Business' //Line 4: Title to be given
+    		})
+    	}
+        </script>
+        <script async defer
+	        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDu8J6EIiM_AnPIiTVUCuGt7KoQR8LdAQg&callback=initMap">
+        </script>
+        
+        <br>
+        <h3>What are you looking for?</h3>
+        <p>Drag the slider to prioritize safety (left) vs affordability (right)</p>
+        <div id = "slidecontainer">
+            <input type = "range" min = "0" max = "10" value = "5" class = "slider" id = "mySlider">
+        </div>
+        <!--<p>Safe Affordable</p>-->
+        
+        <button id="btn">Submit</button>
+        <h3>Safest rent location</h3>
+        <p>The safest rent location will go here</p>
+        <h3>Cheapest rent location</h3>
+        <p>The cheapest rent location will go here</p>
+        <h3>Suggested rent locations</h3>
+        <p>The three rent locations according to the user's slider input will go here</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

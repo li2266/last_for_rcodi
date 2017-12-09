@@ -1,0 +1,94 @@
+/*
+Colors
+
+1--#2E3837		Azul Oscuro
+2--#166678		Azul Medio
+3--#7DB9B3		Azul claro
+4--#E1F6F4		Tono muy claro
+5--#2E3837    Rojo... 
+6--#024959    Boton Up
+ */
+.fullcontenedor{
+  width: 100%;
+  background-color: #2E3837;
+}
+.scontenedor{ 
+    width: 1200px; 
+    margin: 0 auto;
+}
+.container-fluid {
+    width: 100%;
+    height: 400px;
+    background-color: #761A1A;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.ptb-20{
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+#googleMap {
+    width:100%;
+    height:450px;
+}
+.col-lg-5{
+	background-color: #166678;
+	color: #E1F6F4;
+}
+.container {
+	width:100%;
+    background-color: #7DB9B3;
+    align-content: center;
+}
+.btn-group-lg{
+	align-content: center;
+	background-color: #2E3837;
+}
+.btn{
+    background-color: #E1F6F4; /* Green */
+    border: none;
+    color: #166678;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+table, th, td{
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+}
+#tableWrapper {
+  position:relative;
+  width:100%;
+  height: 500px;
+  background-color: #166678;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 12px;
+}
+#tableScroll {
+  height:450px;
+  overflow:auto;
+  margin-top:20px;
+}
+.btn-primary{
+  background-color: #E1F6F4;
+  color: black;
+}
+.ir-arriba {
+  display:none;
+  padding:20px;
+  background:#024959;
+  font-size:20px;
+  color:#E1F6F4;
+  cursor:pointer;
+  position: fixed;
+  bottom:20px;
+  right:20px;
+}

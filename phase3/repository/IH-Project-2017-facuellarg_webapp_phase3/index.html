@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class=" col-md-2 col-md-offset-5">
+			<div id="formulario">
+				<form autocomplete="off">
+					<input id="txt" type="number" name="prueba" required placeholder="Presupuesto">
+					<input id="sb" type="submit" name="probar">
+				</form>
+		
+			</div>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-md-1">
+			<dl id="buttons">
+				<dd><button class="but">Filtro1</button></dd>
+				<dd><button class="but">Filtro2</button></dd>
+				<dd><button class="but">Filtro3</button></dd>
+				<dd><button class="but">Filtro4</button></dd>
+			
+			</dl>
+		</div>
+		<div class="col-md-10">
+			<div id="map">
+		
+			</div>
+		</div>
+	</div>		
+</div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"></script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACgKl7dnrrVVnbmHMee3nADTifUiJaIPM&callback=initMap">
+    </script>
+</body>
+
+
+</html>

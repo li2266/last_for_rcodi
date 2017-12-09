@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Residence Rummager</title>
+    
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Residence Rummager!</h1>
+	<h6>We Rummage, You Reside!</h6>
+	<hr>
+	
+	<!-- Display Map -->
+	<div id="map">
+    	<script>
+    		function initMap() {
+    			var mapCenter = {lat: 40.7291, lng: -73.9965};
+    			var map = new google.maps.Map(document.getElementById('map'), {
+    				zoom: 15,
+    				center: mapCenter
+    			});
+    			var marker = new google.maps.Marker({
+    				position: mapCenter,
+    				map: map
+    			});
+    		}
+    	</script>
+    	<script async defer
+    		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlMZbn8QNUIrqC1PmOTmqdp0uoIMRMEyo&amp;callback=initMap">
+    	</script>
+	</div>
+	
+	<!-- Allow Adjustment Options -->
+	<div id="criteria">
+	    <h4>Narrow your search:</h4>
+	    <hr>
+	    <p>Criteria 1</p>
+	    <input id="getCrit1" placeholder="crit1">
+	    <button id="btn">Apply</button>
+	    <hr>
+	    <p>Criteria 2</p>
+	    <input id="getCrit2" placeholder="crit2">
+	    <button id="btn">Apply</button>
+	    <hr>
+	    <p>Criteria 3</p>
+	    <input id="getCrit3" placeholder="crit3">
+	    <button id="btn">Apply</button>
+	    <hr>
+	    <p>Criteria 4</p>
+	    <input id="getCrit4" placeholder="crit4">
+	    <button id="btn">Apply</button>
+	</div>
+	<hr>
+	
+	<!-- Show Data Visualizations -->
+	<div id="visualizations">
+	    <h3>Various visualizations go here</h3>
+	    <img src="http://www.factcheck.org/UploadedFiles/2016/07/Violent-Crime-Rate-Chart1.png"/>
+	</div>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<font face="helvetica">
+Hi IronHacker, <br><br> Thanks for submitting your app! We really enjoyed evaluating your application. The feedback below should help you improve your application! It will not influence the score of your final solution, so don't worry! 
+<br>
+We judge your application on three dimensions: Technology, InfoVis and Novelty. We use objective techniques for doing that (e.g. code error detection techniques, establish evaluation methods for usability, etc.) and our judges are all experts and well trained. The table below reports the results of the evaluations of your app on all three dimensions. Use this to identify opportunities for strengths and weaknesses.  
+</font>
+<br>
+
+<font face="helvetica">
+<br>
+<b>Table 1: Your results</b> <br><br>
+		<table border="0" cellspacing="1" align="left" frame="hsides" rules="all" width="100%" style="margin-bottom:20px">
+			<tr>
+				<th width="10%"><font color="orange">Results for</font></th>
+				<td width="50%" colspan="1">cglaitong</td>
+				<th width="30%" colspan="1"><font color="orange">Time</font></th>
+				<td width="10%" colspan="1">Mon Nov 27 11:05:55 2017</td>
+			</tr>
+			<tr>
+				<th>Performance Dimension</th>
+				<th>Description</th>
+				<th>Measure type</th>
+				<th>Your Result</th>
+			</tr>
+			<tr>
+				<th rowspan="2"><font color="orange">Technology</font></th>
+				<td>(1) Error rating: We evaluate the quality of your code by counting the errors and diving it by the total number of lines of code. The lower the value the better your code. </td>
+				<td>Error rating</td>
+				<td>0.65%</td>
+			</tr>
+			<tr>
+				<td>(2) Tech requirements: You are expected to meet all 10 technological requirements specified in the challenge <a href="http://www.ironhacks.com/task">description</a>. All requirements are equally weighted. The more more requirements you meet the better </td>
+				<td>Number of technology requirements met  </td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<th rowspan="2"><font color="orange">InfoVis</font></th>
+				<td>(1)User requirements:  We evaluate the fulfillment of user requirements specified in the challenge <a href="http://www.ironhacks.com/task">description</a>. All 5 requirements are equally weighted.</td>
+				<td>Number of user requirements met</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				
+				<td>(2)Usability: We evaluate 
+				<br>(1.1) System affordance: Does the application offer recognizable elements and interactions that can be understood by the user?
+				<br> (2.2) Cognitive workload: Is the number of alternatives from which the user can choose appropriate?
+				<br> (2.3) Functionality: Would a potential user have to memorize a lot of information and make many steps in the app to carry the task?<br> You can achieve a score from 0 to 18 for usability. All three dimensions are equally weighted. </td>
+				<td>Usability points achieved</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th rowspan="2"><font color="orange">Novelty</font></th>
+				<td rowspan="2">Adding new data sets definitely makes your app stand out from the rest.<br>  We evaluate three aspects: (1) Are you using new datasets? (2) How relevant is the new data for the user? (3) How novel is the visualization that you are using? We evaluate each dataset individually and average across all datasets used. For each data set you can achieve up to 9 points. The more points the better.   </td>
+				<td>Number of new datasets</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<td>Total points for novelty </td>
+				<td>30</td>
+			</tr>
+		</table>
+</font>
+<br>
+
+
+
+<I>CONFIDENTIALITY NOTE</I>: This information is confidential and should not be shared with other participants in your hack! Follow the rules of IronHacks and do not share this information. <br><br>
+
+Keep in mind: This evaluation does not affect your standing in the final phase! Keep moving, improving, and be creative! Great prizes are waiting for you. And even if you do not make it to the top, we have prizes for winning spirit and also community spirit. So it's worth working hard! <br><br>
+
+If you have any further questions, please let us know: opendigital@purdue.edu <br><br>
+
+
+Happy Hacking, <br>
+The IronHacks Team
+</html>

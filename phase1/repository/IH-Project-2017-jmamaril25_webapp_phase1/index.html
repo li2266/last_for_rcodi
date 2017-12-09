@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Safe House</title>
+        <!-- MATERIALIZE CSS: Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col s4">
+                    <!-- SIDEBAR NAVIGATION -->
+                    <nav class="navigation">
+                        <img id="logo" src="https://i.imgur.com/Gf07gdC.png" alt="safe_house">
+                        <p id="description"><strong>Safe House</strong> is an online tool to help NYU students look for housing rentals near the main campus (near the Stern School of Business). We will help you find the best deal in the best place.</p>
+                        <!-- PRICE SLIDER -->
+                        <div id="price-range">
+                            
+                        </div>
+                        <!-- FILTER EDITOR -->
+                        <div id="filters">
+                            
+                        </div>
+                    </nav>
+                </div>
+                <!-- GOOGLE MAPS LOCATION -->
+                <div class="col s8">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+        <!-- JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- MATERIALIZE JS: Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <!-- GOOGLE MAPS API -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh9KJJ2-gqECjxl6UAginZ0uxA9Tb4AxE&callback=initMap"></script>
+        <!-- CUSTOM JS -->
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [],
+    "warnings": [
+      {
+        "line": "34",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-bzin22_webapp_phase2/style.css"
+      },
+      {
+        "line": "43",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-bzin22_webapp_phase2/style.css"
+      },
+      {
+        "line": "47",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-bzin22_webapp_phase2/style.css"
+      },
+      {
+        "line": "54",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-bzin22_webapp_phase2/style.css"
+      }
+    ]
+  },
+  "html": [
+    "error: Element “title” not allowed as child of element “head” in this context. (Suppressing further errors from this subtree.)",
+    "error: Element “title” must not be empty.",
+    "error: Element “forms” not allowed as child of element “p” in this context. (Suppressing further errors from this subtree.)",
+    "error: Duplicate ID “button”.",
+    "info: The first occurrence of ID “button” was here.",
+    "error: Duplicate ID “button”.",
+    "info: The first occurrence of ID “button” was here.",
+    "error: Duplicate ID “button”.",
+    "info: The first occurrence of ID “button” was here."
+  ]
+}

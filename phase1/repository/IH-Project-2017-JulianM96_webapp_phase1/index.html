@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>University Residences</title>
+    <style>
+        *{ margin: 0; padding: 0; }
+            html, body, #map{
+                width: 100%;
+                height: 100%;
+            }
+            #formContent{
+                position: relative;
+                top: -100%;
+            }
+            #titulo{
+                width: 60%;
+                background: rgba(255,114,69, .8);
+                border-radius: 5px; 
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+            #mapa{
+                }
+            #opciones{
+                padding: 10px;
+                padding-top: 25px;
+                color: #fff;
+            }
+            
+            #opciones #Preferencias{
+                padding: 0px;
+                padding-top: 5px;
+                margin: 0px;
+                background: rgba(13,0,144,.6);
+                border-radius: 10px;
+            }
+            
+            #opciones #Preferencias #precios{
+                margin: 1px;
+            }
+            #opciones #Preferencias #simbolo1{
+                background: #fff;
+                color: darkgrey;
+                width: 50px;;
+                height: 100%;   
+            }
+            #opciones #Preferencias #Min, #opciones #Preferencias #Max{
+                border-radius: 2px;
+                border: none;
+                height: 100%;
+                width: 100%;
+            }
+        #opciones #Preferencias #ConInclude {
+            padding: 15%;
+            
+        }
+        #opciones #Preferencias #ConInclude h6{
+            font-size: 13px;
+        }
+        
+    </style>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-   PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="fonts/style.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnkjJUF4kPIiGVyJbgH1UKI-xPffbsyZs&callback=initMap"></script>
+    <script type="text/javascript">
+    window.onload = function(){
+        var mapDiv = document.getElementById('map');
+		var map = new google.maps.Map(mapDiv, {
+			center: {lat: 40.4237, lng: -86.9212},
+			zoom: 15});
+		var marker = new google.maps.Marker({ //Line 1
+			position: {lat: 40.4237, lng: -86.9212}, //Line2: Location to be highlighted
+			map: map,//Line 3: Reference to map object
+			title: 'Purdue University' //Line 4: Title to be given
+		})
+    };
+    </script>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="container-fluid" id="formContent">
+        <header>
+            <div class="container-fluid" id="titulo">
+                <center><h1>University Residences to the Best Comfort</h1></center>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <section class="main row">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 " id="mapa">
+                   
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" id="opciones">
+                    <div id="Preferencias">
+                        <center><h4>Preferences</h4></center>
+                        <center><h6>Property Cost</h6></center>
+                        <section class="main row" id="precios">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <input type="text" placeholder=" Min" id="Min">
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="preciosMax">
+                                <input type="text" placeholder=" Max" id="Max">
+                            </div>
+                        </section>
+                        <div id="ConInclude">
+                            <UL type = disk id="lista">
+                                <center><h5>Include</h5></center>   
+                                <LI><h6>Parks and recreation</h6></LI>
+                                <LI><h6>Services pay</h6></LI>
+                                <LI><h6>Schools</h6></LI>
+                                <LI><h6>Transport</h6></LI>
+                                <LI><h6>Main routes</h6></LI>
+                                <LI><h6>Delinquency</h6></LI>
+                                <LI><h6>Police</h6></LI>
+                                <LI><h6>Firefighters</h6></LI>
+                                <LI><h6>Real estate</h6></LI>
+                            </UL>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+        </div>
+    </div>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

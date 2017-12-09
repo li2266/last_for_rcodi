@@ -1,0 +1,30 @@
+#map {
+        height: 350px;
+        width: 100%;
+        margin:20px;
+}
+
+footer{
+	 background-color: #222;
+     border-color: #080808;
+     color: white;
+}
+header{
+	color: white;
+}
+
+form{
+    margin-top:20px;
+}
+
+.jumbotron {
+    background-image: url("https://i.imgur.com/570PXLn.jpg");
+    background-color: #17234E;
+    margin-bottom: 0 !important;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}

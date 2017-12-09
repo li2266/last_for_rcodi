@@ -1,0 +1,52 @@
+
+body{
+  background-image: url("https://i.imgur.com/9B7myxb.jpg");
+  background-repeat: no-repeat;
+}
+.navbar-default{
+  border: none;
+}
+.homeNavbar{
+  background-color: #002868;
+  color: #002868;
+  height: auto;
+  position: relative;
+}
+.navbar-right {
+    color:white;
+    font-size:20px;
+}
+
+.backPanel{
+  font-family: 'Oswald', sans-serif;
+  /*position: relative;*/
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  /*text-transform: uppercase;*/
+  font-weight: bold;
+  width: 45%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-top: 10%;*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  padding: 15px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: white;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #bf0a30;
+  border: none;
+  margin-top: 10px;
+  font-size: 25px;
+}

@@ -1,0 +1,629 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/fonts/fontawesome-webfont.woff?v=4.7.0 failed to be loaded. Status: 404",
+      "https://raw.githubusercontent.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/bg.jpg failed to be loaded. Status: 404",
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/fonts/fontawesome-webfont.ttf?v=4.7.0 failed to be loaded. Status: 404",
+      "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular failed to be loaded. Status: 404"
+    ],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "4",
+        "errorType": "parse-error",
+        "context": ".fa",
+        "errorSubtype": "exp",
+        "skippedString": "auto",
+        "type": "noexistence-at-all",
+        "message": "Property text-rendering doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "errorType": "invalidparam",
+        "message": "Sorry, the at-rule @-webkit-keyframes is not implemented.",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "244",
+        "errorType": "parse-error",
+        "context": ".map iframe",
+        "errorSubtype": "exp",
+        "skippedString": "none",
+        "type": "noexistence-at-all",
+        "message": "Property pointer-events doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "2",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "http://fonts.googleapis.com/css?family=Open+Sans:400,300"
+      },
+      {
+        "line": "3",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "http://fonts.googleapis.com/css?family=Open+Sans:400,300"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "http://fonts.googleapis.com/css?family=Open+Sans:400,300"
+      },
+      {
+        "line": "5",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "http://fonts.googleapis.com/css?family=Open+Sans:400,300"
+      },
+      {
+        "line": "8",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "http://fonts.googleapis.com/css?family=Open+Sans:400,300"
+      },
+      {
+        "line": "9",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "http://fonts.googleapis.com/css?family=Open+Sans:400,300"
+      },
+      {
+        "line": "10",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "http://fonts.googleapis.com/css?family=Open+Sans:400,300"
+      },
+      {
+        "line": "11",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "http://fonts.googleapis.com/css?family=Open+Sans:400,300"
+      },
+      {
+        "line": "2",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "3",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "5",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "8",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "9",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "10",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "11",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "14",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "15",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "16",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "17",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "20",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "21",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "22",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "23",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "26",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "27",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "28",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "29",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "32",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "33",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "34",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "35",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      },
+      {
+        "line": "2",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Raleway"
+      },
+      {
+        "line": "3",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Raleway"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Raleway"
+      },
+      {
+        "line": "5",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://fonts.googleapis.com/css?family=Raleway"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-font-smoothing is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -moz-osx-font-smoothing is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-animation is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-animation is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of font-size",
+        "context": ".fa",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/font-awesome.min.css"
+      },
+      {
+        "line": "75",
+        "level": "0",
+        "message": "Property -webkit-transition is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "76",
+        "level": "0",
+        "message": "Property -moz-transition is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "77",
+        "level": "0",
+        "message": "Property -ms-transition is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "78",
+        "level": "0",
+        "message": "Property -o-transition is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "81",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "101",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "121",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "125",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "139",
+        "level": "0",
+        "message": "Property -webkit-transition is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "140",
+        "level": "0",
+        "message": "Property -moz-transition is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "141",
+        "level": "0",
+        "message": "Property -ms-transition is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "142",
+        "level": "0",
+        "message": "Property -o-transition is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "161",
+        "level": "0",
+        "message": "Property -webkit-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "162",
+        "level": "0",
+        "message": "Property -moz-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "163",
+        "level": "0",
+        "message": "Property -o-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "192",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "194",
+        "level": "0",
+        "message": "Property -webkit-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "195",
+        "level": "0",
+        "message": "Property -moz-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "196",
+        "level": "0",
+        "message": "Property -o-background-size is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "239",
+        "level": "2",
+        "message": "Redefinition of height",
+        "context": ".map",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      },
+      {
+        "line": "0",
+        "level": "2",
+        "message": "font-family: You are encouraged to offer a generic family as a last alternative",
+        "context": ".fa",
+        "type": "no-generic-family",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-sanjitsama_webapp_phase3/stylish-portfolio.css"
+      }
+    ]
+  },
+  "html": [
+    "error: Element “a” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)",
+    "error: Saw “\"” when expecting an attribute name. Probable cause: “=” missing immediately before.",
+    "error: Quote “\"” in attribute name. Probable cause: Matching quote missing somewhere earlier.",
+    "info: Attribute “\"#menu-close\").click();” is not serializable as XML 1.0.",
+    "error: Bad value “$(” for attribute “onclick” on element “a”: syntax error",
+    "error: Attribute “\"#menu-close\").click();” not allowed on element “a” at this point.",
+    "error: Bad value “100%” for attribute “width” on element “iframe”: Expected a digit but saw “%” instead.",
+    "error: Bad value “100%” for attribute “height” on element “iframe”: Expected a digit but saw “%” instead.",
+    "error: The “frameborder” attribute on the “iframe” element is obsolete. Use CSS instead.",
+    "error: The “scrolling” attribute on the “iframe” element is obsolete. Use CSS instead.",
+    "error: The “marginheight” attribute on the “iframe” element is obsolete. Use CSS instead.",
+    "error: The “marginwidth” attribute on the “iframe” element is obsolete. Use CSS instead.",
+    "info: Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections."
+  ]
+}

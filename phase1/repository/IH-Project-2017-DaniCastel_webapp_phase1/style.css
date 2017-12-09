@@ -1,0 +1,66 @@
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+
+#header {
+
+    font-family:  "Century Gothic","EngraversGothic BT" ,"Corbel","Futura Bk BT" ;
+}
+
+#header ul {
+    list-style-type: none; 
+    text-align: center;
+    font-size: 0;
+}
+
+/* Estilos para desplegar los bloques que se ven primero*/
+#header > ul li {
+    display: inline-block;
+    background: #32D240;
+}
+#header li a {
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+/* Cuando el cursor pasa por la barra de opciones*/
+#header li:hover a, #header li a:focus {
+    background: #16A085;
+    color: #fff;
+	
+}
+
+#header li ul {
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+
+}
+#header li:hover ul, #header li:focus ul {
+    width: 100%;
+    background:  #bbb;
+    z-index: 5;
+}
+#header li li {
+    display: block;
+    width: 100%;
+}
+#header li:hover li a, #header li:focus li a {
+    font-family: "Corbel","Futura Bk BT", "EngraversGothic BT", "Century Gothic" ;
+    font-size: .9rem;
+    border-top: 1px solid #e5e5e5;
+    background: #444;
+
+	
+}
+#header li li a:hover, #header li li a:focus {
+    background: #FBDF28; 
+}

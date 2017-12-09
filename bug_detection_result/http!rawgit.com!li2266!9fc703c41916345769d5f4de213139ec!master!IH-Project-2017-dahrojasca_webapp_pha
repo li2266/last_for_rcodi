@@ -1,0 +1,74 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "35",
+        "errorType": "parse-error",
+        "context": ".caption h1",
+        "errorSubtype": "exp",
+        "skippedString": "100",
+        "type": "zero",
+        "message": "Value Error :  width (nullvisudet.html#propdef-width)\n        \n                                only 0 can be a unit. You must put a unit after your number :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-dahrojasca_webapp_phase5/style.css"
+      },
+      {
+        "line": "35",
+        "errorType": "parse-error",
+        "context": ".caption h1",
+        "errorSubtype": "unrecognized",
+        "skippedString": "%;",
+        "type": "generator.unrecognize",
+        "message": "Parse Error",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-dahrojasca_webapp_phase5/style.css"
+      },
+      {
+        "line": "39",
+        "errorType": "parse-error",
+        "errorSubtype": "unrecognized",
+        "skippedString": "[: 0 auto;\r\n}\r\n\r\n.navigation ul]",
+        "type": "generator.unrecognize",
+        "message": "Parse Error",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-dahrojasca_webapp_phase5/style.css"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "4",
+        "level": "2",
+        "message": "font-family: You are encouraged to offer a generic family as a last alternative",
+        "context": "body",
+        "type": "no-generic-family",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-dahrojasca_webapp_phase5/style.css"
+      },
+      {
+        "line": "19",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-dahrojasca_webapp_phase5/style.css"
+      },
+      {
+        "line": "27",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-dahrojasca_webapp_phase5/style.css"
+      },
+      {
+        "line": "52",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-dahrojasca_webapp_phase5/style.css"
+      }
+    ]
+  },
+  "html": [
+    "error: Attribute “href” not allowed on element “script” at this point."
+  ]
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--Font Awesome-->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Jquery -->
+	<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous">
+			  
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="menu">
+			<div id= "title">House for rent: NY</div>
+			<div id="containerBtn1">
+				<input type="checkbox" id="toggle1">
+				<label for="toggle1" class="fa fa-fire-extinguisher" id="labelBtn1" title="Show Fire Stations"></label>
+			</div>
+			<div id="containerBtn2">
+				<input type="checkbox" id="toggle2">
+				<label for="toggle2" class="fa fa-book" id="labelBtn2"
+				title="Show Career Centers"></label>
+			</div>
+			<div id="containerBtn3">
+				<input type="checkbox" id="toggle3">
+				<label for="toggle3" class="fa fa-home" id="labelBtn3"
+				title="Show Rent Home"></label>
+			</div>
+			
+		</nav>
+	</header>
+	<div id="mapContainer">
+		<div id="map"></div>
+
+	</div>
+	<!-- GoogleMaps--> 
+	<script
+		async defer
+		src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSi9OZcxXajLxldu0uPfVdghP5WADjlto&callback=initMap">
+	</script> 
+	<script src="index.js"></script>
+</body>
+</html>

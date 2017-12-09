@@ -1,0 +1,277 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    font-size  : 14px;
+    font-family: 'Unica One', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer,
+header,
+main {
+    width: 100%;
+}
+
+body,
+html {
+    height : 100%;
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.nav-container {
+    display: flex;
+}
+
+#map {
+    height: 84vh;
+    width : 65%;
+    float : right;
+}
+
+.controls-wrapper {
+    width: 35%;
+}
+
+.results-container {}
+
+.b {
+    border: 2px solid red;
+}
+
+.header-container {
+    height  : 8vh;
+    position: static;
+    top     : 0;
+    display : flex;
+}
+
+.nav-container {
+    position      : relative;
+    display       : inline;
+    vertical-align: middle;
+}
+
+.header-wrapper {
+    max-height: 16vh;
+}
+
+.second-row-header {
+    top             : 8vw;
+    background-color: #B0BEC5;
+}
+
+.flex-display {
+    display: inline-block;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+.clouds-color {
+    background-color: #ecf0f1;
+}
+
+.website-main-header {
+    text-transform: capitalize;
+    font-family   : 'Unica One', cursive;
+    font-weight   : 500;
+    font-size     : 6vh;
+    padding-top   : 1vh;
+}
+
+.subscript-main-header {
+    color    : #57068c;
+    font-size: 3vh;
+}
+
+.website-solgan-header {
+    font-size    : 3vh;
+    padding-top  : 2.5vh;
+    padding-right: 1vw;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.logo-img {
+    width   : auto;
+    height  : 5.4vh;
+    position: relative;
+    top     : 1.3vh;
+    left    : 1vw;
+}
+
+.basic-filters {
+    padding-left: 0.65vw;
+}
+
+.basic-filter-options {
+    outline      : none;
+    height       : 5.4vh;
+    margin       : 1.3vh 0.65vw 0 0;
+    padding      : 0 0.5vw;
+    border-radius: 0;
+    border       : 1px solid #6c797a;
+    font-size:  1.2em;
+}
+
+.filter-option-wider {
+    width: 20%;
+}
+
+.inline-display {
+    display: inline;
+}
+
+.filter-button {
+    color          : #ffffff;
+    cursor         : pointer;
+    text-decoration: underline;
+    font-size: 1.6em;
+}
+
+.save-button {
+    color           : #ffffff;
+    background-color: #57068c;
+    border-radius   : 8px;
+    border          : none;
+    cursor: pointer;
+}
+
+.search-results-info {
+    text-align: right;
+}
+
+.search-info {
+    margin: 0 0.5vw;
+}
+
+.search-info > span {
+    color    : #ffffff;
+    font-size: 2vh;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+#test-button {
+    border: 1px solid #000;
+    width : 5em;
+    height: 3em;
+}
+
+.results-controls-container {
+    position: fixed;
+    bottom: 0;
+    width: 35%;
+    height: 6vh;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.hidden {
+    position  : absolute;
+    visibility: hidden;
+    opacity   : 0;
+}
+
+input[type=checkbox] + label {
+    color     : #888;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+input[type=checkbox]:checked + label {
+    color     : #000000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.toggles {
+    margin: 1em;
+}
+
+.toggle-item {
+    border: 1px solid #000;
+    padding: 0.5em;
+    margin-top: 1em;
+    display: block;
+    text-align: center;
+}
+
+.filters {
+    width: 100%;
+}
+
+.usermessage {
+    text-align: center;
+}
+
+.usermessagemessage {
+    font-size: 1.2em;
+}

@@ -1,0 +1,30 @@
+body {
+    color: rgb(25, 75, 150);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px;
+    text-align: center;
+}
+
+blockquote."imgur-embed-pub" {
+    width: 100%;
+}
+
+h3.safety_class {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h3.price_class {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}

@@ -1,0 +1,106 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "32",
+        "errorType": "parse-error",
+        "errorSubtype": "skippedString",
+        "skippedString": "@import \"compass/css3\";",
+        "type": "generator.unrecognize",
+        "message": "@import are not allowed after any valid statement other than @charset and @import.",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "39",
+        "level": "0",
+        "message": "Property -webkit-box is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      },
+      {
+        "line": "40",
+        "level": "0",
+        "message": "Property -moz-box is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      },
+      {
+        "line": "41",
+        "level": "0",
+        "message": "Property -ms-flexbox is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      },
+      {
+        "line": "42",
+        "level": "0",
+        "message": "Property -webkit-flex is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      },
+      {
+        "line": "45",
+        "level": "0",
+        "message": "Property -webkit-flex-flow is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      },
+      {
+        "line": "57",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      },
+      {
+        "line": "98",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      },
+      {
+        "line": "105",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      },
+      {
+        "line": "114",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      },
+      {
+        "line": "129",
+        "level": "2",
+        "message": "Redefinition of width",
+        "context": "#map",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      },
+      {
+        "line": "130",
+        "level": "2",
+        "message": "Redefinition of height",
+        "context": "#map",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-criscapunal_webapp_phase4/style.css"
+      }
+    ]
+  },
+  "html": [
+    "error: Element “head” is missing a required instance of child element “title”.",
+    "error: End tag for  “body” seen, but there were unclosed elements.",
+    "error: Unclosed element “div”."
+  ]
+}

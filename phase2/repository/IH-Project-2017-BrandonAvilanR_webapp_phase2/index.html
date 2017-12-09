@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  		crossorigin="anonymous">
+  	<!-- W3 CSS-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<!-- Custom Css -->
+  	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>New York Rent</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header col-md-6">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b>NEW YORK</b></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav menu col-md-6">
+            <li class="active"><a href="#myCarousel" class="toMove">HOME</a></li>
+            <li><a href="#information" class="toMove">INFORMATION</a></li>
+            <li><a href="#map" class="toMove">MAP</a></li>
+            <li><a href=".w3-card-4" class="toMove">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <a href="https://imgur.com/qpoKOo6"><img src="https://i.imgur.com/qpoKOo6.jpg" title="source: imgur.com" /></a>
+          <div class="carousel-caption">
+            <h3>Statue of Liberty</h3>
+            <p>What a wonderful country</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <a href="https://imgur.com/XdPDH94"><img src="https://i.imgur.com/XdPDH94.jpg" title="source: imgur.com" /></a>
+          <div class="carousel-caption">
+            <h3>Time Square</h3>
+            <p>I don't want to go home</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <a href="https://imgur.com/LFnM4Je"><img src="https://i.imgur.com/LFnM4Je.jpg" title="source: imgur.com" /></a>
+          <div class="carousel-caption">
+            <h3>New York</h3>
+            <p>We love the Big Apple!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- INFO -->
+    <div class="jumbotron" id="information">
+      <h2><b>INFORMATION</b></h2>
+      <p>In this place go a explanation that the project</p>
+    </div>
+
+    <!-- MAP -->
+    <div class="row" id="map-container">
+      <div class="col-md-8" id="map"></div>
+      <div class="aside" id="btn-container">
+        <div class="btn-group-vertical">
+          <button type="button" class="btn btn-default" id="btnArt">Art</button>
+          <button type="button" class="btn btn-default" id="btnBeach">Beach</button>
+          <button type="button" class="btn btn-default" id="btnPaths">Cycle Paths</button>
+          <button type="button" class="btn btn-default" id="btnFire">Fire Deparments</button>
+          <button type="button" class="btn btn-default" id="btnMuseum">Museums</button>
+          <button type="button" class="btn btn-default" id="btnBike">Bicycle Parking</button>
+          <button type="button" class="btn btn-default" id="btnSoccer">Soccer Fields</button>
+        </div>
+      </div>
+    </div>
+    
+    <!--  Contact us -->
+    <div class="w3-card-4">
+      <div class="w3-container w3-black">
+        <h3>Contact Us</h3>
+      </div>
+      <div class="w3-container" id="data">
+        <p>
+          <label class="w3-text-black"><b>First Name</b></label>
+          <input class="w3-input w3-border w3-light-grey" name="first" type="text" placeholder="First Name">
+        </p>
+        <p>
+          <label class="w3-text-black"><b>Last Name</b></label>
+          <input class="w3-input w3-border w3-light-grey" name="last" type="text" placeholder="Last Name">
+        </p>
+        <p>
+          <label class="w3-text-black"><b>Email</b></label>
+          <input class="w3-input w3-border w3-light-grey" name="last" type="text" placeholder="Email">
+        </p>
+        <p>
+          <label class="w3-text-black"><b>Phone Number</b></label>
+          <input class="w3-input w3-border w3-light-grey" name="last" type="text" placeholder="Phone Number">
+        </p>
+        <p>
+          <label class="w3-text-black"><b>Description</b></label>
+          <input class="w3-input w3-border w3-light-grey" name="last" type="text" placeholder="Description">
+        </p>
+        <p>
+          <button class="w3-btn w3-black">Register</button>
+        </p>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <p class="copy"> New York &copy; 2017 | Brandon Avilán</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+  	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<!-- importGoogleMaps -->
+  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPs9AAS6xg3-C5ipnD_qCp7OT8npZt6S0&callback=initMap" async defer ></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="index.js"></script>
+
+  </body>
+</html>

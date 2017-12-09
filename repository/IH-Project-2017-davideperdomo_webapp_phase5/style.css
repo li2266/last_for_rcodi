@@ -1,0 +1,77 @@
+#welcome, #usercriteria, #options{
+	width: 100%;
+	min-height: 380px;
+    height: auto;
+    color: white;
+    background-image : url('https://91b6be3bd2294a24b7b5-da4c182123f5956a3d22aa43eb816232.ssl.cf1.rackcdn.com/contentItem-2104336-10111800-ilqvpf63ycs3o-or.png');
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+#header{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    z-index: 5;
+    border-radius: 0px;
+    background-color: grey;
+}
+#welcome{
+    text-align: center;
+    padding-top:5rem;
+}
+#options{
+    min-height: 500px;    
+}
+.optiondiv{
+    background-color: #333;
+    width: 80%;
+    min-height: 80px;    
+}
+#filtersbtns{
+    padding-top: 5px;
+    text-align: center;
+    background-color: #333;
+}
+#googleMapDiv{
+    margin-top: 20px;
+}
+#googleMap{
+    width:100%;
+    height:450px;
+}
+#selectradio, #selectradio2, #inmaxprice,#inminarea{
+    color:black;
+}
+#testbuttons{
+    margin:10px;
+    text-align:center;
+}
+.btn-default {
+    margin-bottom: 5px;
+    border-radius: 0px;
+}
+#firstcont {
+    background-image: url("https://oneclassblog.com/wp-content/uploads/2017/09/DSCN0010_edited-1.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    margin-top: 55px;
+}
+.cont{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.qborder{
+    border-radius: 0px;
+}
+.footer{
+    background-color: black;
+    border-top: 1rem solid grey;
+    margin-top: 3rem;
+    padding: 1rem;
+    color: #00a651;
+    min-height: 100px;
+    height: auto;
+}

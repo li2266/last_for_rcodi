@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>PenePolis</title>
+  </head>
+  <body>
+    <!-- Codigo postal 10012, 10003,10014,10011,10002,10013,10009 -->
+    <!-- API Key Zillow yzNwzWhK2pxEvZSGRkUH-->
+    <!-- Maps Key AIzaSyDb61z8bGfd8c7AlRNks21NwSytDzEhBAs-->
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2" style="background-color: lightgoldenrodyellow;">
+            <div id="selectores">
+                Min Price: <input id="minPrice" inputmode="numeric" min="0"><br>
+                Max Price: <input id="maxPrice" inputmode="numeric" min="0"><br>
+                Security(0 - 100): <input id="sec" inputmode="numeric" min="0" max="100"><br>
+                <button id="updateRequirements" class="btn orange"> Update Requirements</button>
+                <button id="askData" class="btn orange"> Ask Data</button>
+            </div>
+          </div>
+          <div class="col-md-10" style="background-color: cadetblue;">
+            <div id="mapita">
+    
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb61z8bGfd8c7AlRNks21NwSytDzEhBAs&callback=initMap">
+    </script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

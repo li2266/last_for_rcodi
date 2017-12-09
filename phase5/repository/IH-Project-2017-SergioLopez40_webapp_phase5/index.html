@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Are you searching house? Secure and Cheap? Let´s start</h1>
+        </header>
+        <nav>
+            <ul>
+                <div class="botones">
+                   <h1>This is NYU Stern School of Business</h1>
+                   <button price="btn">Search for price</button>
+                   <button security="btn">Search for security</button>
+                   <button best="btn">Best Option</button>
+                   <script src="index.js"></script>
+                </div>
+            </ul>
+        </nav>
+        <article>
+            <div id="googleMap" style="width:101%;height:400px;"></div>
+            <script>
+            function myMap() {
+                var Stern= new google.maps.LatLng(40.729131,-73.995946)
+                var mapProp= {
+                    center: Stern,
+                    zoom:17,
+                };
+                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                var marker= new google.maps.Marker({
+                    position:Stern,
+                    map:map
+                });
+            }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9Way8510vrSGRPGfFWdzeHt3AAHugORc&callback=myMap"></script>
+        </article>
+        <footer>Developed by Sergio Lopez --- UNAL</footer>
+    </div>
+</body>
+</html>

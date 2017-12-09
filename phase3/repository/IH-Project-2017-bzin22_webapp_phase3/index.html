@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seeker App</title>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href = "https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- link to style.css in file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Jquery source code -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  </head>
+  
+  <body background = "http://supernovathemes.com/wp-content/themes/supernovathemes/images/bg/b17.png">
+      <div class = "container">
+           <h1 id = "title">
+             <br>
+             <strong style="position:absolute; TOP:30px; LEFT:180px; WIDTH:50px; HEIGHT:50px"> Seeker </strong>
+           </h1>
+           <img style="position:absolute; TOP:25px; LEFT:10px; WIDTH:150px; HEIGHT:150px" id = "logo" src='https://i.imgur.com/8vnve4h.jpg' />
+           <p class = "userInput1">
+               &nbsp; 
+               &nbsp;
+               <forms id = "userInput1" name = "userInput1">
+                      <input style="position:absolute; TOP:100px; LEFT:510px;" class="Button" id = "button1" type = "button" value = "About Us" onClick = click();>
+                      <input style="position:absolute; TOP:100px; LEFT:625px;" class="Button" id = "button2" type = "button" value = "Meet the Developer" onClick = Click2();>
+                      <input style="position:absolute; TOP:100px; LEFT:815px;" class="Button" id = "button3" type = "button" value = "Explore the App!" onClick = Click3(); ><br>
+               </forms>
+               <br>
+           </p>
+            <h1 id = "title">
+             <br>
+             <strong style="position:absolute; TOP:30px; LEFT:1000px; WIDTH:50px; HEIGHT:50px"> Seeker </strong>
+           </h1>
+           <img style="position:absolute; TOP:25px; LEFT:1285px; WIDTH:150px; HEIGHT:150px" id = "logo" src='https://i.imgur.com/8vnve4h.jpg' />
+           
+           <h2 class = "AboutUsHeading">
+               &nbsp; <!-- &nbsp &nbsp -->
+               About Us
+           </h2>
+           
+           <p class = "AboutUs">
+              Are you a current student moving to New York City? Do you need an affordable place to live and thrive in? Are you worried about decision-making of choosing a new home? Fear not! The Seeker app will make that easy for you!   
+           
+           <h2 class = "DeveloperHeading">
+               &nbsp;
+               Meet the Developer:
+           </h2>
+           
+           <p class = "Developer">
+               &nbsp;
+               IronHacker
+           </p>
+           
+           <h2 class = "ExploreAppHeading">
+               &nbsp;
+               Explore the App!
+           </h2>
+           
+           <p class = "textInput">
+               &nbsp;
+               Drag your mouse to move across the map! <br>
+               &nbsp;
+               Enter a preferred street name find apartments in the proximity! <br>
+               &nbsp; <input id = "text" type = "text" >
+               &nbsp; <input class="Button" id = "button4" type = "button" value = "Go!" onClick = click();>
+           </p>
+           <br>
+           
+           <ul id = 'data'></ul>
+     </div> 
+     <div id = "wrapper">
+         <div class = "chart">
+             <h3 id = "Data Set">
+                 <table id="data-table" border="1" cellpadding="10" cellspacing="0" >
+                    <caption>
+                        Safety Ratings
+                    </caption>
+                    
+                    <thead>
+                        <tr>
+                             <td>&nbsp;</td>
+                             <th scope="col">1</th>
+                             <th scope="col">2</th>
+                             <th scope="col">3</th>
+                             <th scope="col">4</th>
+                             <th scope="col">5</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                             <th scope="row">Location 1</th>
+                             <td>4</td>
+                        </tr> 
+                        <tr>
+                             <th scope="row">Location 2</th>
+                             <td>4</td>
+                        </tr> 
+                    </tbody>
+                 </table>
+             </h3>
+         </div>
+         <script src="index.js"></script>
+     </div>
+     
+    <div id="map">
+        
+    </div>
+    
+    <script src="index.js">
+        
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDehNREVCDoh4zP6Ucy4f2rLPzeFMxxg6Y&callback=initMap"
+    async defer></script>
+        
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>NYH - Find Home</title>
+    <!-- Materialize Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper grey darken-3">
+        <a class="brand-logo">NYHouses</a>
+        <a href="#" data-activates="mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="findHome.html">Find your home</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="findHome.html">Find your home</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="container">
+            <form>
+              <p>
+                <input id="museums" type="checkbox" class="filled-in"/>
+                <label for="museums">Show Museums</label>
+              </p>
+              <p>
+                <input id="galleries" type="checkbox" class="filled-in"/>
+                <label for="galleries">Show Art galleries</label>
+              </p>
+              <p>
+                <input id="fireDpmt" type="checkbox" class="filled-in"/>
+                <label for="fireDpmt">Show Fire Deparments</label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div id="googleMap">
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <ul>
+            <li class="grey-text text-lighten-3"><label>Bogota, Colombia</label></li>
+            <li class="grey-text text-lighten-3"><label>Phone: +57 3103105469</label></li>
+            <li class="grey-text text-lighten-3"><label>Email: adgonzalezo@unal.edu.co</label></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Custom script -->
+    <script type="text/javascript" src="index.js"></script>
+    <!-- GoogleMaps API -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPPknNm1pkrrE_pczjh8k6P7sFNktuXaA&callback=initMap">
+    </script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- Materialize Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  </body>
+</html>

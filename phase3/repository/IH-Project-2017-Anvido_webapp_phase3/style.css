@@ -1,0 +1,70 @@
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    width: 100%;
+    height: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    height: 0;
+}
+
+main {
+  flex: 1 0 auto;
+  width: 100%;
+  height: 0;
+}
+/*
+#app, img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+/*#app h3, #app a{
+  filter: none
+}*/
+
+h3{
+  font-weight: bold;
+}
+
+
+.gradient{
+  position: relative;
+  float: left;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient figcaption{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  width: 100%;
+  height: 100%;
+}
+
+.gradient div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gradient img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.brand-logo{
+  font-family: "Bad Script";
+  margin-left: 16px;
+}

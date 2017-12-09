@@ -1,0 +1,18 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+    background: #add8e6;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+h1 {
+    text-align: center;
+    color: #2f4f4f;
+}
+
+ #map {
+        height: 50%;
+      }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>¡NY!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 align=center style="font-size:700%; font-family:verdana; color:black;">New York!</h1>
+    </div>
+    <div id="contenedor1" class= container-fluid>    
+        <div class="row">
+            <div class="col-md-6" style="width:50%; height:450px; background:#C4C5FF">
+                <h1 style="color:black;">New York City!</h1>
+                <p style="color:#525155;">New York is the most populated city of the homonymous state and of the 
+                United States of America, and the second largest urban concentration of the 
+                American continent, after Mexico City. New York City is among the largest 
+                and most populated urban agglomerations in the world.</p><br/>
+                <h1 style="color:black;">What are you looking for?</h1>
+                <p style="color:#525155;">  - Parks and Recreation<br/>
+                  - Location of Services<br/>
+                  - Schools<br/>
+                  - Transportation<br/>
+                  - Street lighting<br/>
+                  - Police Station<br/>
+                  - Fire Station<br/>
+                  - Crime Rates<br/>
+                  - Real State Prices<br/>
+                  - Criminal Registry<br/>
+                </p><br/>
+            </div>
+            <div class="col-md-6 temp">
+                <div id="map"></div>
+                <script>
+                    function initMap(){
+                        var location ={lat: 40.712775, lng: -74.005973}
+                        var map = new google.maps.Map(document.getElementById("map"), {
+                            zoom: 12,
+                            center: location
+                        });
+                        var marker = new google.maps.Marker({
+                        position: location,
+                        map: map
+                        });
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBciy5QDrNH-CzA3kfhvAL8MHHTFpVb6hw&callback=initMap">
+    </script>
+</body>
+</html>

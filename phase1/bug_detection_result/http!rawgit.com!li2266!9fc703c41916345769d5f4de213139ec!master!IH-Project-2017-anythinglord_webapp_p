@@ -1,0 +1,41 @@
+{
+  "js": {
+    "errors": [
+      "TypeError: null is not an object (evaluating 'document.getElementById(\"btn\").addEventListener')"
+    ],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "39",
+        "errorType": "parse-error",
+        "context": "footer",
+        "errorSubtype": "exp",
+        "skippedString": "10px,0",
+        "type": "operator",
+        "message": "Value Error :  padding (nullbox.html#propdef-padding)\n        \n                                , is an incorrect operator :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-anythinglord_webapp_phase1/style.css"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "24",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-anythinglord_webapp_phase1/style.css"
+      }
+    ]
+  },
+  "html": [
+    "error: Element “title” must not be empty.",
+    "info: Article lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all articles.",
+    "info: Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections.",
+    "error: Bad value “” for attribute “src” on element “img”: Must be non-empty.",
+    "error: Bad value “5%” for attribute “width” on element “img”: Expected a digit but saw “%” instead.",
+    "error: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.",
+    "info: Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections."
+  ]
+}

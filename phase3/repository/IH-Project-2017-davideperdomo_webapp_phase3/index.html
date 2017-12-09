@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<?php
+header('Access-Control-Allow-Origin: *'); 
+?>
+<html>
+<head>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <title> RENTALAPP </title>
+</head>
+<body>
+    <div id="header">
+        <!--Navbar taken from bootstrap-->
+        <nav id="barnav" class="navbar">
+            <nav class="navbar navbar-inverse qborder" style="height: 52px;">
+                <div class="navbar-header ">
+                    <button type="button" class="navbar-toggle collapsed"  style="background-color: #333;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#firstcont">RENTALAPP</a>
+                </div>                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #333;">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#"><span class="glyphicon glyphicon-pencil"></span></a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://www.stern.nyu.edu/" target="_blank">Stern NYU</a></li>
+                    <li><a href="#usercriteria">Filters</a></li>  
+                    <li><a href="#googleMap">Map</a></li> 
+                    <li><a href="stat.html">Statistics</a></li> 
+                    <li class="dropdown" >
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menú<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Options</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">info</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+        </nav>
+    </div>
+  
+
+    <div class="container-fluid ">
+      
+    <div class="row " id="firstcont">
+        <div class="col-md-6">
+            <div id="welcome">
+                <h1>Welcome to NYU Stern School of Bussines!</h1>
+                <p>We show you the best options to rent near the university </p>
+                <div>
+                    <button type="button" class="btn btn-default buttons">SAFEST OPTION</button>
+                    <button type="button" class="btn btn-default buttons">CHEAPEST OPTION</button>
+                </div> 
+                <div>
+                    <a href="#googleMap">
+                        <button type="button" class="btn btn-default buttons" id="showall" >SHOW ALL HOUSES
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="usercriteria">
+                <h2>Filters</h2>
+                <div  class="cont">
+                    <div class="row">
+                        <div class="col-md-6">
+                                <label>Máx.Distance to University:</label>
+                            </div>
+                            <div class="col-md-6">
+                                <select id="selectradio">
+                                    <option>0.01</option>
+                                    <option>0.02</option>
+                                    <option>0.03</option>
+                                    <option>0.04</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                <div  class="cont">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Máx.Distance to Stations:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <select id="selectradio2">
+                                <option>0.01</option>
+                                <option>0.02</option>
+                                <option>0.03</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div  class="cont">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Max. rent price (dollars):</label>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <input type="text" name="maxprice" value="1000" 
+                                    id="inmaxprice">    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div  class="cont">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Min. house area (m^3):</label>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <input type="text" name="minarea" value="50"
+                                    id="inminarea">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div  class="cont">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Number of parks in radius:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="range" min="1" max="100" value="50">
+                        </div>
+                    </div>
+                </div>
+                <div  class="cont">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Number of Restaurants/bars in radius:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="range" min="1" max="100" value="50">
+                        </div>
+                    </div>
+                </div>
+                <div id="testbuttons">
+                    <button type="button" class="btn btn-default" id="testairq">TEST AIRQ</button>
+                    <button type="button" class="btn btn-default" id="testweather">TEST WEATHER</button>
+                    <button type="button" class="btn btn-default" id="testzillow">TEST ZILLOW</button>
+                    <button type="button" class="btn btn-default" id="testmap">UPDATE MAP</button>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-9">            
+            <div id="googleMapDiv">
+                <div id="filtersbtns">
+                    <button type="button" class="btn btn-default" id="houses">HOUSES</button>
+                    <button type="button" class="btn btn-default" id="crimes">CRIMES</button>
+                    <button type="button" class="btn btn-default" id="atm">ATM</button>
+                    <button type="button" class="btn btn-default" id="firest">FIRE</button>
+                    <button type="button" class="btn btn-default" id="hospitals">HOSPITALS</button>
+                </div>
+                <div id="googleMap"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div id="options">
+                <h2>List of options</h2>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+  
+    <!--Footer-->
+    <footer class="footer">
+                        <div class="col-md-12"> 
+                            <ul class="footer-nav">
+                                <li> <a href="https://www.facebook.com/davidpk96" target="_blank"> Facebook 
+                                </a> </li>
+                                <li> <a href="https://twitter.com/"> Twitter </a> </li>
+                                <li> <a href="https://plus.google.com/"> Google+ </a> </li>
+                            </ul>
+                        </div>
+    </footer>
+                
+  
+    <!-- Google maps API-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrGMXhfq_pSa32u-hDAhmpXFAwzrvd11Y" async defer>        
+    </script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" 
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" 
+        crossorigin="anonymous"></script>
+    
+    <!--d3-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>    
+    <!-- custom script -->
+    <script type="text/javascript" src="index.js"></script>  
+
+</body>
+</html>

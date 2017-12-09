@@ -1,0 +1,21 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [],
+    "warnings": []
+  },
+  "html": [
+    "error: Attribute “name” not allowed on element “meta” at this point.",
+    "error: Element “meta” is missing one or more of the following attributes: “itemprop”, “property”.",
+    "info: Consider avoiding viewport values that prevent users from resizing documents.",
+    "error: Attribute “charset” not allowed on element “meta” at this point.",
+    "error: Element “meta” is missing one or more of the following attributes: “content”, “itemprop”, “property”.",
+    "error: Element “style” not allowed as child of element “body” in this context. (Suppressing further errors from this subtree.)",
+    "error: Stray end tag “head”.",
+    "error: Start tag “body” seen but an element of the same type was already open."
+  ]
+}

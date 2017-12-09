@@ -1,0 +1,26 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+#titulo{
+  font-family: Times, sans-serif;
+  color: #FFFFFF;
+}
+#menu{
+  background-color: grey;
+}
+#lateral{
+  background-color: grey;
+}
+.container {
+    width: 100%;
+}
+header{
+  background-color: #000000;
+}
+#map {
+        height: 100%;
+      }
+body{
+  background-color: #FFFFF0;
+}

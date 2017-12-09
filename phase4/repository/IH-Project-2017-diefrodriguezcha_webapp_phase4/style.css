@@ -1,0 +1,64 @@
+body {
+    color: #444;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+}
+
+.secondColumn{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.container button{
+  position: relative;
+}
+
+.homeNavbar{
+  background-color: #002868;
+  color: white;
+}
+
+.panelHeader{
+  background-color: #002868;
+  color: white;
+  height: 70px;
+}
+
+.infoPanel{
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-color: black;
+}
+
+#currentWeatherList{
+  font-size: 16px;
+}
+
+.weatherLogo{
+  width: 150px;
+  height: 150px;
+  float: left;
+}
+
+.navLink{
+  color: white;
+  font-size: 20px;
+}
+
+#mapContainer{
+    width: 100%;
+    height: 500px;
+}
+
+.schoolBtn, .schoolBtn:hover{
+  color: white;
+  background-color: #bf0a30;
+  font-size: 15px;
+  margin: 15px 10px;
+}
+
+.div-inline{
+    display: inline-block;
+}

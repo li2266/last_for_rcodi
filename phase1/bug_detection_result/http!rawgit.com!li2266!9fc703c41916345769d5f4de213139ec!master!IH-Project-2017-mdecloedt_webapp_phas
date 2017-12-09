@@ -1,0 +1,26 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "1",
+        "errorType": "parse-error",
+        "errorSubtype": "skippedString",
+        "skippedString": "Lexical error at line 4, column 5.  Encountered: \"{\" (123), after : \"<h2 \"",
+        "type": "generator.unrecognize",
+        "message": "Parse Error",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-mdecloedt_webapp_phase1/index.html"
+      }
+    ],
+    "warnings": []
+  },
+  "html": [
+    "error: Element “title” must not be empty.",
+    "error: “style” element between “head” and “body”.",
+    "error: Cannot recover after last error. Any further errors will be ignored."
+  ]
+}

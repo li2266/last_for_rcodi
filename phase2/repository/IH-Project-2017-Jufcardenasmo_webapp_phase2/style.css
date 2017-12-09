@@ -1,0 +1,22 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+
+
+#map {
+    height: 100%;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+curl -H "token:<token>" "url"
+$.ajax({ url:<url>, data:{<data>}, headers:{ token:<token> } })

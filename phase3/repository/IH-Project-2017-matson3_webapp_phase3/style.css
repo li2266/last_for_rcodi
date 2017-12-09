@@ -1,0 +1,23 @@
+#map {
+    height : 100%;
+	width : 60%;
+	float : left;
+}
+
+#nycClimate {
+	height : 100%;
+	width: 40%;
+	overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+body, p, h1, h2, h3, h4, h5 {
+	color : #ffffff;
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>University Residences</title>
+    <style>
+        *{ margin: 0; padding: 0; }
+            html, body, #map{
+                width: 100%;
+                height: 100%;
+            }
+            #formContent{
+                position: relative;
+                top: -100%;
+                width: 70%;
+            }
+            #titulo{
+                width: 100%;
+                background  : rgba(255,114,69, .8);
+                border-radius: 5px; 
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+
+            #opciones{
+                position: relative;
+                top: -100%;
+                width: 20%;
+                margin-left:80%; 
+                padding: 10px;
+                padding-top: 25px;
+                color: #fff;
+            }
+            
+            #opciones #Preferencias{
+                padding: 0px;
+                padding-top: 10px;
+                margin: 0px;
+                background: rgba(13,0,144,.7);
+                border-radius: 10px;
+                padding-bottom: 20px;
+            }
+            
+            #opciones #Preferencias #precios{
+                margin: 1px;
+            }
+            #opciones #Preferencias #simbolo1{
+                background: #fff;
+                color: darkgrey;
+                width: 50px;;
+                height: 100%;   
+            }
+            #opciones #Preferencias #Min, #opciones #Preferencias #Max{
+                border-radius: 2px;
+                border: none;
+                height: 100%;
+                width: 100%;
+            }
+                
+        #Search{
+            margin-top: 10px;
+            background: rgb(255,114,69);
+            width: 50%;
+            border: 1px solid rgba(255,114,69, .8);
+            border-radius: 5px;
+            outline: none;
+        }
+        
+        #Search:active{
+            background: #FF855F; 
+            
+        }
+        
+    </style>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-   PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="fonts/style.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnkjJUF4kPIiGVyJbgH1UKI-xPffbsyZs&callback=initMap"></script>
+      <script type="text/javascript">
+        function testjson(){
+            //alert("inside testjson");
+            jsontest = $.ajax({
+                type: 'GET',
+                url:  'https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&locationid=ZIP:28801&startdate=2010-05-01&enddate=2010-05-01',
+
+                //you can use different data-set values.
+                headers: {
+                    Token: 'NEOFVbmguewhssyxIEsowGhirbKwsfIB'//example:'kxhfoJOtnEuxSNnMGMMSEITkmcsAFmFT'
+                },
+                //  async: false,
+                dataType: 'json',
+                success: function (data) {
+                    var len = data.length;
+                    var txt = "";
+                    alert(JSON.stringify(data));
+                    jsontest = data;
+                    console.log("data is: " + data);
+        //            var response = JSON.parse(data);
+        //            if(len > 0){
+        //                for(var i=0;i<len;i++){
+        //                    if(data[i].city && data[i].cStatus){
+        //                        txt += "<tr><td>"+data[i].city+"</td><td>"+data[i].cStatus+"</td></tr>";
+        //                    }
+        //                }
+        //                if(txt != ""){
+        //                    $("#table").append(txt).removeClass("hidden");
+        //                }
+        //            }
+                },failure: function(){
+                    alert("ajax failed");
+                }
+            });
+            console.log(jsontest);  
+            //console.log(jsontest[0]);
+        }
+        function initMap() {
+        // Styles a map in night mode.
+        var latlng = new google.maps.LatLng(40.729645, -73.996609);
+        var map;
+        var bounds = new google.maps.LatLngBounds();
+        var mapOptions = {
+            mapTypeId: 'roadmap'
+        };
+        // Display a map on the web page
+        map = new google.maps.Map(document.getElementById("map"));
+        
+            
+        var markers = [
+            [-73.996609 , 40.729645, 'Brooklyn Museum, U'],
+            [-74.01375579519738, 40.703816216918035, 'Alexander Hamilton U.S. Custom House'],
+            [-74.06303178855111, 40.615120837755356, 'Alice Austen House Museum'],
+            [-73.94729768541572, 40.833853500753314, 'American Academy of Arts and Letters'],
+            [-73.97810302110001, 40.76162497138548 , 'American Folk Art Museum'],
+            [-74.0396848374904, 40.69905626244391, 'American Immigration History Center'],
+            [-73.97364816377815, 40.78082623457644, 'American Museum of Natural History'],
+            [-74.00701187920873, 40.72352659262823, 'American Numismatic Society'],
+            [-73.96597045258356, 40.76882422895272, 'Americas Society'],
+            [-73.99963036903092, 40.721127449476676, 'Anne Frank Center USA'],
+            [-73.96428395726613, 40.76983378265351, 'Asia Society'],
+            [-74.00693426094169, 40.72557180583998, 'New York City Fire Museum'],
+            [-73.87974874003561, 40.87823644134894, 'Bronx Historical Society & Musem'],
+            [-73.99234604790877, 40.72765741724545, 'Merchants House Museum'],
+            [-73.98975703078781, 40.7276767876997, 'Ukrainian Museum'],
+            [-73.99272306225821, 40.72495970416682, 'East Village History Project'],
+            [-73.99670247583494, 40.7247979456424, 'Museum of Comic and Cartoon Art (MoCCA)'],
+            [-73.97442477664784, 40.68524514383062, 'Museum of Contemporary African Diasporan Arts (MoCADA)'],
+            [-73.99283879250072, 40.722346701845474, 'New Museum of Contemporary Art'],
+            [-73.99779152534921, 40.74002038014153, 'Rubin Museum of Art'],
+            [-73.98904085250442, 40.738642014511264, 'Theodore Roosevelt Birthplace'],
+            [-73.98224232560065, 40.73875919099525, 'School of Visual Arts Museum'],
+            [-73.96273074561996, 40.773800871637576, 'O reilly William & Co Ltd'],
+            [-73.99703425892838, 40.731995513546245, 'Marcus Curt Gallery Inc'],
+            [-74.00394434300469, 40.734595236627335, 'New York Gallery Tours'],
+            [-74.0095084934269, 40.70983827872425, 'New York Gallery Tours'],
+            [-74.00074603486665, 40.72369074954108, 'Mimi Ferzt Inc'],
+            [-74.00815285200781, 40.715235074421756, 'Nyabinghi Africian Gift Shop'],
+            [-74.00187734226864, 40.71809470427269, 'Art In Genera'],
+            [-73.99609362076046, 40.73640266876522, 'Tenri Cultural Institute']
+        ];
+        var infoWindowContent = [
+            ['<div class="info_content">' +
+            '<h4>New York University Stern School of Business</h4>' + '<a href="https://garzota.leadpages.co/nyu/?gclid=EAIaIQobChMI8rvFp5DR1wIVEcpkCh0orgVPEAAYASAAEgJAs_D_BwE" target="_blank">site of University</a>' + '</div>'],            
+            ['<div class="info_content">' +
+            '<h4>Alexander Hamilton U.S. Custom House</h4>' +
+            '<h5>Tel: (212) 514-3700</h5>' + '<a href="https://www.gsa.gov/historic-buildings/alexander-hamilton-us-custom-house-new-york-ny" target="_blank">site Alexander Hamilton U.S. Custom House</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Alice Austen House Museum</h4>' +
+            '<h5>Tel: (718) 816-4506</h5>' + '<a href="http://www.aliceausten.org/" target="_blank">site Alice Austen House Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>American Academy of Arts and Letters</h4>' +
+            '<h5>Tel: (212) 368-5900</h5>' + '<a href="http://www.artsandletters.org/" target="_blank">site American Academy of Arts and Letters</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>American Folk Art Museum/</h4>' +
+            '<h5>Tel: (212) 265-1040</h5>' + '<a href="http://www.folkartmuseum.org/" target="_blank">site American Folk Art Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>American Immigration History Center</h4>' +
+            '<h5>Tel: (212) 363-3200</h5>' + '<a href="http://www.ellisisland.org/" target="_blank">site American Immigration History Center</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>American Museum of Natural History</h4>' +
+            '<h5>Tel: (212) 769-5100</h5>' + '<a href="http://www.amnh.org/" target="_blank">site of Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>American Numismatic Society</h4>' +
+            '<h5>Tel: (212) 571-4470</h5>' + '<a href="http://www.numismatics.org/" target="_blank">site American Folk Art Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Americas Society</h4>' +
+            '<h5>Tel: (212) 249-8950</h5>' + '<a href="http://as.americas-society.org/" target="_blank">site of American Numismatic Society</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Anne Frank Center USA</h4>' +
+            '<h5>Tel: (212) 431-7993</h5>' + '<a href="http://www.annefrank.com/" target="_blank">site American Folk Art Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Asia Society</h4>' +
+            '<h5>Tel: (212) 288-6400</h5>' + '<a href="http://www.asiasociety.org/" target="_blank">site of Anne Frank Center USA</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>New York City Fire Museum</h4>' +
+            '<h5>Tel: (212) 691-1303</h5>' + '<a href="http://www.nycfiremuseum.org" target="_blank">site of Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Bronx Historical Society & Musem</h4>' +
+            '<h5>Tel: (718) 881-8900</h5>' + '<a href="http://www.bronxhistoricalsociety.org/" target="_blank">site of Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Merchants House Museum</h4>' +
+            '<h5>Tel: (212) 777-1089</h5>' + '<a href="http://www.merchantshouse.com/" target="_blank">site of Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Ukrainian Museum</h4>' +
+            '<h5>Tel: (212) 228-0110</h5>' + '<a href="http://www.ukrainianmuseum.org/" target="_blank">site of Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>East Village History Project</h4>' +
+            '<h5>Tel: (212) 614-8702</h5>' + '<a href="http://leshp.org/" target="_blank">site if East Village History Project</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Museum of Comic and Cartoon Art (MoCCA)</h4>' +
+            '<h5>Tel: (212) 254 3511</h5>' + '<a href="http://www.moccany.org/" target="_blank">site of Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Museum of Contemporary African Diasporan Arts (MoCADA)</h4>' +
+            '<h5>Tel: (718) 230-0492</h5>' + '<a href="http://www.mocada.org/" target="_blank">site of Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>New Museum of Contemporary Art</h4>' +
+            '<h5>Tel: (212) 219-1222</h5>' + '<a href="http://www.newmuseum.org/" target="_blank">site of Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Rubin Museum of Art</h4>' +
+            '<h5>Tel: (212) 620-5000</h5>' + '<a href="http://www.rmanyc.org/" target="_blank">site of Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Theodore Roosevelt Birthplace</h4>' +
+            '<h5>Tel: (212) 260-1616</h5>' + '<a href="http://www.nps.gov/thrb/index.htm" target="_blank">site of Theodore Roosevelt Birthplace</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>School of Visual Arts Museum</h4>' +
+            '<h5>Tel: (212) 592-2145</h5>' + '<a href="http://www.schoolofvisualarts.edu/sa/index.jsp?sid0=201&page_id=482&event_id=865" target="_blank">site of Museum</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>O reilly William & Co Ltd</h4>' +
+            '<h5>Tel: (212) 396-1822</h5>' + '<a href="http://www.nyc.com/arts__attractions/oreilly_william__co_ltd.806/whats_nearby.aspx" target="_blank">site of Galleries</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Marcus Curt Gallery Inc</h4>' +
+            '<h5>Tel: (212) 226-3200</h5>' + '<a href="http://www.curtmarcusgallery.com/" target="_blank">site of Galleries</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>New York Gallery Tours</h4>' +
+            '<h5>Tel: (212) 946-1548</h5>' + '<a href="http://www.nygallerytours.com/" target="_blank">site of Galleries</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Tower Art Gallery</h4>' +
+            '<h5>Tel: (212) 571-0100</h5>' + '<a href="http://www.nelso.com/us/place/50980/" target="_blank">site of Galleries</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Mimi Ferzt Inc</h4>' +
+            '<h5>Tel: (212) 343-9377</h5>' + '<a href="http://www.mimiferzt.com/" target="_blank">site of Mimi Ferzt Inc</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Nyabinghi Africian Gift Shop</h4>' +
+            '<h5>Tel: (212) 566-3336</h5>' + '<a href="http://www.nyc.com/arts__attractions/nyabinghi_africian_gift_shop.136/editorial_review.aspx" target="_blank">site Nyabinghi Africian Gift Shop</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Art In Genera</h4>' +
+            '<h5>Tel: (212) 219-0473</h5>' + '<a href="http://www.artingeneral.org/" target="_blank">site Art In Genera</a>' + '</div>'],
+            ['<div class="info_content">' +
+            '<h4>Tenri Cultural Institute</h4>' +
+            '<h5>Tel: (212) 645-2800</h5>' + '<a href="http://www.tenri.org/" target="_blank">site of Tenri Cultural Institute</a>' + '</div>']
+        ]; 
+                    
+        var infoWindow = new google.maps.InfoWindow(), marker, i;       
+        for( i = 0; i < markers.length; i++ ) {
+            var position = new google.maps.LatLng(markers[i][1], markers[i][0]);
+            bounds.extend(position);
+            if(i==0){
+                marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: markers[i][2]
+            });
+
+            }else if(i<22){
+              marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    scale: 8, //tamaño
+                    strokeColor: 'rgba(13,0,144,.7)', //color del borde
+                    strokeWeight: 2, //grosor del borde
+                    fillColor: 'rgba(255,114,69, .8)', //color de relleno
+                    fillOpacity:1// opacidad del relleno
+                },
+                title: markers[i][2]
+            });
+  
+            }else{
+              marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    scale: 8, //tamaño
+                    strokeColor: 'rgba(255,114,69, .8)', //color del borde
+                    strokeWeight: 2, //grosor del borde
+                    fillColor: 'rgba(13,0,144,.7)', //color de relleno
+                    fillOpacity:1// opacidad del relleno
+                },
+                title: markers[i][2]
+            });
+  
+            }
+            
+            // Add info window to marker    
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    infoWindow.setContent(infoWindowContent[i][0]);
+                    infoWindow.open(map, marker);
+                }
+            })(marker, i));
+        
+
+            // Center the map to fit all markers on the screen
+            map.fitBounds(bounds);
+        }
+         var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+            this.setZoom(13);
+             this.setCenter(latlng);
+            google.maps.event.removeListener(boundsListener);
+        });
+      }
+    google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+        <header class="container-fluid" id="formContent">
+            <div class="container-fluid" id="titulo">
+                <center><h1>University Residences to the Best Comfort</h1></center>
+            </div>
+        </header>
+        <div id="opciones">
+            <div id="Preferencias">
+                <center><h4>Preferences</h4></center>
+                <center><h6>Property Cost</h6></center>
+                <section class="main row" id="precios">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <input type="text" placeholder=" Min" id="Min">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="preciosMax">
+                        <input type="text" placeholder=" Max" id="Max">
+                    </div>
+                </section>
+                <div class="container-fluid" id="ConInclude">
+                    <br>
+                    <center><h5>Include</h5></center>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Parks and recreation</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Services pay</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Schools</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Transport</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Main routes</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Delinquency</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Police</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Firefighters</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Real estate</label></div>
+                </div>
+                <center><input type="button" value="Search" id="Search" onclick="testjson()"></center>
+            </div>
+        </div>  
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnkjJUF4kPIiGVyJbgH1UKI-xPffbsyZs&callback=initMap" async defer></script>
+    <script type="application/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="application/javascript"></script>
+</body>
+</html>

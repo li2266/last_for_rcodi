@@ -1,0 +1,32 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "7",
+        "errorType": "parse-error",
+        "context": "html, body",
+        "errorSubtype": "unrecognized",
+        "skippedString": "bcv \n        margin: 0",
+        "type": "generator.unrecognize",
+        "message": "Parse Error",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase3/index.html"
+      }
+    ],
+    "warnings": []
+  },
+  "html": [
+    "error: Attribute “name” not allowed on element “meta” at this point.",
+    "error: Element “meta” is missing one or more of the following attributes: “itemprop”, “property”.",
+    "info: Consider avoiding viewport values that prevent users from resizing documents.",
+    "error: Attribute “charset” not allowed on element “meta” at this point.",
+    "error: Element “meta” is missing one or more of the following attributes: “content”, “itemprop”, “property”.",
+    "error: Element “style” not allowed as child of element “body” in this context. (Suppressing further errors from this subtree.)",
+    "error: Stray end tag “head”.",
+    "error: Start tag “body” seen but an element of the same type was already open."
+  ]
+}

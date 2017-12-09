@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title></title>
+    
+    <!--Bootstrap import-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	 <!--Local CSS import-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+    
+    <nav class='navbar' role="navigation"><!--Navigation bar-->
+        <a href="#transparent"><button type="button" class="btn btn-primary" style="float:left" >HOME</button></a>
+        <a href=""><button type="button" class="btn btn-primary" >LIST</button></a>
+        <a href="#salto1"><button type="button" class="btn btn-primary" >MAP</button></a>
+        <a href=""><button type="button" class="btn btn-primary" >CONFIG</button></a>
+    </nav>
+    
+    <div id="transparent"></div> <!--Transparent space-->
+    
+    <div id="title1"> <!--Welcome div-->
+        <H1>WELCOME</H1>
+        <H5 id="salto1">Please scroll down</H5>
+        <br>
+    </div>
+    <div class="divisions" id="mapdiv"><H1>MAP</H1></div>
+    <div id="map"></div><!--Map div-->
+    
+    
+    
+    
+    
+
+    <!-- jQuery import -->
+	<script
+	 src="https://code.jquery.com/jquery-3.2.1.min.js"
+	 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous">
+	</script>
+	
+	<!-- Custom JS import-->
+	<script type="text/javascript" src="index.js">
+	</script>
+	
+	<!-- Google maps import-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAGkaJvssCLsvacSAWbgjsBNgftcK_U3I&callback=initMap"
+    async defer></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": [
+      "jQuery.Deferred exception: Can't find variable: google http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/js/googlemap.js:243:18\nj@https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js:2:59428\nhttps://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js:2:89673 undefined"
+    ]
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "118",
+        "errorType": "parse-error",
+        "context": "li .resulttitle",
+        "errorSubtype": "exp",
+        "skippedString": "0",
+        "type": "noexistence-at-all",
+        "message": "Property margini-top doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "121",
+        "errorType": "parse-error",
+        "context": "li .resultprice",
+        "errorSubtype": "exp",
+        "skippedString": "280",
+        "type": "value",
+        "message": "Value Error :  font-weight (nullfonts.html#propdef-font-weight)\n        \n                                280 is not a font-weight value :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "124",
+        "errorType": "parse-error",
+        "context": "li .resultaddr",
+        "errorSubtype": "exp",
+        "skippedString": "80",
+        "type": "value",
+        "message": "Value Error :  font-weight (nullfonts.html#propdef-font-weight)\n        \n                                80 is not a font-weight value :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "19",
+        "errorType": "parse-error",
+        "errorSubtype": "exp",
+        "skippedString": "hidden",
+        "type": "noexistence-at-all",
+        "message": "Property scroll doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/index.html"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "11",
+        "level": "2",
+        "message": "Redefinition of margin-bottom",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "11",
+        "level": "2",
+        "message": "Redefinition of margin-left",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "11",
+        "level": "2",
+        "message": "Redefinition of margin-top",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "11",
+        "level": "2",
+        "message": "Redefinition of margin-right",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "16",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "24",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "31",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "56",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "68",
+        "level": "2",
+        "message": "Redefinition of align-items",
+        "context": ".filter-input-container",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "113",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "118",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "162",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "202",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "225",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "296",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/style.css"
+      },
+      {
+        "line": "21",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/index.html"
+      },
+      {
+        "line": "24",
+        "level": "2",
+        "message": "font-family: You are encouraged to offer a generic family as a last alternative",
+        "context": "#autoXML945986945986",
+        "type": "no-generic-family",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/index.html"
+      },
+      {
+        "line": "25",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-littlex2015_webapp_phase4/index.html"
+      }
+    ]
+  },
+  "html": [
+    "error: Attribute “cols” not allowed on element “table” at this point.",
+    "error: Attribute “rows” not allowed on element “table” at this point.",
+    "error: “td” start tag in table body.",
+    "error: The “width” attribute on the “td” element is obsolete. Use CSS instead.",
+    "error: The “width” attribute on the “td” element is obsolete. Use CSS instead."
+  ]
+}

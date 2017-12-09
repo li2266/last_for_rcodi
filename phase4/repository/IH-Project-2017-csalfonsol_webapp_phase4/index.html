@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		  <!-- Custom Css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset = "UTF-8">
+	<title> NYU rent assistant </title>
+</head>
+
+<body>
+	<header class="main-header"> <!-- Encabezado principal -->
+		 <h1>Hello, ¡Welcome to NYU Stern School of Business! </h1>
+		 <p>We are proud to help you find the best place for live while you reach your dreams</p>
+	</header>
+
+	<div class="black-separator"></div>
+
+
+		 <div class="container-fluid">
+			<div class="row"> <!-- Fila con tres contenedores -->
+				<div class="col-md-12 col-lg-7" id="googleMapContainer"> <!-- Columna que contiene el mapa -->
+				</div>
+					<div class="col-md-2 col-lg-1" id="buttonsContainer"> <!-- Columna de botones sobre el mapa -->
+						<div class="user-Buttons">
+							<input id="hideButton" type="button" class="btn btn-primary" value="Hide Map" onclick="mapOpacity()"></input>
+							<input id="centerButton" type="button" class="btn btn-primary" value="Go to NYU" onclick="center()"></input>
+						
+						</div>
+					</div>
+
+				<div class="col-md-10 col-lg-4 no-padding"> <!-- Columna interaccion con usuario -->
+					<div class="user-header">
+							 <p>First, let's see some houses/apartments you could rent near the university...</p>
+							 <input type="button" class="btn btn-primary" value="Show places" id="showButton" onclick="loadPlaces()"></input>
+					</div>
+				</div>
+
+			</div>
+	  </div>
+
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- Custom JS -->
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="zillow.js"></script>
+	<!-- Google Maps Api -->
+	<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4Iw8DCVCgc3UaxE71pBZa89irkFX4HxE&callback=initMap">
+  </script>
+</body>
+</html>

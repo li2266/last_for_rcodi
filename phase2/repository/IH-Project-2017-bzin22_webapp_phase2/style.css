@@ -1,0 +1,64 @@
+body {
+    color: #732;
+    font-family: Arial, sans-serif;
+    background: teal;
+}
+/* button animations */
+#button:hover {
+	background: #732;
+	border: 2px solid green;
+	color: black;
+	cursor: pointer;
+
+}
+
+#button {
+	background: green;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .5s;
+	margin-top: 15px;
+}
+#map {
+    height: 100%;
+    width: 75%;
+}
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    background: teal;
+}
+.DeveloperHeading {
+    text-align: left;
+}
+.ExploreAppHeading {
+    text-align: left;
+}
+.Developer {
+    color: black;
+    text-align: left;
+}
+.textInput {
+    color: black;
+    text-align: left;
+}
+.AboutUsHeading {
+    text-align: left;
+}
+.AboutUs {
+  color: black;
+  text-align: center;
+}
+.userInput1 {
+    text-align: center;
+}
+html, body {
+    height: 80%;
+    margin: 0;
+    padding: 0;
+}

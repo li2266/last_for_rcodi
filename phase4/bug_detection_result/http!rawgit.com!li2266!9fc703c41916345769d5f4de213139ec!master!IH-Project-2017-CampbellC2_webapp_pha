@@ -1,0 +1,37 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [],
+    "warnings": [
+      {
+        "line": "5",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase4/index.html"
+      },
+      {
+        "line": "11",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase4/index.html"
+      }
+    ]
+  },
+  "html": [
+    "error: Start tag “head” seen but an element of the same type was already open.",
+    "error: Element “acticle” not allowed as child of element “section” in this context. (Suppressing further errors from this subtree.)",
+    "error: The “align” attribute on the “h1” element is obsolete. Use CSS instead.",
+    "error: The “align” attribute on the “h2” element is obsolete. Use CSS instead.",
+    "error: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.",
+    "error: End tag for  “body” seen, but there were unclosed elements.",
+    "error: Unclosed element “div”.",
+    "error: Unclosed element “acticle”.",
+    "error: Unclosed element “section”."
+  ]
+}

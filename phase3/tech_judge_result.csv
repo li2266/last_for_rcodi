@@ -1,0 +1,109 @@
+username,hack id,repo name,time,climate dataset,extra dataset used,extra dataset list,google api,location,using JS,mashup,readme,good readme,chart,if use library,library list
+mdecloedt,honors0,IH-Project-2017-mdecloedt_webapp_phase3,Wed Nov 15 19:18:47 2017,1,2,"Required Weather API, Zillow Home Value Searching API, ",1,1,1,0,1,1,1,1,"jquery,bootstrap,angular,"
+Jordan-Loeser,honors0,IH-Project-2017-Jordan-Loeser_webapp_phase3,Wed Nov 15 19:18:47 2017,1,2,"Required Weather API, Zillow Home Value Searching API, ",1,1,1,0,1,1,1,1,"jquery,d3,"
+LukasMMarinovic,honors0,IH-Project-2017-LukasMMarinovic_webapp_phase3,Wed Nov 15 19:18:47 2017,1,1,"Required Weather API, ",1,0,1,1,0,0,1,1,"jquery,d3,bootstrap,animate,"
+whipplem123,honors0,IH-Project-2017-whipplem123_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,1,1,1,1,1,"three,"
+SionHu,honors0,IH-Project-2017-SionHu_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+jmamaril25,honors0,IH-Project-2017-jmamaril25_webapp_phase3,Wed Nov 15 19:18:47 2017,1,7,"Required Weather API, New York State Career Centers, New York City Farmers Markets, School Safety Report, Zillow Home Value Searching API, New York City Museums, Air Quality, ",1,1,1,1,1,1,1,1,"jquery,materialize,d3,"
+lennwgs,honors0,IH-Project-2017-lennwgs_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,1,0,0,1,1,"bootstrap,"
+viswapurdue,honors0,IH-Project-2017-viswapurdue_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+CampbellC2,honors0,IH-Project-2017-CampbellC2_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,1,"ember,d3,animate,"
+noah-curran,honors0,IH-Project-2017-noah-curran_webapp_phase3,Wed Nov 15 19:18:47 2017,1,1,"Required Weather API, ",1,1,1,0,0,0,1,1,"font-awesome,animate,"
+laurenjank,honors0,IH-Project-2017-laurenjank_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,1,0,0,1,1,"jquery,"
+bzin22,honors0,IH-Project-2017-bzin22_webapp_phase3,Wed Nov 15 19:18:47 2017,1,5,"Required Weather API, New York City Farmers Markets, New York City Art Galleries, DOHMH New York City Restaurant Inspection Results, Bank-Owned ATM Locations in New York State, ",1,1,1,1,0,0,1,1,"jquery,materialize,animate,"
+AkaGar,honors0,IH-Project-2017-AkaGar_webapp_phase3,Wed Nov 15 19:18:47 2017,0,3,"Neighborhood Tabulation Areas, Housing New York Units by Building, Local Area Unemployment Statistics (LAUS) Seasonally Adjusted Data: Beginning 1976, ",1,1,1,0,1,1,1,1,"three,jquery,react,d3,bootstrap,"
+matson3,honors0,IH-Project-2017-matson3_webapp_phase3,Wed Nov 15 19:18:47 2017,1,1,"Required Weather API, ",1,1,1,0,1,1,1,1,"jquery,d3,bootstrap,"
+ecottle,honors0,IH-Project-2017-ecottle_webapp_phase3,Wed Nov 15 19:18:47 2017,1,1,"Required Weather API, ",1,1,1,0,1,1,1,1,"jquery,"
+littlex2015,honors0,IH-Project-2017-littlex2015_webapp_phase3,Wed Nov 15 19:18:47 2017,1,1,"Required Weather API, ",1,1,1,0,1,1,1,0,
+shivans,honors0,IH-Project-2017-shivans_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+nbraunec,honors0,IH-Project-2017-nbraunec_webapp_phase3,Wed Nov 15 19:18:47 2017,1,2,"Required Weather API, Zillow Home Value Searching API, ",1,1,1,1,0,0,1,1,"jquery,d3,"
+sanjitsama,honors0,IH-Project-2017-sanjitsama_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,1,"font-awesome,jquery,d3,bootstrap,animate,"
+Ilyumzhinov,honors0,IH-Project-2017-Ilyumzhinov_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+hihms,honors0,IH-Project-2017-hihms_webapp_phase3,Wed Nov 15 19:18:47 2017,0,1,"Required Weather API, ",0,1,1,0,0,0,1,1,"jquery,d3,bootstrap,"
+snugghash,honors0,IH-Project-2017-snugghash_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+zhao744,honors0,IH-Project-2017-zhao744_webapp_phase3,Wed Nov 15 19:18:47 2017,1,1,"Required Weather API, ",1,1,1,1,1,1,1,1,"jquery,d3,bootstrap,"
+aclipfel,honors0,IH-Project-2017-aclipfel_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+ko68,honors0,IH-Project-2017-ko68_webapp_phase3,Wed Nov 15 19:18:47 2017,1,4,"Required Weather API, Housing New York Units by Building, Total Housing Units By Occupancy Status And Tenure By Borough, New York City Leading Causes of Death, ",1,1,1,1,1,1,1,1,"jquery,d3,bootstrap,"
+GeoffYart,honors0,IH-Project-2017-GeoffYart_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,1,1,1,1,1,"jquery,d3,bootstrap,"
+gshowal,honors0,IH-Project-2017-gshowal_webapp_phase3,Wed Nov 15 19:18:47 2017,1,1,"Required Weather API, ",1,1,1,0,1,1,1,1,"jquery,bootstrap,"
+Nigogu,unal0,IH-Project-2017-Nigogu_webapp_phase3,Wed Nov 15 19:18:47 2017,0,1,"Zillow Home Value Searching API, ",1,1,1,1,1,1,1,1,"jquery,bootstrap,"
+Daryhez,unal0,IH-Project-2017-Daryhez_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+daapinzonch,unal0,IH-Project-2017-daapinzonch_webapp_phase3,Wed Nov 15 19:18:47 2017,0,1,"Housing New York Units by Building, ",1,0,1,0,0,0,1,1,"jquery,d3,bootstrap,"
+fewilchesc,unal0,IH-Project-2017-fewilchesc_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,0,0,0,0,0,0,
+JorgeTorresC,unal0,IH-Project-2017-JorgeTorresC_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+anythinglord,unal0,IH-Project-2017-anythinglord_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+criscapunal,unal0,IH-Project-2017-criscapunal_webapp_phase3,Wed Nov 15 19:18:47 2017,0,1,"Housing New York Units by Building, ",1,1,1,0,1,1,1,1,"jquery,bootstrap,"
+dieguischa,unal0,IH-Project-2017-dieguischa_webapp_phase3,Wed Nov 15 19:18:47 2017,1,7,"Required Weather API, Bank-Owned ATM Locations in New York State, New York City Population By Community Districts, Bicycle Routes Across New York State: Map, Facilities Licensed by the Department of Motor Vehicles (DMV), New York City Museums, New York City Art Galleries, ",1,1,1,1,0,0,1,1,"ember,jquery,d3,bootstrap,"
+Orloffyeah,unal0,IH-Project-2017-Orloffyeah_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,1,1,1,1,1,"jquery,d3,bootstrap,"
+SergioLopez40,unal0,IH-Project-2017-SergioLopez40_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+DiegoAraque1207,unal0,IH-Project-2017-DiegoAraque1207_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,1,1,0,0,0,1,1,"jquery,bootstrap,"
+olimita,unal0,IH-Project-2017-olimita_webapp_phase3,Wed Nov 15 19:18:47 2017,0,2,"Housing New York Units by Building, New York City Museums, ",1,1,1,1,1,1,1,1,"jquery,bootstrap,"
+yaochoal,unal0,IH-Project-2017-yaochoal_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,1,0,0,1,1,"jquery,d3,bootstrap,"
+Gavnic,unal0,IH-Project-2017-Gavnic_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,1,1,0,0,0,1,1,"jquery,d3,bootstrap,"
+Joacampora,unal0,IH-Project-2017-Joacampora_webapp_phase3,Wed Nov 15 19:18:47 2017,0,3,"New York City Locations Providing Seasonal Flu Vaccinations, New York City Art Galleries, New York City Museums, ",0,1,1,0,1,1,1,1,"jquery,d3,bootstrap,"
+Ozai98,unal0,IH-Project-2017-Ozai98_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,1,1,0,0,0,1,1,"jquery,bootstrap,"
+nviverosb,unal0,IH-Project-2017-nviverosb_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,0,0,0,1,1,"jquery,bootstrap,"
+Sariilan,unal0,IH-Project-2017-Sariilan_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+Alekzu,unal0,IH-Project-2017-Alekzu_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,0,1,0,0,0,1,0,
+vvargasd,unal0,IH-Project-2017-vvargasd_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+biherrerap,unal0,IH-Project-2017-biherrerap_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+bfprietoc,unal0,IH-Project-2017-bfprietoc_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+LauraMolina,unal0,IH-Project-2017-LauraMolina_webapp_phase3,Wed Nov 15 19:18:47 2017,0,1,"Fire Department Directory for New York State, ",0,1,1,0,0,0,1,1,"font-awesome,jquery,bootstrap,"
+Acreed21,unal0,IH-Project-2017-Acreed21_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,1,0,0,1,1,"jquery,bootstrap,"
+Camiioo,unal0,IH-Project-2017-Camiioo_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+frnkbs,unal0,IH-Project-2017-frnkbs_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,1,1,1,1,"d3,bootstrap,"
+Jfcastroh,unal0,IH-Project-2017-Jfcastroh_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+evilcucaracha,unal1,IH-Project-2017-evilcucaracha_webapp_phase3,Wed Nov 15 19:18:47 2017,0,2,"New York City Art Galleries, New York City Museums, ",1,1,1,0,1,1,1,1,"jquery,bootstrap,animate,"
+JulianM96,unal1,IH-Project-2017-JulianM96_webapp_phase3,Wed Nov 15 19:18:47 2017,1,1,"Required Weather API, ",1,1,1,1,0,0,1,1,"jquery,bootstrap,"
+Saariasba,unal1,IH-Project-2017-Saariasba_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+tres-iqus,unal1,IH-Project-2017-tres-iqus_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,0,0,0,0,0,0,
+cglaitong,unal1,IH-Project-2017-cglaitong_webapp_phase3,Wed Nov 15 19:18:47 2017,1,6,"Required Weather API, New York City Locations Providing Seasonal Flu Vaccinations, New York State Career Centers, New York City Museums, Directory Of DCP Offices, New York City Art Galleries, ",1,1,1,0,1,1,1,1,"jquery,d3,bootstrap,"
+DaniCastel,unal1,IH-Project-2017-DaniCastel_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,0,0,0,1,1,"jquery,d3,bootstrap,"
+BrandonAvilanR,unal1,IH-Project-2017-BrandonAvilanR_webapp_phase3,Wed Nov 15 19:18:47 2017,1,6,"Required Weather API, New York City Locations Providing Seasonal Flu Vaccinations, New York City Museums, Boardwalk, New York City Art Galleries, Housing New York Units by Building, ",1,1,1,1,1,1,1,1,"font-awesome,jquery,d3,bootstrap,animate,"
+alejosaur,unal1,IH-Project-2017-alejosaur_webapp_phase3,Wed Nov 15 19:18:47 2017,1,6,"Required Weather API, New York City Locations Providing Seasonal Flu Vaccinations, Bicycle Routes Across New York State: Map, New York City Museums, New York City Art Galleries, Housing New York Units by Building, ",1,1,1,1,0,0,1,1,"jquery,d3,bootstrap,animate,"
+jaasuarezvi,unal1,IH-Project-2017-jaasuarezvi_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+jdsolanos,unal1,IH-Project-2017-jdsolanos_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,0,0,0,1,1,"jquery,bootstrap,"
+DavidsMartinez,unal1,IH-Project-2017-DavidsMartinez_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+Biopeligro,unal1,IH-Project-2017-Biopeligro_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+garayf,unal1,IH-Project-2017-garayf_webapp_phase3,Wed Nov 15 19:18:47 2017,0,2,"New York City Art Galleries, New York City Museums, ",1,1,1,0,0,0,1,1,"jquery,bootstrap,"
+jaleonro,unal1,IH-Project-2017-jaleonro_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,1,0,0,1,1,"jquery,bootstrap,"
+facuellarg,unal1,IH-Project-2017-facuellarg_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,1,0,0,1,1,"jquery,bootstrap,"
+Caadiazsi,unal1,IH-Project-2017-Caadiazsi_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+sebcamacho1703,unal1,IH-Project-2017-sebcamacho1703_webapp_phase3,Wed Nov 15 19:18:47 2017,1,2,"Required Weather API, New York City Museums, ",1,1,1,1,0,0,1,1,"jquery,bootstrap,"
+xFortich,unal1,IH-Project-2017-xFortich_webapp_phase3,Wed Nov 15 19:18:47 2017,0,3,"New York City Art Galleries, Zillow Home Value Searching API, New York City Museums, ",1,1,1,0,1,1,1,1,"jquery,bootstrap,animate,"
+Gusgal03,unal1,IH-Project-2017-Gusgal03_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+Juankmilo97,unal1,IH-Project-2017-Juankmilo97_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,1,1,0,0,0,1,1,"jquery,bootstrap,"
+alebautis,unal1,IH-Project-2017-alebautis_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+sarguellesr,unal1,IH-Project-2017-sarguellesr_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+davideperdomo,unal1,IH-Project-2017-davideperdomo_webapp_phase3,Wed Nov 15 19:18:47 2017,1,4,"Required Weather API, Neighborhood Tabulation Areas, Air Quality, Bank-Owned ATM Locations in New York State, ",0,1,1,0,1,1,1,1,"jquery,d3,bootstrap,"
+JamerMejiaGarcia,unal1,IH-Project-2017-JamerMejiaGarcia_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+nikolasto,unal1,IH-Project-2017-nikolasto_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,0,1,0,0,0,1,1,"jquery,d3,bootstrap,"
+gahormigag,unal1,IH-Project-2017-gahormigag_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+ayperezc,unal1,IH-Project-2017-ayperezc_webapp_phase3,Wed Nov 15 19:18:47 2017,0,1,"New York City Museums, ",1,1,1,0,1,1,1,1,"jquery,bootstrap,"
+anferoar96,unal2,IH-Project-2017-anferoar96_webapp_phase3,Wed Nov 15 19:18:47 2017,0,1,"New York City Museums, ",1,1,1,1,1,1,1,1,"jquery,bootstrap,"
+StevenEsmar,unal2,IH-Project-2017-StevenEsmar_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,0,0,0,1,0,
+dcastanedar,unal2,IH-Project-2017-dcastanedar_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+trickyjuggler,unal2,IH-Project-2017-trickyjuggler_webapp_phase3,Wed Nov 15 19:18:47 2017,0,3,"New York City Art Galleries, School Safety Report, New York City Museums, ",1,1,1,1,1,1,1,1,"jquery,bootstrap,angular,"
+DaveValencia,unal2,IH-Project-2017-DaveValencia_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+csalfonsol,unal2,IH-Project-2017-csalfonsol_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,1,0,0,1,1,"jquery,bootstrap,animate,"
+tres-xxx,unal2,IH-Project-2017-tres-xxx_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+buendiagon,unal2,IH-Project-2017-buendiagon_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+DSFarfanF,unal2,IH-Project-2017-DSFarfanF_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+jssanchezo,unal2,IH-Project-2017-jssanchezo_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+bsdiaza,unal2,IH-Project-2017-bsdiaza_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,1,1,0,0,0,1,1,"jquery,d3,bootstrap,"
+casc3798,unal2,IH-Project-2017-casc3798_webapp_phase3,Wed Nov 15 19:18:47 2017,0,1,"Zillow Home Value Searching API, ",1,1,1,0,1,1,1,1,"jquery,bootstrap,"
+jsalcinar,unal2,IH-Project-2017-jsalcinar_webapp_phase3,Wed Nov 15 19:18:47 2017,0,3,"Fire Department Directory for New York State, School Safety Report, New York State Career Centers, ",1,1,1,1,1,1,1,1,"jquery,d3,bootstrap,"
+Anvido,unal2,IH-Project-2017-Anvido_webapp_phase3,Wed Nov 15 19:18:47 2017,1,4,"Required Weather API, New York City Art Galleries, Fire Department Directory for New York State, New York City Museums, ",1,1,1,1,1,1,1,1,"jquery,materialize,"
+Jufcardenasmo,unal2,IH-Project-2017-Jufcardenasmo_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,0,0,0,1,1,"bootstrap,"
+federgolo,unal2,IH-Project-2017-federgolo_webapp_phase3,Wed Nov 15 19:18:47 2017,0,2,"Bicycle Routes Across New York State: Map, New York City Museums, ",0,1,1,0,0,0,1,1,"jquery,d3,bootstrap,"
+serbatero,unal2,IH-Project-2017-serbatero_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,1,1,1,0,0,0,1,1,"jquery,bootstrap,animate,"
+GabrielUnal,unal2,IH-Project-2017-GabrielUnal_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+diefrodriguezcha,unal2,IH-Project-2017-diefrodriguezcha_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+adcorredorm,unal2,IH-Project-2017-adcorredorm_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+jdgaitanf,unal2,IH-Project-2017-jdgaitanf_webapp_phase3,Wed Nov 15 19:18:47 2017,1,2,"Required Weather API, New York City Museums, ",1,1,1,0,0,0,1,1,"jquery,bootstrap,"
+pahigueraf,unal2,IH-Project-2017-pahigueraf_webapp_phase3,Wed Nov 15 19:18:47 2017,0,5,"new york address points, Fire Department Directory for New York State, New York City Art Galleries, New York State Career Centers, New York City Museums, ",1,1,1,1,1,1,1,1,"font-awesome,jquery,d3,bootstrap,"
+RafaelCruz15,unal2,IH-Project-2017-RafaelCruz15_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+gimg1859,unal2,IH-Project-2017-gimg1859_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+jannMorenoJ,unal2,IH-Project-2017-jannMorenoJ_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+dahrojasca,unal2,IH-Project-2017-dahrojasca_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,
+FredyRosero,unal2,IH-Project-2017-FredyRosero_webapp_phase3,Wed Nov 15 19:18:47 2017,0,0,,0,0,1,0,0,0,1,0,

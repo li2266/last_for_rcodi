@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:700');
+
+.container{
+  max-width: 1920px;
+  width: 80%;
+  min-width: 500px;
+}
+
+h1{
+  font-size: 500%;
+}
+
+hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid white;
+  margin: 1em 0;
+  padding: 0;
+}
+
+#welcome-text{
+  position: relative;
+  color: white;
+  top: 42vh;
+  float: right;
+  font-weight: 700;
+}
+
+#welcome-text h2{
+  float: right;
+}
+
+body {
+  color: #677077;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.section{
+  height: 100vh;
+}
+
+nav{
+  width: 100%;
+}
+
+.navbar{
+  top: 0;
+  left: 0;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100;
+  padding: 0px;
+}
+
+.navbar button{
+  color: #252839;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100px;
+  border-radius: 0px;
+  float: right;
+  margin: 0px;
+}
+
+.navbar button:hover{
+  background-color: #f2b632;
+  color: white;
+}
+
+.navbar .btn:focus,.btn:active {
+  box-shadow: none;
+  outline-color: white !important;
+  background-color: #252839;
+  color: white;
+}
+
+#home-button{
+  background-color: #252839;
+  color: white;
+  width: 150px;
+  float: left;
+  margin: 0px;
+}
+
+#home-button:hover{
+  background-color: #f2b632;
+
+}
+
+#banner{
+  background-position:bottom;
+  background-size:cover;
+  background-image: url("https://github.com/evilcucaracha/Purdue-UNAL-IronHacks-2017/blob/master/Images/banner.jpg?raw=true");
+}
+
+#scroll-down-text{
+  text-align: center;
+  margin-top: -40px;
+  color: white;
+}
+
+#info{
+  text-align: center;
+}
+
+#info img{
+  position: relative;
+  top: 20vh;
+  width: 100%;
+}
+
+
+.img-hover img {
+    -webkit-transition: all .3s ease;
+  	-moz-transition: all .3s ease;
+  	-o-transition: all .3s ease;
+  	-ms-transition: all .3s ease;
+  	transition: all .3s ease;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.10);
+    -moz-transform:scale(1.10);
+    -ms-transform:scale(1.10);
+    -o-transform:translatZ(0) scale(1.20);
+    transform:translatZ(0) scale(1.20);
+}
+
+
+#map-section{
+  background:  #677077;
+  padding-top: 86px;
+  padding-bottom: 5vh;
+}
+
+#map{
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+  position:relative;
+}
+
+footer{
+  background-color: #252839;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+}

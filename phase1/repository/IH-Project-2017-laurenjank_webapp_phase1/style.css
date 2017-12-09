@@ -1,0 +1,10 @@
+body {
+    color: black;
+    font-family: Georgia, sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thisishard_webphase3</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+</head>    
+
+<body>
+    <h1>The NYU Campus is here. Now Let's find you a affordable place near here. </h1>
+    <div id="map"></div>
+
+    <script>
+    function initMap() {
+        var options = {zoom: 15, center: {lat: 40.7291, lng: -73.9965}}
+        var main = new google.maps.Map(document.getElementById('map'), options)
+        var marker = new google.maps.Marker({position: {lat: 40.7291, lng: -73.9965}, map: main})
+    }
+    
+    
+    </script>
+   
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALVC74Deivw9K4UVr2Rzz_um8X26-fC5I&callback=initMap">
+    </script>
+    
+    <script src="index.js"></script>
+    
+    <script src="d3.js"></script>
+    
+    <script>
+    src="https://code.jquery.com/jquery-3.2.1.js"integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+  </script>
+  
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+
+
+  <div>
+    <h3>Worried about weather or climate? No worries, we Have you covered. </h3>
+    <div id="map"></div>
+  </div>
+ 
+ <script>
+function getClimateData() {
+    var myToken = "RzyOYHaNfSodkWMBLfICKqBDkAJZVnLM";
+   $.ajax({
+  accepts: {
+    mycustomtype: 'GET',
+       url : "https://www.ncdc.noaa.gov/cdo-web/api/v2/locations?locationid=ZIP:10003",
+       headers : {'myToken': noaaApiKey},
+       success : function(result) {
+           var weatherData = result;
+           console.log(weatherData.results);
+
+           return weatherData.results;
+       },
+       error : function(result) {
+           console.log("Could not access weather data.");
+           console.log(result);
+       }
+     }});
+ }
+ 
+var body = d3.select("body");
+var div = body.append("div");
+index.html({
+	"results": [
+		{
+			"id": "GSOY",
+			"name": "Global Summary of the Year",
+			"datacoverage": 1,
+			"mindate": "1763-01-01",
+			"maxdate": "2015-01-01"
+		},
+		...
+	],
+	"metadata": {
+		"resultset": {
+			"limit": 25,
+			"count": 11,
+			"offset": 1
+		}
+	}
+});
+
+ dataType: 'GET'
+});
+d3.select("body")
+  .selectAll("div")
+    .data(data)
+  .enter().append("div")
+    .style("width", function(d) { return d * 100 + "px"; })
+    .text(function(d) { return weatherData.results; });
+
+$("button").click(function(){
+    $.ajax({url: "https://www.ncdc.noaa.gov/cdo-web/api/v2/locations?locationid=ZIP:10003", success: function(result){
+        $("div").html(weatherData.results);
+    }});
+});
+</script>
+
+    
+                    <div class="col-md-3 col-sm-6">
+                    <div class="contact-info bottom">
+                        <h2>Questions?</h2>
+                        <address>
+                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br> 
+                        Phone: +1 (123) 456 7890 <br> 
+                        </address>
+
+                        <h2>*Disclaimer: NYU is not affiliated with NewNYUSafety. Use the service at your discretion</h2>
+                        <address>
+                            For all official inquiries, contact NYU at:
+                            
+                        https://www.nyu.edu/footer/contact-us.html <br> 
+                        70 Washington Square South, <br> 
+                        New York, NY, 10012 <br> 
+                        United States <br> 
+                        (212) 998-1212 <br>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="contact-form bottom">
+                        <h2>Comments or concerns? Feel free to leave suggestions</h2>
+                        <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" required="required" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
+                            </div>                        
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btn btn-submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; NewNYUSafety. Copyright </p>
+                    </div>
+                </div>
+ </body>  
+
+</html>

@@ -1,0 +1,297 @@
+
+a, a:hover, a:active{ outline:0px !important}
+
+
+/* Primary Styles
+---------------------------------*/
+body {
+	background:#FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#888888;
+	margin:0;
+}
+
+h1{
+	font-family: 'Montserrat',sans-serif;
+	font-size:50px;
+	font-weight:400;
+	letter-spacing: -1px;
+	margin:0 0 22px 0 ;
+	color:#000000;
+}
+
+h2{
+	font-size:34px;
+	color:#222222;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	letter-spacing: -1px;
+	margin:0 0 15px 0;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+h3{
+	font-family: 'Montserrat', sans-serif;
+	color:#222222;
+	font-size:16px;
+	margin:0 0 5px 0;
+	text-transform:uppercase;
+	font-weight:400;
+}
+
+h6{
+	font-size:16px;
+	color:#888888;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-align:center;
+	margin:0 0 60px 0;
+}
+
+.firstLine{
+	font-size:16px;
+	color:#888888;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-align:center;
+	margin:0 0 10px 0;
+}
+
+p{
+	line-height:24px;
+	margin:0;
+}
+
+/* Header Styles
+---------------------------------*/
+
+.header{
+	text-align:center;
+	padding:100px 0;
+}
+
+.intro-phrase{
+	padding:0;
+	margin:35px 0 55px;
+}
+
+.intro-phrase li{
+	display:inline-block;
+	font-family: 'Montserrat',sans-serif;
+	font-size:14px;
+	color: #BCBCBC;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin:0 5px 0 0;
+	padding:0 0 0 15px;
+}
+
+.link{
+	padding:15px 35px;
+	background:#84AFE0;
+	color:#FFFFFF !important;
+	font-size:16px;
+	font-weight:400;
+	font-family: 'Montserrat', sans-serif;
+	display:inline-block;
+	border-radius:3px;
+	text-transform:uppercase;
+	line-height:25px;
+	margin-bottom:20px;
+}
+
+.link:hover {
+	text-decoration:none;
+	color:#84AFE0 !important;
+	background:#FFFFFF;
+}
+
+.link:active, .link:focus {
+	background: #84AFE0;
+	text-decoration:none;
+	color:#FFFFFF !important;
+}
+
+/* Navigation
+---------------------------------*/
+.main-nav{
+	text-align:center;
+	margin:10px 0 0px;
+	padding:0px;
+	list-style:none;
+	background:#FFFFFF;
+	
+}
+.main-nav li{
+	display:inline;
+	margin:0 1px;
+}
+.main-nav li a{
+	display:inline-block;
+	color:#222222;
+	text-transform:uppercase;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	line-height:20px;
+	margin:17px 32px;
+}
+
+.main-nav li a:hover{ 
+	text-decoration:none;
+	color: #84AFE0;
+}
+
+.navbar-brand{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.collapse{
+	background:#FFFFFF;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+.affix + .container-fluid {
+	padding-top: 70;
+}
+
+/* Visualization
+---------------------------------*/
+.main-section{
+	padding:90px 0 50px;
+}
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.visualization-list{
+	padding:0 0 0 0;
+	font-size:14px;
+	margin-bottom:40px;
+}
+
+.visualization-list-col{
+	overflow:hidden;	
+}
+
+button{
+	padding:15px 35px;
+	background:#84AFE0;
+	color:#FFFFFF !important;
+	font-size:14px;
+	font-weight:400;
+	font-family: 'Montserrat', sans-serif;
+	display:inline-block;
+	border-radius:3px;
+	text-transform:uppercase;
+	line-height:25px;
+	margin-bottom:20px;
+}
+
+button:hover {
+	text-decoration:none;
+	color:#84AFE0 !important;
+	background:#FFFFFF;
+}
+
+button:active, button:focus {
+	background: #84AFE0;
+	text-decoration:none;
+	color:#FFFFFF !important;
+}
+/* D3 Graph
+---------------------------------*/
+.bar {
+	fill: #84AFE0;
+}
+
+.bar:hover {
+	fill: #EE6E6E;
+}
+
+.axis {
+	font: 16px sans-serif;
+	shape-rendering: crispEdges;
+}
+
+.x.axis line {
+  stroke: #000;
+}
+
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #000;
+}
+.guideline {
+  margin-right: 100px;
+  float: right;
+}
+
+.axis--x path {
+	display: none;
+}
+
+path.line {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+path.area {
+  fill: #e7e7e7;
+}
+
+/* Map
+---------------------------------*/
+.map-section{
+	padding: 10px 0 50px;
+}
+
+.map-container{
+	margin-top: 0px;
+	margin-left: 10%;
+	width: 1000px;
+	height: 562px;
+}
+
+#googleMapContainer{
+	margin-top: 0px;
+	margin-left: 0%;
+	width: 1000px;
+	height: 562px;
+}
+
+/* Footer
+---------------------------------*/
+
+.footer{
+	padding:35px 0 35px;
+}
+.copyright{
+	color:#CCCCCC;
+	font-size:14px;
+	display:block;
+	text-align:center;
+}
+.copyright a{
+	color:#84AFE0;
+}

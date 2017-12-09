@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <title>New York's Finest</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylemain.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="navbar navbar-default  navbar-fixed-top homeNavbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img src="https://i.imgur.com/9T46QPI.png" />
+        </div>
+        <ul class="nav navbar-nav navbar-right navLink">
+          <li ><a href="#" class="navLink">About Us</a></li>
+          <li ><a href="#" class="navLink">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="mapContainer"></div>
+      <div id="panelsWrapper">
+        <div id="controlPanel" class="panel panel-body backPanel">
+          <div class="dropdown div-inline">
+            <button id="schoolName" class="btn btn-block schoolBtn dropdown-toggle" type="button" data-toggle="dropdown">
+              <span class="namesHere"></span><span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="selectSchool">New York University (NYU)</a></li>
+              <li class="divider"></li>
+              <li><a class="selectSchool">Columbia University</a></li>
+              <li><a class="selectSchool">Fordham University</a></li>
+              <li><a class="selectSchool">Julliard School</a><li>
+              <li><a class="selectSchool">St. John's University</a></li>
+              <li><a class="selectSchool">Fashion Institute of Technology</a></li>
+              <li><a class="selectSchool">Parsons School of Design</a></li>
+              <li><a class="selectSchool">Pace University</a></li>
+              <li><a class="selectSchool">Baruch College</a></li>
+              <li><a class="selectSchool">The City College of New York</a></li>
+              <li><a class="selectSchool">Pratt Institute</a></li>
+              <li><a class="selectSchool">Hunter College</a></li>
+              <li><a class="selectSchool">John Jay College of Criminal Justice</a></li>
+              <li><a class="selectSchool">Borough of Manhattan Community College</a></li>
+              <li><a class="selectSchool">LaGuardia Community College</a></li>
+              <li><a class="selectSchool">The New School</a></li>
+              <li><a class="selectSchool">New York Film Academy</a><li>
+              <li><a class="selectSchool">New York City College of Technology</a><li>
+            </ul>
+          </div>
+          <div class="btn-center">
+            <input id="weatherBtn" type="image" src="https://i.imgur.com/VDV3zR6.png" title="Get weather Report!"
+            width="15%" height="15%" class="filterBtn" disabled>
+            <input id="WiFiBtn" type="image" src="https://i.imgur.com/0A56CM5.png" title="Get WiFi Spots!"
+            width="15%" height="15%" class="filterBtn">
+            <input id="SubwayBtn" type="image" src="https://i.imgur.com/x1U2qhj.png" title="Get Subway Entrances!"
+            width="15%" height="15%" class="filterBtn">
+            <input id="HospitalBtn" type="image" src="https://i.imgur.com/3PgHMcO.png" title="Get Hospitals Locations!"
+            width="15%" height="15%" class="filterBtn">
+            <input id="GalleriesBtn" type="image" src="https://i.imgur.com/ZxRmq4X.png" title="Get Art Galleries Locations!"
+            width="15%" height="15%" class="filterBtn">
+            <input id="MuseumsBtn" type="image" src="https://i.imgur.com/RPZBNbw.png" title="Get Museums Locations!"
+            width="15%" height="15%" class="filterBtn">
+            <input id="BikeLanesBtn" type="image" src="https://i.imgur.com/WFW71ZL.png" title="Get Available Bike Lanes!"
+            width="15%" height="15%" class="filterBtn">
+            <input id="HousesBtn" type="image" src="https://i.imgur.com/9b8Hbr0.png" title="Get Available Houses!"
+            width="15%" height="15%" class="filterBtn">
+          </div>
+          <p class="suggestion">* Clicking on map markers reveal more info</p>
+        </div>
+        <div id="currentlyAtPanel" class="panel panel-body backPanel">
+          <p></p>
+        </div>
+        <div id="additionalPanel" class="panel panel-body backPanel">
+          <input class='backArrow' type='image' src='https://i.imgur.com/rfoyvDk.png' height='5%' width='5%' title='Go back!'>
+          <div id="extraContent">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-fixed-bottom homeFooter"></div>
+    <!-- JQuery  -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <!--  Google Maps -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm4CyWaG7Dc4Oep8wLxEgl2fsZ2waeLu8&callback=onGoogleMapResponse">
+    </script>
+</body>
+</html>

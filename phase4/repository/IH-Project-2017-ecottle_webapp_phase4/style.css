@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(25, 75, 150);
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    height: cover;
+    width: cover;
+    background-image:url("https://hdwallsource.com/img/2014/2/pattern-backgrounds-18340-18805-hd-wallpapers.jpg");
+}
+
+h1 {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+}
+
+blockquote."imgur-embed-pub" {
+    width: 100%;
+    max-width: 1500px;
+}
+
+h3.safety_class {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    max-width: 1500px;
+}
+
+h3.price_class {
+    width: 100%;
+    max-width: 1500px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+p {
+    width: 100%;
+    max-width: 1500px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.container {
+    width: 100%;
+    max-width: 1500px;
+}

@@ -1,0 +1,42 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "8",
+        "errorType": "parse-error",
+        "context": "html, body",
+        "errorSubtype": "exp",
+        "skippedString": "40",
+        "type": "zero",
+        "message": "Value Error :  margin (nullbox.html#propdef-margin)\n        \n                                only 0 can be a unit. You must put a unit after your number :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-StevenEsmar_webapp_phase5/index.html"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "19",
+        "level": "0",
+        "message": "2.9 is out of range",
+        "type": "out-of-range",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-StevenEsmar_webapp_phase5/index.html"
+      },
+      {
+        "line": "19",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-StevenEsmar_webapp_phase5/index.html"
+      }
+    ]
+  },
+  "html": [
+    "error: Element “head” is missing a required instance of child element “title”.",
+    "error: Start tag “body” seen but an element of the same type was already open.",
+    "error: Cannot recover after last error. Any further errors will be ignored."
+  ]
+}

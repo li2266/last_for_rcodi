@@ -1,0 +1,31 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [],
+    "warnings": [
+      {
+        "line": "36",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-RafaelCruz15_webapp_phase1/style.css"
+      },
+      {
+        "line": "7",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-RafaelCruz15_webapp_phase1/index.html"
+      }
+    ]
+  },
+  "html": [
+    "error: Stray end tag “head”.",
+    "error: Start tag “body” seen but an element of the same type was already open.",
+    "error: Cannot recover after last error. Any further errors will be ignored."
+  ]
+}

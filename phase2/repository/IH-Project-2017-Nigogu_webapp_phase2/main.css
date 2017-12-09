@@ -1,0 +1,81 @@
+/* Basic elements */
+
+header{
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+}
+
+body {
+  background-image: url("https://wallpapercave.com/wp/U4EPTmK.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1,h2, div {
+  font-family: 'Roboto', sans-serif;
+  font-size-adjust: auto;
+}
+
+/* First Screen */
+
+.welcome {
+  margin-top: 15%;
+  text-align: center;
+}
+
+.startandinfo {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 5%;
+  text-align: center;
+  background-color: rgba(193, 66, 66, 0.4);
+  color: white;
+}
+
+.footerresults {
+  background-color: rgba(193, 66, 66, 0.4);
+  text-align: center;
+  margin-top: 2%;
+  color: white;
+}
+
+
+/* Main Screen */
+.criteria {
+  margin-top: 2%;
+  text-align: center;
+  background-color: rgba(193, 66, 66, 0.4);
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+  color:white;
+}
+
+.chart {
+    height: 300px;
+    background-color: rgba(193, 66, 66, 0.4);
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+#start {  background-color: green; }
+#about {  background-color: grey; }
+#updatemap {  background-color: green; }
+#budget { margin-right: 10px; color: black; text-align: right; width: 8%;}
+
+#googleMapDiv {
+	height: 400px;
+  width: 100%;
+  margin-bottom: 15px;
+}

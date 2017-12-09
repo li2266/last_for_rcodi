@@ -1,0 +1,114 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "47",
+        "errorType": "parse-error",
+        "context": ".slider::-webkit-slider-thumb",
+        "errorSubtype": "exp",
+        "skippedString": "none",
+        "type": "noexistence-at-all",
+        "message": "Property appearance doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/style.css"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "26",
+        "level": "0",
+        "message": "You should add a 'type' attribute with a value of 'text/css' to the 'link' element",
+        "type": "link-type",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/index.html"
+      },
+      {
+        "line": "2",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/style.css"
+      },
+      {
+        "line": "31",
+        "level": "0",
+        "message": "Property -webkit-appearance is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/style.css"
+      },
+      {
+        "line": "34",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/style.css"
+      },
+      {
+        "line": "37",
+        "level": "0",
+        "message": "Property -webkit-transition is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/style.css"
+      },
+      {
+        "line": "45",
+        "level": "0",
+        "message": "::-webkit-slider-thumb is an unknown vendor extended pseudo-element",
+        "type": "vendor-ext-pseudo-element",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/style.css"
+      },
+      {
+        "line": "46",
+        "level": "0",
+        "message": "Property -webkit-appearance is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/style.css"
+      },
+      {
+        "line": "50",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/style.css"
+      },
+      {
+        "line": "54",
+        "level": "0",
+        "message": "::-moz-range-thumb is an unknown vendor extended pseudo-element",
+        "type": "vendor-ext-pseudo-element",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/style.css"
+      },
+      {
+        "line": "57",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/style.css"
+      },
+      {
+        "line": "63",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-viswapurdue_webapp_phase2/style.css"
+      }
+    ]
+  },
+  "html": [
+    "error: Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.",
+    "error: Element “head” is missing a required instance of child element “title”.",
+    "error: Element “center” not allowed as child of element “h1” in this context. (Suppressing further errors from this subtree.)",
+    "error: The “center” element is obsolete. Use CSS instead.",
+    "error: The “center” element is obsolete. Use CSS instead.",
+    "error: The “center” element is obsolete. Use CSS instead.",
+    "error: Named character reference was not terminated by a semicolon. (Or “&” should have been escaped as “&amp;”.)",
+    "error: Named character reference was not terminated by a semicolon. (Or “&” should have been escaped as “&amp;”.)",
+    "error: Named character reference was not terminated by a semicolon. (Or “&” should have been escaped as “&amp;”.)",
+    "error: Named character reference was not terminated by a semicolon. (Or “&” should have been escaped as “&amp;”.)",
+    "error: Named character reference was not terminated by a semicolon. (Or “&” should have been escaped as “&amp;”.)",
+    "error: Named character reference was not terminated by a semicolon. (Or “&” should have been escaped as “&amp;”.)"
+  ]
+}

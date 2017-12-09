@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Safe House</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/K2HOgz7.png">
+        <!-- MATERIALIZE CSS: Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col s4">
+                    <!-- SIDEBAR NAVIGATION -->
+                    <nav class="navigation">
+                        <img id="logo" src="https://i.imgur.com/Gf07gdC.png" alt="safe_house">
+                        <p id="description"><strong>Safe House</strong> is an online hub to help NYU students look for housing rentals near the main campus (near the Stern School of Business) and get access to local musuems, subway routes, and more. We are commited to helping you get comfortable navigating in the city.</p>
+                        <!-- PRICE SLIDER -->
+                        <div id="price-range">
+                            <h5>Price Range</h5>
+                            <div class="input-field">
+                                <i class="material-icons prefix">attach_money</i>
+                                <input placeholder="$100.00" id="minimum_price" min="0.00" step="100.00" type="number" class="validate">
+                                <label for="mimimum_price">Minimum Price</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">attach_money</i>
+                                <input placeholder="$999.00" id="maximum_price" min="0.00" step="100.00" type="number" class="validate">
+                                <label for="maximum_price">Maximum Price</label>
+                            </div>
+                        </div>
+                        <!-- FILTER EDITOR -->
+                        <div id="filters">
+                            <h5>Map Filters</h5>
+                            <div class="input-field">
+                            	<select multiple>
+                            		<option value="" disabled selected>Apply Filters:</option>
+                            		<option value="1">Safety</option>
+                            		<option value="2">Transportation</option>
+                            		<option value="3">Bike Paths</option>
+                            	</select>
+                            </div>
+                            <h6>Active Filters:</h6>
+                            <div id="filter_tags">
+                                <div class="chip">Safety<i class="close material-icons">close</i></div>
+                                <div class="chip">Bike Paths<i class="close material-icons">close</i></div>
+                                <div class="chip">Transportation<i class="close material-icons">close</i></div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- GOOGLE MAPS LOCATION -->
+                <div class="col s8">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+        <!-- JQUERY JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- MATERIALIZE JS: Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <!-- D3.JS -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <!-- GOOGLE MAPS API -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh9KJJ2-gqECjxl6UAginZ0uxA9Tb4AxE&callback=initMap"></script>
+        <!-- CUSTOM JS -->
+        <script src="index.js"></script>
+    </body>
+</html>

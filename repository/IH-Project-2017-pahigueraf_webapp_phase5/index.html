@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>House for Rent: NY</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--Pacifico Font - Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+	<!--Font Awesome-->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Jquery -->
+	<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous">
+			  
+	</script>
+	<!--D3-->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+	<div id="mainContainer">
+		<header>
+			<div id="title">
+				<img src="http://drive.google.com/uc?export=view&id=1joSY9Cqr3aXyCYnJehXbJqRrPBQKP7_8">
+				<div id="description">
+					<br><br>House for rent: NY is an application that shows the cheapest, safest or closest house in rent respect to NYU!
+					<br><br> Click in the help buttons for more details!
+				</div>
+			</div>
+		</header>
+		<div class="showHideData" id="showHideData">
+			<div class="titleShowHideData" id="show">
+				Show
+				<button class="btnHelp">?</button>
+			</div>
+			<div class="containerShowHideData">
+				<div id="containerBtn1">
+					<input type="checkbox" id="toggle1">
+					<label for="toggle1" class="fa fa-fire-extinguisher" id="labelBtn1" title="Show/Hide Fire Stations">
+						Fire Stations
+					</label>
+					
+				</div>
+				<div id="containerBtn2">
+					<input type="checkbox" id="toggle2">
+					<label for="toggle2" class="fa fa-book " id="labelBtn2"
+					title="Show/Hide Career Centers">
+						Career Centers
+					</label>
+		
+				</div>
+				<div id="containerBtn3">
+					<input type="checkbox" id="toggle3">
+					<label for="toggle3" class="fa fa-home" id="labelBtn3"
+					title="Show/Hide Rent Homes">
+						Rent Homes
+					</label>
+					
+				</div>
+
+				<div id="containerBtn4">
+					<input type="checkbox" id="toggle4">
+					<label for="toggle4" class="fa fa-picture-o " id="labelBtn4"
+					title="Show/Hide Art Galleries">
+						Art Galleries
+					</label>
+					
+				</div>
+
+				<div id="containerBtn5">
+					<input type="checkbox" id="toggle5">
+					<label for="toggle5" class="fa fa-university " id="labelBtn5"
+					title="Show/Hide Museums">
+						Museums
+					</label>
+					
+				</div>
+
+			</div>
+		</div>
+		<div class="showHideData" id="filters">
+			<div class="titleShowHideData" id="filterT">
+				Filters
+				<button class="btnHelp">?</button>
+			</div>
+			<div class="containerShowHideData" id="filtersMenu">
+				<ul id="deployment " class="show">
+					
+							<div id="cheapest">
+								<input type="radio" name="filter" id="filter1" class="filter" value="Cheapest Option" />
+								<label id="label1" for="filter1">Cheapest Option</label>
+							</div>
+							<div id="closest">
+								<input type="radio" name="filter" id="filter2" class="filter" value="Closest Option" />
+								<label id="label2" for="filter2">Closest Option</label>
+							</div>
+							<div id="safest">
+								<input type="radio" name="filter" id="filter3" class="filter" value="Safest Option" />
+								<label id="label3" for="filter3"> Safest Option </label>
+							</div>
+							<div id="noneSummary" >
+								<input type="radio" name="filter" id="filter" class="filter" value="None" checked/>
+								<label id="label4" for="filter"> None </label>
+							</div>
+							
+
+					
+				</ul>
+			</div>
+		</div>
+		<div class="showHideData" id="results">
+			<div class="titleShowHideData" id="res">
+				Results
+				<button class="btnHelp">?</button>
+			</div>
+			<div class="containerShowHideData" id="results2">
+				
+			</div>
+		</div>
+		<div class="showHideData" id="charts">
+			<div class="titleShowHideData" id="chart">
+				Charts
+				<button class="btnHelp">?</button>
+			</div>
+			<div class="containerShowHideData">
+				<div class="chartDiv">
+					<input type="radio" name="chart" id="chart1" class="chart" value="Median Rental Price in NY" />
+					<label id="labelChart1" for="chart1">Median Rental Price in NY</label>
+				</div>
+				<div class="chartDiv">
+					<input type="radio" name="chart" id="chart2" class="chart" value="Climate" />
+					<label id="labelChart2" for="chart2">Average Temperature</label>
+				</div>
+				<div class="chartDiv">
+					<input type="radio" name="chart" id="chart3" class="chart" value="None" checked/>
+					<label id="labelChart3" for="chart3"> None </label>
+				</div>
+			</div>
+		</div>
+		<div id="map"></div>
+		<div id="containerSvg">
+			
+		</div>
+		
+		<div id="details">
+			<div id="details2">
+				<div class="detailContainer">
+					<div id="address" class="labelDetails">Address</div>
+					<div id="addressValue" class="labelValue"></div>
+				
+					<div id="cost" class="labelDetails">Cost</div>
+					<div id="costValue" class="labelValue"></div>
+				
+					<div id="distance" class="labelDetails">Distance</div>
+					<div id="distanceValue" class="labelValue"></div>
+
+					<div id="safe" class="labelDetails">Safe Indicator</div>
+					<div id="safeValue" class="labelValue"></div>
+				</div>	
+					<button class="close">X</button>
+				
+			</div>
+		</div>
+		<div id="helpShow">
+			<div id="helpShow2">
+				<p>
+					In this pane, you can see the location of interesting sites like art galleries, museums, fire stations, career centers and houses in rent near NYU. 
+				<br><br>
+				You can choose what sites class to want see. When the button is on, you will see the places on the map.
+				<br><br>
+				Career Centers and Fire stations is closed to a maximum distance of 10 km and Art galleries an museums is within a range of 5 km.
+				</p>
+				
+				<button class="close">X</button>
+				
+			</div>
+		</div>
+		<div id="helpFilters">
+			<div id="helpFilters2">
+				<p>
+					In this pane, you can choose the option that you want between: Cheapest option, Closest option and Safest option. When there are results, these are optimized to help you in your decision.
+				When you choose "None option", you will see all the options in results pane.
+				</p>
+				 
+				<button class="close">X</button>
+				
+			</div>
+		</div>
+		<div id="helpResults">
+			<div id="helpResults2">
+				<p>
+					In this pane, you can see all the available houses in rent in a range of 10 km. If you click in each option, you will see details of the house, like: cost, address, distance to NYU and safe indicator.
+					<br><br>
+					The safe indicator represents a level of safety around the house in a radius of 200 meters. The less indicator the more safety.
+				</p>
+				
+				<button class="close">X</button>
+				
+			</div>
+		</div>
+		<div id="helpCharts">
+			<div id="helpCharts2">
+				<p>
+					In this pane, you can choose the chart that you want to see between Median rental price and Average Temperature.
+					<br>
+					Mediant rental price chart shows you the average rent price over the last year. This will help you to make a projection according to the time in which you want to travel.
+					<br><br>
+					Average Temperature shows you the maximum (red line), average (blue line) and minimum (green line) temperature over the last year. This will help you to make a projection according to the time in which you want to travel.
+				</p>
+				<button class="close">X</button>
+				
+			</div>
+		</div>
+		<footer>
+			
+		</footer>
+	</div>
+	<!-- GoogleMaps-->
+	<script
+		async defer
+		src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSi9OZcxXajLxldu0uPfVdghP5WADjlto&callback=initMap">
+	</script> 
+	<script src="index.js"></script>
+</body>
+</html>

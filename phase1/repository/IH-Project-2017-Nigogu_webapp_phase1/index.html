@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>WebApp v1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+    integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body>
+<header>
+<h1>¡Welcome to New York City!</h1>
+<h2>This is the NYU Renting Places Finder</h2>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+			<div class="col-md-12">
+				<div id="googleMapDiv"></div>
+			</div>
+		</div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="criteria">
+        <!-- aquivacriterios -->
+        <form>
+          <fieldset class="form-group">
+            <label for="budget">How much is your budget?</label>
+            <select class="form-control" id="budget">
+              <option>less than $300</option>
+              <option>$300-600</option>
+              <option>$600-900</option>
+              <option>$900-1200</option>
+              <option>More than $1200</option>
+            </select>
+          </fieldset>
+        </form>
+        <button class="btn">Search</button>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row">
+        <div id="options">
+          <ul class="list-group">
+            <li class="list-group-item">Rent option #1.</li>
+            <li class="list-group-item">Rent option #2.</li>
+            <li class="list-group-item">Rent option #3.</li>
+            <li class="list-group-item">Rent option #4.</li>
+            <li class="list-group-item">Rent option #5.</li>
+          </ul>
+        </div>
+        </div>
+        <div class="row">
+        <div class="chart"></div>
+        </div>
+        <div class="row">
+        <div class="chart"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JQuery -->
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  </script>
+
+  <script type="text/javascript" src="map.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+
+  <!-- Google Maps -->
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcbJCulkQ2a6ey4dZ-Gs18o-M73TOyseI&callback=initMap">
+  </script>
+
+  </body>
+</html>

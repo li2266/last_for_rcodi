@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+*{ margin: 0; padding: 0; }
+html, body, #map{
+    width: 100%;
+    height: 100%;
+}
+#formContent{
+    position: relative;
+    top: -50px;
+    width: 300px;
+    margin: 0 auto;
+}
+.submit{ padding: 3px 5px; }
+
+
+.videoWrapper {
+	position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@import "compass/css3";
+
+.flex-container {
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background-repeat: no-repeat;
+  padding: 5px;
+  width: 250px;
+  height: 200px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+#universidad-nacional {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Universidad_Nacional_de_Colombia_-_Escudo_2016.svg");
+  background-position: 50% 0%;
+}
+#purdue-university {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/51/Purdue_University_wordmark.svg");
+  background-position: 0% 50%;
+}
+
+#google {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/272px-Google_2015_logo.svg.png");
+  background-size: 80%;
+  background-position: 40% 50%;
+}
+
+#ironHack {
+  background-image: url("http://www.ironhacks.com/@/bloggify/public/img/logo/logo.png");
+  background-size: 90%;
+  background-position: 50% 50%;
+}
+
+#socrata {
+  background-image: url("https://dev.socrata.com/img/snuffleupacan.png");
+  background-size: 50%;
+  background-position: 50% 0%;
+}
+
+#sponsors {
+  padding: 20px;
+  margin: 0px;
+  font-family: 'Chivo', sans-serif;
+  font-size: 3vw;
+  text-align: center;
+}
+.text {
+  position: absolute;
+  color: white;
+  margin-top: 20%;
+  font-family: 'Chivo', sans-serif;
+  font-size: 6vw;
+}
+.button {
+  position: absolute;
+  background-color: red;
+
+
+}
+
+.image {
+  position: absolute;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-family: 'Chivo', sans-serif;
+  font-size: 150%;
+  margin-top: 30%;
+  width: 15%;
+  height: 100px;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+  width: 100px;
+  height: 100px;
+}

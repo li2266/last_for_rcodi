@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #map {
+            height: 800px;
+            width: 1000px;
+        }
+        body, html {
+            height: 100%;
+             margin: 0;
+             font: 400 15px/1.8 "Lato", sans-serif;
+             color: #777;
+        }
+
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+             position: relative;
+             opacity: 0.9;
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+
+        }
+        .bgimg-1 {
+             background-image: url(http://www.commonapp.org/files/school/image/NYU_CommonApp_HeaderImage2.jpg);
+             height: 60%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>NYU Stern School of Business Student Housing Search</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Makes it mobile friendly-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:rgb(209,229,255)">
+    <div class="bgimg">
+     <!--<img src= "http://www.stern.nyu.edu/sites/default/files/assets/images/uat_024994.jpg"  alt="NYU Stern School of Business" title="NYU Stern School of Business">
+      </div>  <!--http://newyork.carpediem.cd/data/afisha/o/42/fe/42fe683c54.jpg"-->   
+    <div class="caption">
+         <br>
+         <br>
+         <br>
+         <span class="border">HOUSE QUEST</span><br>
+        
+         <br>
+         <span class="border2">Student housing aid for the NYU <br><br>Stern School of Business <br><br> New York</span>
+         </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>         
+ <div id = "Map" style="text-align:center">
+     <h3>Community Map</h3>
+     <h5>This map displays information about the proximity of housing options to parks, stores, and other attractions.</h5>
+     <div id="map"></div>
+     
+     <script>
+      function initMap() {
+        var options = {
+            zoom: 15,
+            center: {lat: 40.7291, lng: -73.9965}
+        };
+        
+        var map = new 
+          google.maps.Map(document.getElementById('map'), options); 
+          
+        addMarker({
+            coords:{lat: 40.7291, lng: -73.9965},
+            iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            content: '<h1>NYU Stern School of Business</h1>'
+            
+        });
+        addMarker({
+            coords:{lat:40.735164, lng: -73.989303},
+            content: '<h1>107 East 15th St</h1> <h3>Safest Option</h3>'
+        });
+        addMarker({
+            coords:{lat:40.7279221, lng: -74.000253},
+            content: '<h1>177 Thompson St APT 20</h1> <h3>Most Affordable</h3>'
+        })
+        addMarker({
+            coords:{lat:40.733494, lng:-73.98828},
+            content: '<h1>Trader Joes</h1> <h3>Grocery Store</h3>'
+        })
+        addMarker({
+            coords:{lat:40.734049, lng:-73.990574},
+            content: '<h1>Regal Union Square Stadium 14</h1> <h3>Movie Theatre</h3>'
+        })
+        addMarker({
+            coords:{lat:40.727607, lng:-73.998781},
+            content: '<h1>Morton Williams</h1> <h3>Grocery Store</h3>'
+        })
+        addMarker({
+            coords:{lat:40.726809, lng:-74.000250},
+            content: '<h1>Starbucks</h1> <h3>Coffee Shop</h3>'
+        })
+       
+        function addMarker(props){
+            var marker = new google.maps.Marker({
+                position: props.coords,
+                map:map
+            });
+            
+            if(props.iconImage){
+                marker.setIcon(props.iconImage);
+            };
+            if(props.content){
+                var infoWindow = new google.maps.InfoWindow({
+                    content: props.content
+                });
+                
+                marker.addListener('click', function(){
+                    infoWindow.open(map, marker);
+                });
+            }
+        };
+      };
+      </script>
+     
+     
+     
+     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAENoUy8AFovs_vvP1RpXAFzAxPxbX37Ac&callback=initMap">
+     </script>
+     </div>
+     <br><br><br>
+<div id = "cheapest house" style = "text-align:center">
+    <p><a href="https://www.zillow.com/homes/for_rent/Manhattan-New-York-NY-10012/apartment_duplex_type/2112783261_zpid/61626_rid/paymenta_sort/40.736494,-73.97981,40.715061,-74.016717_rect/14_zm/" target="_blank">Most Affordable Housing Option | $1,600 <small>/mo</small></a></p>
+</div>
+<br><br><br>
+<div id = "safesthouse" style = "text-align:center">
+    <p><a href="https://www.zillow.com/homes/for_rent/apartment_duplex_type/2096603515_zpid/paymenta_sort/40.73264,-73.985944,40.729962,-73.990557_rect/17_zm/" target="_blank">Safest Housing Option | $1,775 <small>/mo</small></a></p>
+</div>
+</body>
+</html>

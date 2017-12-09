@@ -1,0 +1,409 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "1",
+        "errorType": "parse-error",
+        "context": "#SESearchPopupId",
+        "errorSubtype": "exp",
+        "skippedString": "20px",
+        "type": "noexistence-at-all",
+        "message": "Property center doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "4",
+        "errorType": "parse-error",
+        "context": "#SESearchPopupId",
+        "errorSubtype": "exp",
+        "skippedString": "linear-gradient",
+        "type": "value",
+        "message": "Value Error :  background (nullcolors.html#propdef-background)\n        \n                                linear-gradient is not a background-color value :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "5",
+        "errorType": "parse-error",
+        "context": "#SESearchPopupId",
+        "errorSubtype": "unrecognized",
+        "skippedString": "(to top,#D9DFDF 0,#E9E9E9 100%);",
+        "type": "generator.unrecognize",
+        "message": "Parse Error",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "5",
+        "errorType": "parse-error",
+        "context": "#SESearchPopupId",
+        "errorSubtype": "skippedString",
+        "skippedString": "}",
+        "type": "generator.unrecognize",
+        "message": "Parse Error",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "8",
+        "errorType": "parse-error",
+        "errorSubtype": "unrecognized",
+        "skippedString": "[ .\nSESearchImgage img]",
+        "type": "generator.unrecognize",
+        "message": "Parse Error",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "11",
+        "errorType": "parse-error",
+        "context": "#SESearchPopupId .SESearchContent #sbNotifCloseBtn",
+        "errorSubtype": "exp",
+        "skippedString": "tight",
+        "type": "value",
+        "message": "Value Error :  float (nullvisuren.html#propdef-float)\n        \n                                tight is not a float value :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "11",
+        "errorType": "parse-error",
+        "context": "#SESearchPopupId .SESearchContent #sbNotifCloseBtn",
+        "errorSubtype": "skippedString",
+        "skippedString": "url(chrome-extension://gngocbkfmikdgphklgmmehbjjlfgdemm/img/pops/close.svg) no-repeat center",
+        "type": "url",
+        "message": "Value Error :  background (nullcolors.html#propdef-background)\n        \n                                url(chrome-extension://gngocbkfmikdgphklgmmehbjjlfgdemm/img/pops/close.svg) is an incorrect URL",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "26",
+        "errorType": "parse-error",
+        "context": ".notifySEClass .SBStateTextContainer .SBStatePopupClose",
+        "errorSubtype": "exp",
+        "skippedString": "tight",
+        "type": "value",
+        "message": "Value Error :  float (nullvisuren.html#propdef-float)\n        \n                                tight is not a float value :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "27",
+        "errorType": "parse-error",
+        "context": ".notifySEClass .SBStateTextContainer .SBStatePopupClose",
+        "errorSubtype": "skippedString",
+        "skippedString": "url(chrome-extension://gngocbkfmikdgphklgmmehbjjlfgdemm/img/pops/close.svg) no-repeat center",
+        "type": "url",
+        "message": "Value Error :  background (nullcolors.html#propdef-background)\n        \n                                url(chrome-extension://gngocbkfmikdgphklgmmehbjjlfgdemm/img/pops/close.svg) is an incorrect URL",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "29",
+        "errorType": "parse-error",
+        "context": ".sbNotifViewMorePrev",
+        "errorSubtype": "exp",
+        "skippedString": "5px",
+        "type": "noexistence-at-all",
+        "message": "Property margin-center doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "4",
+        "level": "0",
+        "message": "You should add a 'type' attribute with a value of 'text/css' to the 'style' element",
+        "type": "style-type",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -moz-linear-gradient(center top,#D9DFDF 0,#D9DFDF 3%,#E9E9E9 100%) repeat scroll 0 0 transparent is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "5",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "9",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "11",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "13",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "14",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "17",
+        "level": "1",
+        "message": "Same color for background-color and color",
+        "context": ".notifySEClass",
+        "type": "same-colors",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "18",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "25",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "25",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "28",
+        "level": "2",
+        "message": "Redefinition of width",
+        "context": ".main",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "28",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "28",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "29",
+        "level": "2",
+        "message": "Redefinition of border-width",
+        "context": ".sbNotifViewMorePrev",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "29",
+        "level": "2",
+        "message": "Redefinition of border-color",
+        "context": ".sbNotifViewMorePrev",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "29",
+        "level": "2",
+        "message": "Redefinition of margin-left",
+        "context": ".sbNotifViewMorePrev",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "31",
+        "level": "2",
+        "message": "Redefinition of width",
+        "context": ".center",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "37",
+        "level": "2",
+        "message": "Redefinition of width",
+        "context": ".menu",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "37",
+        "level": "2",
+        "message": "Redefinition of width",
+        "context": ".main",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "37",
+        "level": "2",
+        "message": "Redefinition of width",
+        "context": ".center",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "47",
+        "level": "2",
+        "message": "Redefinition of background-color",
+        "context": ".modal",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "47",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "53",
+        "level": "1",
+        "message": "Same color for background-color and border-top-color",
+        "context": ".modal-content",
+        "type": "same-colors",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "53",
+        "level": "1",
+        "message": "Same color for background-color and border-right-color",
+        "context": ".modal-content",
+        "type": "same-colors",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "53",
+        "level": "1",
+        "message": "Same color for background-color and border-bottom-color",
+        "context": ".modal-content",
+        "type": "same-colors",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "53",
+        "level": "1",
+        "message": "Same color for background-color and border-left-color",
+        "context": ".modal-content",
+        "type": "same-colors",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "53",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "62",
+        "level": "2",
+        "message": "font-family: You are encouraged to offer a generic family as a last alternative",
+        "context": "#autoXML1610728716107287",
+        "type": "no-generic-family",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "64",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "71",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "71",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "80",
+        "level": "0",
+        "message": "You should add a 'type' attribute with a value of 'text/css' to the 'style' element",
+        "type": "style-type",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "85",
+        "level": "2",
+        "message": "Redefinition of width",
+        "context": ".cancelbtn",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "85",
+        "level": "2",
+        "message": "Redefinition of width",
+        "context": ".signupbtn",
+        "type": "redefinition",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "125",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      },
+      {
+        "line": "157",
+        "level": "0",
+        "message": "You should add a 'type' attribute with a value of 'text/css' to the 'style' element",
+        "type": "style-type",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-CampbellC2_webapp_phase3/index.html"
+      }
+    ]
+  },
+  "html": [
+    "error: Missing space before doctype name.",
+    "error: Nameless doctype.",
+    "error: Quirky doctype. Expected “<!DOCTYPE html>”.",
+    "error: Element “head” is missing a required instance of child element “title”.",
+    "error: The “align” attribute on the “h1” element is obsolete. Use CSS instead.",
+    "error: The “align” attribute on the “h2” element is obsolete. Use CSS instead.",
+    "error: Attribute “name” not allowed on element “meta” at this point.",
+    "error: Element “meta” is missing one or more of the following attributes: “itemprop”, “property”.",
+    "error: Element “style” not allowed as child of element “div” in this context. (Suppressing further errors from this subtree.)",
+    "error: The “align” attribute on the “h3” element is obsolete. Use CSS instead.",
+    "error: An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.",
+    "error: Element “style” not allowed as child of element “div” in this context. (Suppressing further errors from this subtree.)",
+    "error: Start tag “body” seen but an element of the same type was already open.",
+    "error: Stray end tag “form”.",
+    "info: Empty heading.",
+    "error: End tag for  “body” seen, but there were unclosed elements.",
+    "error: Unclosed element “div”.",
+    "error: Unclosed element “div”.",
+    "error: Unclosed element “div”."
+  ]
+}

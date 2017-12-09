@@ -1,0 +1,42 @@
+body{
+    background-color: #E3F2FD;
+}
+
+#map{
+	height: 528px;
+	width: 100%;
+	background-color: gray;
+	margin-bottom: 10px;
+}
+
+#site_info{
+	height: 528px;
+	width: 100%;
+	background-color: #BBDEFB;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+#topBar{
+	color: white;
+	margin-bottom: 50px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#jumbo{
+	background-color: #2196F3;
+	border-radius: 0px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+#Label {
+    position: absolute;
+    background-color: green;
+    margin-top: 100px;
+    left: 5%;
+    height: 500px;
+    width: 500px;
+    z-index: 99;
+}

@@ -1,0 +1,70 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "15",
+        "errorType": "parse-error",
+        "context": "blockquote",
+        "errorSubtype": "unrecognized",
+        "skippedString": "blockquote.\"imgur-embed-pub\" {\n    width: 100%;\n}",
+        "type": "generator.unrecognize",
+        "message": "Parse Error",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-ecottle_webapp_phase3/style.css"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "2",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-ecottle_webapp_phase3/style.css"
+      },
+      {
+        "line": "7",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-ecottle_webapp_phase3/style.css"
+      },
+      {
+        "line": "18",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-ecottle_webapp_phase3/style.css"
+      },
+      {
+        "line": "23",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-ecottle_webapp_phase3/style.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-ecottle_webapp_phase3/index.html"
+      }
+    ]
+  },
+  "html": [
+    "error: Element “title” must not be empty.",
+    "error: No space between attributes.",
+    "info: Attribute “;” is not serializable as XML 1.0.",
+    "error: Attribute “width” not allowed on element “script” at this point.",
+    "error: Attribute “;” not allowed on element “script” at this point.",
+    "error: Attribute “height” not allowed on element “script” at this point.",
+    "error: Element “title” not allowed as child of element “body” in this context. (Suppressing further errors from this subtree.)",
+    "error: Element “style” not allowed as child of element “body” in this context. (Suppressing further errors from this subtree.)",
+    "error: The “align” attribute on the “h3” element is obsolete. Use CSS instead.",
+    "error: The “align” attribute on the “p” element is obsolete. Use CSS instead."
+  ]
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+<link rel="stylesheet" href="style.css">
+<Style>
+}
+</Style>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NYU Housing Search</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html" style = "font-size: 20px">Home</a></li>
+      <li><a href= "Map.html" style = "font-size: 20px">Map</a></li>
+      <li><a href="Listing.html" style = "font-size: 20px">Listings</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<button id="btn1">Park Suggestion</button>
+<button id="btn2">Movies</button>
+<button id="btn3">Art</button>
+<br/>
+<br/>
+<div id="map"></div>
+<br/>
+<br/>
+<style>
+           #map{ 
+            height:500px;
+            width:100%;
+            }
+        </style>
+
+
+        <script>
+            function initMap(){
+            var options = {
+                zoom:13,
+                center:{lat:40.7291,lng: -73.9965}
+            }  
+            var map = new 
+            google.maps.Map(document.getElementById('map'), options);
+            
+            /*
+            var marker = new google.maps.Marker({
+                position:{lat:40.7291,lng: -73.9965},
+                map:map
+            });
+            var infoWindow = new google.maps.InfoWindow({
+                content:'<h1>Apartment 1</h1>'
+            });
+            
+            marker.addListener('click', function(){
+                infoWindow.open(map, marker);
+            });
+            */
+            addMarker({
+                coords:{lat:40.7291,lng: -73.9965},
+                iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            content:'<h3>NYU Stern School of Business</h3>'
+            });
+            addMarker({
+                coords:{lat:40.716411,lng: -73.989568},
+            content:'<h3>Apartment 1, $1,795 /mo</h3>'
+            });
+            addMarker({
+                coords:{lat:40.749715,lng: -73.995884},
+            content:'<h3>Apartment 2, $1,450 /mo</h3>'
+            });
+            
+            function addMarker(props){
+                var marker = new google.maps.Marker({
+                position:props.coords,
+                map:map,
+                icon:props.iconImage
+            });
+            
+            if(props.iconImage){
+                marker.setIcon(props.iconImage);
+            }
+            if(props.content){
+                var infoWindow = new google.maps.InfoWindow({
+                    content:props.content
+                });
+                marker.addListener('click', function(){
+                infoWindow.open(map, marker);
+                });
+            }
+            }
+            }
+        </script>
+
+<script type="text/javascript">
+var bikeLayer = new google.maps.BicyclingLayer();
+bikeLayer.setMap(map);
+
+}
+
+</script>
+
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"></script>
+
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgwo_7c0hdLq9W3uMT1o7gsPVPDmBOGPU&callback=initMap">
+    </script>
+    </body>
+</html>
+
+

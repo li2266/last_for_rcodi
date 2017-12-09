@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>NYH - Find Home</title>
+    <!-- Materialize Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="styleFH.css">
+    <!-- Icons Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google fonts Bad Script -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bad+Script">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper blue-grey darken-2">
+        <a href="index.html" class="brand-logo">NYHouses</a>
+        <a id="navInfo" href="#" data-activates="mobile" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="findHome.html">Find your home</a></li>
+          <li><a href="moreNy.html">More about NY</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="findHome.html">Find your home</a></li>
+          <li><a href="moreNy.html">More about NY</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="row">
+        <div class="col s12 m12">
+          <p class="flow-text center">Please select an option among houses for rent, museums, art galleries
+             and others, we show the places and their information. For "Houses for rent" you can select the
+              bookmark and see the best option to go (driving) to NYU Stern School of Business</p>
+              
+          <p class="flow-text center">Click show all in houses for rent and click the markers please</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m8">
+          <div id="googleMap">
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div id="infoPanel">
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header active"><i class="material-icons">home</i>Houses for rent
+                  </div>
+                  <div class="collapsible-body">
+                    <div class="switch">
+                      <label>
+                        Show All:
+                        <input id="houses" type="checkbox">
+                        <span class="lever"></span>
+                        Update the switch, adding data every second.. ;) (optimized function, coming soon)
+                      </label>
+                    </div>
+                    <br>
+                    <div id="cHouses" class="collection"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">account_balance</i>Museums</div>
+                  <div class="collapsible-body">
+                    <div class="switch">
+                      <label>
+                        Show All:
+                        <input id="museums" type="checkbox">
+                        <span class="lever"></span>
+                      </label>
+                    </div>
+                    <br>
+                    <div id="cMuseums" class="collection"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">brush</i>Art Galleries</div>
+                  <div class="collapsible-body">
+                    <div class="switch">
+                      <label>
+                        Show All:
+                        <input id="galleries" type="checkbox">
+                        <span class="lever"></span>
+                      </label>
+                    </div>
+                    <br>
+                    <div id="cGalleries" class="collection"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">directions_bus</i>Fire Departments</div>
+                  <div class="collapsible-body">
+                    <div class="switch">
+                      <label>
+                        Show All:
+                        <input id="fireDpmt" type="checkbox">
+                        <span class="lever"></span>
+                      </label>
+                    </div>
+                    <br>
+                    <div id="cFireDpmt" class="collection"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">insert_emoticon</i>Vaccination Locations</div>
+                  <div class="collapsible-body">
+                    <div class="switch">
+                      <label>
+                        Show All:
+                        <input id="vaccination" type="checkbox">
+                        <span class="lever"></span>
+                      </label>
+                    </div>
+                    <br>
+                    <div id="cVaccination" class="collection"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">local_gas_station</i>Fuel Stations</div>
+                  <div class="collapsible-body">
+                    <div class="switch">
+                      <label>
+                        Show All:
+                        <input id="fuel" type="checkbox">
+                        <span class="lever"></span>
+                      </label>
+                    </div>
+                    <br>
+                    <div id="cFuel" class="collection"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">local_atm</i>ATM Locations</div>
+                  <div class="collapsible-body">
+                    <div class="switch">
+                      <label>
+                        Show All:
+                        <input id="atm" type="checkbox">
+                        <span class="lever"></span>
+                      </label>
+                    </div>
+                    <br>
+                    <div id="cATM" class="collection"></div>
+                  </div>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer blue-grey darken-4">
+      <div class="container">
+        <div class="row">
+          <ul>
+            <li><label class="white-text">Bogota, Colombia</label></li>
+            <li><label class="white-text">Phone: +57 3103105469</label></li>
+            <li><label class="white-text">Email: adgonzalezo@unal.edu.co</label></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- Materialize Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Custom script -->
+    <script type="text/javascript" src="./map.js"></script>
+    <!-- GoogleMaps API -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPPknNm1pkrrE_pczjh8k6P7sFNktuXaA&callback=initMap">
+    </script>
+  </body>
+</html>

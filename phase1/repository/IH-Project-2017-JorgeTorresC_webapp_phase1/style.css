@@ -1,0 +1,34 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+#googleMap {
+    width:100%;
+    height:350px;
+}
+#TableDiv {
+    width:100%;
+    height:50px;
+    margin-top: 25px;
+    margin-bottom:25px;
+    background-color:grey
+}
+#ChartDiv {
+    width:100%;
+    height:50px;
+    margin-top: 25px;
+    margin-bottom:25px;
+    background-color:grey
+}
+.ContainerButton {
+    width:100%;
+    height:40px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    background-color: grey
+}

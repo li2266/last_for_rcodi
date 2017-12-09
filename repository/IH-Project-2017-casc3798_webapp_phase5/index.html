@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Phase 5 </title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12" id = "top">
+				<h1 style="color: black; text-align: center">Home Finder!</h1>
+				<h6 class = "white" style="text-align: center">We are going to help you to find your new home!<b></h6>
+				<div id="menu">
+			</div>				
+		</div>
+	</div>
+	<div class="row">
+		<div class = "col-md-12" id= "menu">
+			<nav class= "menu">
+					<h4 style="color: white"> <b>Plase select the options that you want to see<b></h5>
+				<label class="checkbox-inline"><input type="checkbox" value=""  id="museumsButton" autocomplete="off" onclick="museums()">Draw museums</label>
+				<label class="checkbox-inline"><input type="checkbox" value="" id="bikeRoutesButton" autocomplete="off" onclick="bikeRoutes()">Draw bike rutes</label>
+				<label class="checkbox-inline"><input type="checkbox" value="" id="artButton" autocomplete="off" onclick="art()">Draw art galleries</label>  
+				<label class="checkbox-inline"><input type="checkbox" value="" id="fireHouseButton" autocomplete="off" onclick="fireHouse()">Draw fire houses</label>  
+				<label class="checkbox-inline"><input type="checkbox" value="" id="houseByBuildingButton" autocomplete="off" onclick="houseByBuilding()">Draw houses by building</label>  
+				<label class="checkbox-inline"><input type="checkbox" value="" id="AlternativeFuelStationButton" autocomplete="off" onclick="AlternativeFuelStation()">Draw alternative fuel station</label>  
+			</nav>
+		</div>
+	</div>
+
+  		<div class = "row" id = "middle">
+			<div class = "col-8">
+				<h2 style="padding-bottom: 25px ">Map</h2>
+				
+				<div id="map"></div>
+				
+			</div>
+
+			<div class = "col-4">
+				<h4>Here's going to be options, data and other information</h4>
+
+				<div id = "tableWrapper">
+
+					<div id = "tableScroll">
+
+						<table style="margin-bot: 15px ">
+							<thead>
+								<tr>
+									<th colspan = "2" style = "text-align: center;">Options</th>
+								</tr>
+
+								<tr>
+									<th> Option 1 </th>
+									<th> Option 2 </th>
+								</tr>
+								<tr>
+									<th> Location </th>
+									<th> Location </th>
+								</tr>
+								<tr>
+									<th> Distance </th>
+									<th> Distance </th>
+								</tr>
+
+								<tr>
+									<th><button class = "button1"> More information </button></th>
+									<th><button class = "button1"> More information </button></th>
+								</tr>
+
+							</thead>
+							<tbody id = "mainTableBody"></tbody>
+
+						</table>
+						
+						<p1 > Didn't like the previous options? <br> We have more!</p1>
+						
+						
+						<table style="margin-top: 15px ">
+							<thead>
+								<tr>
+									<th colspan = "2" style = "text-align: center;">Other options</th>
+								</tr>
+
+								<tr>
+									<th> Option </th>
+									<th> Option </th>
+								</tr>
+								<tr>
+									<th> Location </th>
+									<th> Location </th>
+								</tr>
+								<tr>
+									<th> Distance </th>
+									<th> Distance </th>
+								</tr>
+
+								<tr>
+									<th><button class = "button1"> More information </button></th>
+									<th><button class = "button1"> More information </button></th>
+								</tr>
+								<tr>
+									<th><button class = "button1"> Previous </button></th>
+									<th><button class = "button1"> Next </button></th>
+								</tr>
+
+							</thead>
+							<tbody id = "mainTableBody"></tbody>
+
+						</table>
+
+					</div>
+
+				</div>
+					
+				
+
+			</div>
+  		</div>
+
+	</div>
+	
+	<script
+	 src="https://code.jquery.com/jquery-3.2.1.min.js"
+	 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous">
+	</script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJGw67p5JS22PnfRmYsYbLxq5PzCgAqew&callback=initMap">
+    </script>
+	
+</body>
+</html>

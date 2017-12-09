@@ -1,0 +1,25 @@
+{
+  "js": {
+    "errors": [
+      "TypeError: null is not an object (evaluating 'document.getElementById(\"btn\").addEventListener')"
+    ],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [],
+    "warnings": [
+      {
+        "line": "4",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-laurenjank_webapp_phase1/index.html"
+      }
+    ]
+  },
+  "html": [
+    "error: Element “p1” not allowed as child of element “body” in this context. (Suppressing further errors from this subtree.)",
+    "error: Stray start tag “script”."
+  ]
+}

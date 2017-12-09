@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Which NYC Neighborhood Should You Move To?</title>
+<style>
+
+body {
+background-color: white;
+font-family: "Georgia";
+}
+
+#main {
+width: 100%;
+border: 5px gray;
+margin: auto;
+padding: 15px;
+background-color: white;
+border-radius: 15px;
+}
+
+#header {    
+text-align: center;
+margin-top: 0;
+border: 5px black;
+padding: 10px;
+height: 100px;
+}
+
+label {
+width: 400px;
+display: inline-block;
+}
+
+button {
+display: block;
+margin-top: 30px;
+
+}
+
+
+</style>
+</head>
+<body>
+<div id="main">
+<div id="header"><h1>Which NYC Neighborhood Should You Move To?</h1></div>
+
+<form  id="form1">
+<p>How much do you want to pay in rent every month?</p>
+<label><input type="radio" name="rent" id="3200" value="1" />$3200</label>
+<label><input type="radio" name="rent" id="3600" value="2" />$3600</label>
+<label><input type="radio" name="rent" id="3400" value="3" />$3400</label>
+<label><input type="radio" name="rent" id="4200" value="4" />$4200</label>
+<label><input type="radio" name="rent" id="4000" value="5" />$4000</label>
+<label><input type="radio" name="rent" id="3800" value="6" />$3800</label>
+
+<p>What's your idea of a perfect date?</p>
+<label><input type="radio" name="date" id="a" value="1" />Seeing a show on Broadway!</label>
+<label><input type="radio" name="date" id="b" value="2" />Seeing the Statue of Liberty!</label>
+<label><input type="radio" name="date" id="c" value="3" />Strolling around town!</label>
+<label><input type="radio" name="date" id="d" value="4" />Eating at a cool new restaurant!</label>
+<label><input type="radio" name="date" id="e" value="5" />Exploring a trendy part of town!</label>
+<label><input type="radio" name="date" id="f" value="6" />Going to the bars together!</label>
+
+<p>What's your favorite weather?</p>
+<label><input type="radio" name="weather" id="g" value="1" />Doesn't matter to me!</label>
+<label><input type="radio" name="weather" id="h" value="2" />Rain</label>
+<label><input type="radio" name="weather" id="i" value="3" />Sunny and warm</label>
+<label><input type="radio" name="weather" id="j" value="4" />Fall weather</label>
+<label><input type="radio" name="weather" id="k" value="5" />A little bit of everything</label>
+<label><input type="radio" name="weather" id="l" value="6" />Gray and gloomy</label>
+
+<p>What's your idea of "nightlife"?</p>
+<label><input type="radio" name="nights" id="m" value="1" />Going to see a concert!</label>
+<label><input type="radio" name="nights" id="n" value="2" />Sleeping.</label>
+<label><input type="radio" name="nights" id="o" value="3" />Exploring town.</label>
+<label><input type="radio" name="nights" id="p" value="4" />Going to a party!</label>
+<label><input type="radio" name="nights" id="q" value="5" />Going to a crazy bar!</label>
+<label><input type="radio" name="nights" id="r" value="6" />Going to a chill bar.</label>
+
+<p>Where do you see yourself in 10 years?</p>
+<label><input type="radio" name="ten_yrs" id="s" value="1" />Clothing designer for TV and movies</label>
+<label><input type="radio" name="ten_yrs" id="t" value="2" />Climbing the corporate ladder</label>
+<label><input type="radio" name="ten_yrs" id="u" value="3" />Raising my kids!</label>
+<label><input type="radio" name="ten_yrs" id="v" value="4" />A celebrity, of course</label>
+<label><input type="radio" name="ten_yrs" id="w" value="5" />Setting new trends</label>
+<label><input type="radio" name="ten_yrs" id="x" value="6" />Running my own business</label>
+
+<p>Where would you be on a weekend morning?</p>
+<label><input type="radio" name="weekend" id="y" value="1" />Shopping!</label>
+<label><input type="radio" name="weekend" id="z" value="2" />Going to a museum!</label>
+<label><input type="radio" name="weekend" id="ca" value="3" />Going out for brunch!</label>
+<label><input type="radio" name="weekend" id="db" value="4" />Going to an art gallery!</label>
+<label><input type="radio" name="weekend" id="ec" value="5" />Sleeping off the night before...</label>
+<label><input type="radio" name="weekend" id="fd" value="6" />Going to the Farmer's Market!</label>
+
+<p>What kind of restaurant scene would you like?</p>
+<label><input type="radio" name="food" id="ae" value="1" />Quick, fast, and good food.</label>
+<label><input type="radio" name="food" id="bf" value="2" />Take-out.</label>
+<label><input type="radio" name="food" id="cg" value="3" />The BEST food.</label>
+<label><input type="radio" name="food" id="dh" value="4" />A few neighborhood classics.</label>
+<label><input type="radio" name="food" id="ei" value="5" />I just need beer.</label>
+<label><input type="radio" name="food" id="fj" value="6" />I just want lots of options.</label>
+
+<p>What would you want your living space to look like?</p>
+<label><input type="radio" name="house" id="ak" value="1" />A tiny apartment is okay with me!</label>
+<label><input type="radio" name="house" id="bl" value="2" />Big, fancy apartment.</label>
+<label><input type="radio" name="house" id="cm" value="3" />Normal apartment.</label>
+<label><input type="radio" name="house" id="dn" value="4" />Industrial, stark looking homes.</label>
+<label><input type="radio" name="house" id="eo" value="5" />SUPER NICE.</label>
+<label><input type="radio" name="house" id="fp" value="6" />Small, but nice.</label>
+
+<p>What kind of shopping scene would you like?</p>
+<label><input type="radio" name="shop" id="aq" value="1" />Lots of big stores</label>
+<label><input type="radio" name="shop" id="br" value="2" />I don't like shopping</label>
+<label><input type="radio" name="shop" id="cs" value="3" />Some big stores, some local businesses and artisan shops</label>
+<label><input type="radio" name="shop" id="dt" value="4" />Some popular stores</label>
+<label><input type="radio" name="shop" id="eu" value="5" />High-end clothing and shoe stores</label>
+<label><input type="radio" name="shop" id="fv" value="6" />Fashion stores with the latest looks</label>
+
+
+<button type="submit" value="Submit">Submit</button>
+
+</form>
+<p id="answer"></p>
+<p id="city"></p>
+</div>
+<script>
+ 
+    
+	   document.getElementById("form1").onsubmit=function() {
+	   
+	   rent = parseInt(document.querySelector('input[name = "rent"]:checked').value);
+	   date = parseInt(document.querySelector('input[name = "date"]:checked').value);
+	   weather = parseInt(document.querySelector('input[name = "weather"]:checked').value);
+	   nights = parseInt(document.querySelector('input[name = "nights"]:checked').value);
+	   ten_yrs = parseInt(document.querySelector('input[name = "ten_yrs"]:checked').value);
+	   weekend = parseInt(document.querySelector('input[name = "weekend"]:checked').value);
+	   food = parseInt(document.querySelector('input[name = "food"]:checked').value);
+	   house = parseInt(document.querySelector('input[name = "house"]:checked').value);
+	   shop = parseInt(document.querySelector('input[name = "shop"]:checked').value);
+	  
+	   total = rent+date+weather+nights+ten_yrs+weekend+food+house+shop;
+	   
+	  
+	   document.getElementById("answer").innerHTML = total;
+	   
+	   
+
+	   if(total < 15) {
+document.getElementById("city").innerHTML = "You should move to Midtown West!";
+}
+       if(total >= 15 && total < 25) {
+document.getElementById("city").innerHTML = "You should move to the Financial District!";
+}
+	   if(total >= 25 && total < 35) {
+document.getElementById("city").innerHTML = "You should move to Greenwich Village!";
+}   
+       if(total >=35 && total < 45) {
+document.getElementById("city").innerHTML = "You should move to Soho!";
+}
+       if(total >=45 && total < 55) {
+document.getElementById("city").innerHTML = "You should move to Chelsea!";
+}
+       if(total >= 55) {
+document.getElementById("city").innerHTML = "You should move to Gramercy!";
+}
+
+	   return false; 
+	   }
+	
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Find House</title>
+  </head>
+  <body>
+    <!-- Codigo postal 10012, 10003,10014,10011,10002,10013,10009 -->
+    <!-- API Key Zillow yzNwzWhK2pxEvZSGRkUH-->
+    <!-- Maps Key AIzaSyDb61z8bGfd8c7AlRNks21NwSytDzEhBAs    AIzaSyDwNXrfW1somRdEl85WiYQMhfRRsY_Y9Yc-->
+    <div class="container-fluid">
+        <div class="row" style="background-color: yellowgreen;">
+            <div class="col-md-12">
+                <div id="cabecera">
+                    <h3 id="titulo">Find You Special Place dot COM</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2" style="background-color: lightgoldenrodyellow;">
+            <div id="selectores">
+                Min Price: <input id="minPrice" inputmode="numeric" min="0"><br>
+                Max Price: <input id="maxPrice" inputmode="numeric" min="0"><br>
+                Security(0 - 100): <input id="sec" inputmode="numeric" min="0" max="100"><br>
+                <button id="updateRequirements" class="btn suborange">Update Requirements</button>
+                <button id="pointHighSchools" class="btn suborange toogleOrange">Point High Schools</button>
+                <button id="pointHealtPoints" class="btn suborange toogleOrange">Point Health Points</button>
+                <button id="pointMuseums" class="btn suborange toogleOrange">Point Museums</button>
+                
+                <p><img height = "40" width ="37" src ="https://c24215cec6c97b637db6-9c0895f07c3474f6636f95b6bf3db172.ssl.cf1.rackcdn.com/framed/~/media/multimedia/interactives/2016/ecci/images/school_icon.gif"> High School<br>
+                <img height = "37" width ="37" src ="https://mt.googleapis.com/vt/icon/name=icons/onion/SHARED-mymaps-container_4x.png,icons/onion/1834-museum-jp_4x.png&highlight=C2185B&scale=2.0"> Museum<br>
+                <img height = "40" width ="37" src ="http://dashboard.apostrophesolutions.com/mapiconscollection-markers/hospital-building.png"> Health Point</p>
+            </div>
+          </div>
+          <div class="col-md-10" style="background-color: skyblue;">
+            <div id="mapita">
+    
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script>
+        $( "button.toogleOrange" ).click(function() {
+            $( this ).toggleClass( "orange suborange" );
+        });
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb61z8bGfd8c7AlRNks21NwSytDzEhBAs&callback=initMap">
+    </script>
+  </body>
+</html>

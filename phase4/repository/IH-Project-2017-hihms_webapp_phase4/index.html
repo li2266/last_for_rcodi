@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Moonsun's Ironhack Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa64THCPfr1s9qifs9bTJbqM40-NagFCk&amp;libraries=places"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./chart.js" type="text/javascript"></script>
+    <script src="./map.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Hello, Prospective Student for NYU Stern School of Business!</h2>
+        <h3>Welcome to New York, New Yorker.</h3>
+        <h4>This app is to help you find a safe and affordable place
+        to rent near the NYU Stern School of Business, New York.</h4>
+        
+    </div>
+    
+    <div>
+            <form>
+                
+                <div>
+                    <input id="pac-input" class="controls" type="text" placeholder="Enter Place To View">
+                </div>
+            </form>
+        </div>
+    
+    
+    <div class="col-md-4" id="leftcol">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading1">
+                  <h5 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#climate-div" aria-expanded="false" aria-controls="collapse1">Climate in New York</a>
+                  </h5>
+                </div>
+                <div id="climate-div" class="panel-collapse collapse " role="tabpanel" >
+                  <div class="panel-body">
+                      <div id="climate">
+                          <div class="row"><label class="col-sm-4 control-label">Climate</label></div>
+                          <div id="chart-temp"></div>
+                      </div>
+                      <div id="source">
+                          <div class="row"><label class="col-sm-4 control-label">Source</label></div>
+                          <div class="chart-source">Global Summary of the Month Location Details <a href="https://www.ncdc.noaa.gov/cdo-web/datasets/GSOM/locations/CITY:US360019/detail" target="_blank">[data]</a></div>
+                          
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2">
+                  <h5 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#renting-option" aria-expanded="true" aria-controls="collapse2" >Find my Rent Place</a>
+                  </h5>
+                </div>
+                <div id="renting-option" class="panel-collapse collapse " role="tabpanel" >
+                  <div class="panel-body">
+                     
+                      <div id="distance">
+                          <div class="row"><label class="find-rent">Distance to university (Find Closest!)</label></div>
+                          <div>Coming Soon at Later Phase..!</div>
+                      </div>
+                      <div id="crime-rate">
+                          <div class="row"><label class="find-rent">Crime rate (Find Safest!)</label></div>
+                          <div>Coming Soon at Later Phase..!</div>
+                      </div>
+                      <div id="price">
+                          <div class="row"><label class="find-rent">Price (Find Cheapest!)</label></div>
+                          <div>Coming Soon at Later Phase..!</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading3">
+                  <h5 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#detail" aria-expanded="false" aria-controls="collapse3" id="result-link"  >Housing Detail</a>
+                  </h5>
+                </div>
+                <div id="detail" class="panel-collapse collapse "  role="tabpanel" >
+                    <div class="panel-body">
+                        <div class="row">
+                            <label class="housing-detail">Rent</label><div id="property-price" class="c"></div>
+                        </div>
+                        <div class="row">
+                            <label class="housing-detail">Bedroom</label><div id="property-bedroom" class="c"></div>
+                        </div>
+                        <div class="row">
+                            <label class="housing-detail">Size</label><div id="property-size" class="c"></div>
+                        </div>
+                        <div class="row">
+                            <label class="housing-detail">Address</label><div id="property-address" class="c"></div>
+                        </div>
+                        <div class="row">
+                            <label class="housing-detail">Distance</label><div id="distance" class="c"></div>
+                        </div>
+                        <div class="row">
+                            <label class="housing-detail">Crime rate</label><div id="crime-rate" class="c"></div>
+                        </div>
+                        <div class="row">
+                            <label class="housing-detail">Source</label><div id="website" class="c"></div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-8" id="rightcol">
+            <div id="map"></div>
+        </div>
+    
+    
+    
+    
+    
+</body>
+</html>

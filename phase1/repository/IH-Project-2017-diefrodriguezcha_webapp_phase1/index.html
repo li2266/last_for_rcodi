@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <title>New York's Finest</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="jumbotron niceHeader">
+        <h1>New York's Finest</h1>
+        <h3>A solution made by students, for students</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class ="panel panel-default">
+                <div class ="panel-body niceHeader">
+                    <h3>This is Map: Your new friend on The Big Apple</h3>    
+                </div>
+                <div class="panel-body">
+                    <div id="mapContainer"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default info">
+                <div class="panel-body">
+                    <h3>On your own in the big city ...</h3>
+                </div>
+                <div class="panel-body">
+                ...Well, not entirely <br>
+                Here at New York's Finest we get that being the new kid on a the city 
+                is hard, but it doesn't have to be traumatic. We help you with that!
+                All the info you need about the area you plan to live, we put it in your 
+                hands. No more struggle.<br>
+                
+                Wait for us!
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JQuery  -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    
+    <!--  Google Maps -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm4CyWaG7Dc4Oep8wLxEgl2fsZ2waeLu8&callback=initMap">
+    </script>
+</body>
+</html>

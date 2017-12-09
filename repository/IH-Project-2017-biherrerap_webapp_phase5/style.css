@@ -1,0 +1,66 @@
+	body{
+	font-family: lato;
+	background-color: #FFFFFF;
+	color: white;
+}
+
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+
+#FirstBar{
+	background-color: #2C3E50;
+	height: 60px; 
+	border-radius: 0%;
+	border-color: #2C3E50;
+}
+
+#Services,#Language,#USD,#BrandName{
+	color:white;
+}
+
+
+#DateArrivalText{
+	margin-top: 8px;
+}
+
+#DateSelector{
+	background-color: #f0938a ;
+}
+
+#DateSelectors{
+	margin-top: 9px;
+}
+
+#HostSelector{
+	background-color: #f0938a ;
+	height: 58px;
+}
+
+#DropdownHosts{
+	margin-top: 9px;
+}
+
+#fila{
+	background-color: #FFFFFF;
+}
+
+#LeftColumn{
+	background-color: #e74c3c;
+	overflow: auto;
+}
+
+#row2{
+	background-color: grey;
+}
+
+#RightColumn{
+	background-color: #FFFFFF;
+}
+
+#googleMap{
+	width:101%;
+	height:400px;
+}

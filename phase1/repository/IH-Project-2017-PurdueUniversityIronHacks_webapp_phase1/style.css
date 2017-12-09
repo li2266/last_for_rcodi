@@ -1,0 +1,82 @@
+html {
+   font-size: 80%;
+}
+
+@media screen and (max-width: 480px) {
+   html {
+      font-size: 40%;
+   }
+}
+
+body {
+   font-family: "Rock Salt";
+   overflow: hidden;
+   background: hsl(190, 20%, 10%);
+   text-align: center;
+   visibility: hidden;
+}
+
+h1 {
+   color: white;
+   -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
+   margin: 0;
+   font-size: 3rem;
+   letter-spacing: 4px;
+}
+h2 {
+   color: hsl(37, 100%, 69%);
+   font-size: 1.65rem;
+   -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
+   margin: 0;
+}
+
+.container {
+   height: 100vh;
+   width: 100vw;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+}
+
+.jack {
+   height: 40vmin;
+   width: 40vmin;
+   position: absolute;
+   -webkit-transform-origin: top left;
+           transform-origin: top left;
+}
+
+.jack-image {
+   -webkit-transform: translate(-20vmin, -20vmin);
+           transform: translate(-20vmin, -20vmin);
+}
+
+#defs {
+   height: 0;
+   width: 0;
+   overflow: hidden;
+}
+
+.st0 {
+   fill: url(#_x2E_stem_1_);
+}
+.st1 {
+   fill: url(#_x2E_pumpkin_1_);
+   stroke: #f15a24;
+   stroke-width: 4;
+   stroke-miterlimit: 10;
+}
+.st2 {
+   fill: #ffc338;
+   stroke: #5e4900;
+   stroke-width: 4;
+   stroke-miterlimit: 10;
+}

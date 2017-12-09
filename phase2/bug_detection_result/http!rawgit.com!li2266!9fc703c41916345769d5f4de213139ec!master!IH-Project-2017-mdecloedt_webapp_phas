@@ -1,0 +1,56 @@
+{
+  "js": {
+    "errors": [
+      "ReferenceError: Can't find variable: google"
+    ],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "4",
+        "errorType": "parse-error",
+        "errorSubtype": "skippedString",
+        "skippedString": "}",
+        "type": "generator.unrecognize",
+        "message": "Parse Error",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-mdecloedt_webapp_phase2/index.html"
+      },
+      {
+        "line": "7",
+        "errorType": "parse-error",
+        "errorSubtype": "skippedString",
+        "skippedString": "}",
+        "type": "generator.unrecognize",
+        "message": "Parse Error",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-mdecloedt_webapp_phase2/index.html"
+      },
+      {
+        "line": "11",
+        "errorType": "parse-error",
+        "context": "#h2",
+        "errorSubtype": "unrecognized",
+        "skippedString": "<h2>\n}",
+        "type": "generator.unrecognize",
+        "message": "Parse Error",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-mdecloedt_webapp_phase2/index.html"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "2",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-mdecloedt_webapp_phase2/style.css"
+      }
+    ]
+  },
+  "html": [
+    "error: Element “title” must not be empty.",
+    "info: Attribute “}” is not serializable as XML 1.0.",
+    "error: Attribute “}” not allowed on element “h2” at this point.",
+    "error: Element “p” not allowed as child of element “h2” in this context. (Suppressing further errors from this subtree.)"
+  ]
+}

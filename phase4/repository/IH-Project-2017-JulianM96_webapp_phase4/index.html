@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>University Residences</title>
+    <style>
+        *{ margin: 0; padding: 0; }
+            html, body, #map{
+                width: 100%;
+                height: 100%;
+            }
+            #formContent{
+                position: relative;
+                top: -100%;
+                width: 70%;
+            }
+            #titulo{
+                width: 100%;
+                background  : rgba(255,114,69, .8);
+                border-radius: 5px; 
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+
+            #opciones{
+                position: relative;
+                top: -100%;
+                width: 20%;
+                margin-left:80%; 
+                padding: 10px;
+                padding-top: 25px;
+                color: #fff;
+            }
+            
+            #opciones #Preferencias{
+                padding: 0px;
+                padding-top: 10px;
+                margin: 0px;
+                background: rgba(13,0,144,.7);
+                border-radius: 10px;
+                padding-bottom: 20px;
+            }
+            
+            #opciones #Preferencias #precios{
+                margin: 1px;
+            }
+            #opciones #Preferencias #simbolo1{
+                background: #fff;
+                color: darkgrey;
+                width: 50px;;
+                height: 100%;   
+            }
+            #opciones #Preferencias #Min, #opciones #Preferencias #Max{
+                border-radius: 2px;
+                border: none;
+                height: 100%;
+                width: 100%;
+            }
+                
+        #Search{
+            margin-top: 10px;
+            background: rgb(255,114,69);
+            width: 50%;
+            border: 1px solid rgba(255,114,69, .8);
+            border-radius: 5px;
+            outline: none;
+        }
+        
+        #Search:active{
+              background: #FF855F;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-   PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="fonts/style.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnkjJUF4kPIiGVyJbgH1UKI-xPffbsyZs&callback=initMap"></script>
+      <script type="text/javascript">
+        function testjson(){
+            //alert("inside testjson");
+            jsontest = $.ajax({
+                type: 'GET',
+                url:  'https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&locationid=ZIP:28801&startdate=2010-05-01&enddate=2010-05-01',
+
+                //you can use different data-set values.
+                headers: {
+                    Token: 'NEOFVbmguewhssyxIEsowGhirbKwsfIB'//example:'kxhfoJOtnEuxSNnMGMMSEITkmcsAFmFT'
+                },
+                //  async: false,
+                dataType: 'json',
+                success: function (data) {
+                    var len = data.length;
+                    var txt = "";
+                    alert(JSON.stringify(data));
+                    jsontest = data;
+                    console.log("data is: " + data);
+        //            var response = JSON.parse(data);
+        //            if(len > 0){
+        //                for(var i=0;i<len;i++){
+        //                    if(data[i].city && data[i].cStatus){
+        //                        txt += "<tr><td>"+data[i].city+"</td><td>"+data[i].cStatus+"</td></tr>";
+        //                    }
+        //                }
+        //                if(txt != ""){
+        //                    $("#table").append(txt).removeClass("hidden");
+        //                }
+        //            }
+                },failure: function(){
+                    alert("ajax failed");
+                }
+            });
+            console.log(jsontest);  
+            //console.log(jsontest[0]);
+        }
+        function initMap() {
+        // Styles a map in night mode.
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.729645, lng: -73.996609},
+          zoom: 13,
+        
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+        });
+        var  marker = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 40.729645, lng: -73.996609}
+          });
+          marker.addListener('click', toggleBounce);
+
+      }
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+        <header class="container-fluid" id="formContent">
+            <div class="container-fluid" id="titulo">
+                <center><h1>University Residences to the Best Comfort</h1></center>
+            </div>
+        </header>
+        <div id="opciones">
+            <div id="Preferencias">
+                <center><h4>Preferences</h4></center>
+                <center><h6>Property Cost</h6></center>
+                <section class="main row" id="precios">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <input type="text" placeholder=" Min" id="Min">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="preciosMax">
+                        <input type="text" placeholder=" Max" id="Max">
+                    </div>
+                </section>
+                <div class="container-fluid" id="ConInclude">
+                    <br>
+                    <center><h5>Include</h5></center>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Parks and recreation</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Services pay</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Schools</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Transport</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Main routes</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Delinquency</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Police</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Firefighters</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">&nbsp;&nbsp;&nbsp;Real estate</label></div>
+                </div>
+                <center><input type="button" value="Search" id="Search" onclick="testjson()"></center>
+            </div>
+        </div>  
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnkjJUF4kPIiGVyJbgH1UKI-xPffbsyZs&callback=initMap"
+    async defer></script>
+    <script type="application/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="application/javascript"></script>
+</body>
+</html>

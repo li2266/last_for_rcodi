@@ -1,0 +1,14 @@
+body {
+    color: black;
+    font-family: Arial, sans-serif;
+    background: #B0C4DE ;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+}
+
+  h1 {
+    text-align: center;
+}

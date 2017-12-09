@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nyu Rent</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<div class="container">
+  <h1>NYU Rent</h1>
+  <p>Find a place near your dreams.</p>
+	<div class="row">
+		<div class="col-md-3">
+      <div class="btn-group-vertical">
+        <button type="button"class="museums-button">Museums</button>
+        <button type="button"class="#art-galleries-button">"Art-galleries</button>
+      </div>
+      <hr>
+      <div type="button"class="btn btn-success">Search</div>
+		</div>
+		<div class="col-md-9">
+			<div id="map">
+
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="index.js"></script>
+ <!-- Adding Google Map-->
+	 <script
+		 async defer
+		 src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUdX6EdrzNtQaUZ4qF7CDv0AgLflwGO8M&callback=initMap">
+	 </script>
+</body>
+</html>

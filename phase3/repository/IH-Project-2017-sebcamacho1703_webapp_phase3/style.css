@@ -1,0 +1,46 @@
+#map {
+	width: 100%;
+	height: 500px;
+}
+
+#criteria {
+	width: 100%;
+}
+
+#dataf {
+	width: 100%;
+}
+
+#tableScroll tr th{
+	border: 1px solid black;
+	text-align: center;
+}
+
+nav.navbar {
+    background-color: #100F70;
+}
+
+nav.navbar ul.nav li {
+    color: black;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/1/16/New_York_University_Seal.svg/1200px-New_York_University_Seal.svg.png);
+	background-size: 100%;
+}
+
+body main {
+  padding-top: 3.7rem;
+  padding-bottom: 25px;
+}
+
+footer {
+	margin-top:50px;
+    width:100%;
+    height:25px;
+    background-color: #100F70;
+    position: fixed;
+    bottom: 0;
+}

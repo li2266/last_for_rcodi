@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Google Maps</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="style.css">
+       <!--Jquery-->
+    	 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    	crossorigin="anonymous"></script>
+      <!--Bootstrap-CSS-->
+	   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	  <!--Bootstrap-Javascript-->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+</head>
+
+  <body>
+      <header>
+     
+      	<div class="container-fluid">
+      		<div class="row">
+      			<div class="jumbotron">
+				<h1>Rent in New York</h1>
+			
+      		</div>
+				<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#navbar1">
+							<span class="sr-only">Menu</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="http://www.ironhacks.com/users/anferoar96/projects/webapp_phase5/preview/index.html">Home</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			</div>
+		</div>
+      
+	   </header>
+
+	   <div class="container">
+	   	<section class="row">
+            
+          <div class="col-xs-12 col-sm-4 col-md-5">
+            <form class="form-horizontal">
+
+		        <div class="form-group">
+		            <label for="price" class="control-label col-md-2">Price:</label>
+		            <div class="col-md-5">
+		              <input class="form-control" type="text" id="price" placeholder="Min-price">
+		            </div>
+		            
+		            <div class="col-md-5">
+		              <input class="form-control" type="text" id="price" placeholder="Max-price">
+		            </div>
+	        	</div>
+	        	
+	        	<div class="form-group">
+		            <label for="museum" class="control-label col-md-2">Museum:</label>
+		            <div class="col-md-1">
+		              <input class="form-control" type="checkbox" id="museum" >
+		            </div>
+		            
+	        	</div>
+
+		        <div class="form-group">
+		          <div class="col-md-2 col-md-offset-5">
+		            <button class="btn btn-primary" onclick="boton()">Send</button>
+		          </div>
+		        </div>
+	       </form>
+          </div>
+            
+	       
+ 		<div class="col-xs-12 col-sm-8 col-md-7">
+ 			<div id="map" >
+	       	<script src="index.js"> </script>
+    		</div>
+ 		</div>
+	       
+
+	   </div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<h3>Andrés Román</h3>
+		</div>
+	</footer>
+   
+	<!--Google Maps-->
+    <script async defer
+    	src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCWHjljCrL8PQPNVoRfQEeeADEPe0TLEfs&callback=initMap">
+    </script>
+
+  </body>
+  
+</html>

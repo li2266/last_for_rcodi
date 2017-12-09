@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title> NYU </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+    <script type="text/javascript">
+	function initMap(){
+		var mapDiv = document.getElementById('map');
+		var map = new google.maps.Map(mapDiv, {
+			center: {lat: 40.7291, lng: -73.9965},
+			zoom: 12});  
+		var marker = new google.maps.Marker({ 
+			position: {lat: 40.7291, lng: -73.9965},
+			map: map,
+			title: 'NYU Stern School of Business'
+		});
+	}
+  </script>
+  </head>
+  <body>
+    <div class = "header">
+        <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+    			<a href="">Inicio</a>
+        	</nav>
+        <h1 class="icon-dog"> NYU </h1>	
+        
+    </div>	
+       
+    <div class = "hh" >
+        	
+        <h3> NYU Stern School of Business, New York</h3>
+        <script>var a = 0; </script>
+         
+        <button class="btn btn-info" onclick="$('#map').animate({opacity: a},'slow'); a = a * -1 + 1">Show map/Hide map</button>
+      
+    </div>
+	
+    <div id="map"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC4lO1PjOC9xzRaOK86FJoht6VBFYcsB8&callback=initMap">
+    </script>
+  </body>
+
+</html>

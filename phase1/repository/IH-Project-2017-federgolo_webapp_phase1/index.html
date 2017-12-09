@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>House Rental: NYC</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid" style="background-color:#B5B5B3; color:white">
+      <div class="container" style = "text-align:center">
+        <h1 class="display-3">House Rental: NYC</h1>
+        <p class="lead">Looking for a flat in the big apple? You came to the right place!</p>
+      </div>
+    </div>
+    
+    <div class="container" >
+    <div class="row">
+        <div class="col-md-8">
+            <div id="googleMapContainer"></div>
+        </div>
+        <div class="col-md-4">
+            <button class="button bigButton">UPDATE INFO</button>
+            <button class="button bigButton">UPDATE MAP</button>
+            <button class="button bigButton">SHOW RANDOM HOUSE</button>
+            
+            <div style="background-color:#D75725; color:white; padding:10px">
+                <h2 style = "text-align:center">Join us!</h2>
+                <p style="margin-bottom: 0px;">
+                Join the most complete, dynamic, user friendly, online, real time home-finder in the nation and get yourself a new sweet place for the most reasonable prices. Type in your e-mail adress and subscribe to unlimited offers according to your tastes.</p>
+                <input type="text" id="fname" name="greeting" placeholder="Your e-mail goes here.">
+                <button class="button bigButton">SIGN UP FOR OFFERS</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+    <script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE8xriysOhyZRXUKso-aSEj8qKH0__a54&callback=onGoogleMapResponse" >
+    </script>
+</body>
+</html>

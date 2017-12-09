@@ -1,0 +1,96 @@
+#map {
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{ 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 0;
+}
+
+h1{
+    font-size: 2em;
+}
+
+#over_map{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    pointer-events: none;
+}
+
+.options{
+
+}
+
+#overlay{
+
+    border: 1px solid black;
+    background-color: rgba(250,250,250,0.85);
+    margin: auto;
+    height: 50px;
+    width: 50%;
+    z-index:10;
+    -moz-filter: blur(1px);
+    transition:             height 250ms ease;
+    -moz-transition:    height 250ms ease;
+    -ms-transition:     height 250ms ease;
+    -o-transition:      height 250ms ease;
+    -webkit-transition: height 250ms ease;
+}
+
+.menu{
+    margin-left: 6%;
+    margin-top: 6%;
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    pointer-events: all;
+    margin-right: 0px;
+    background-color: rgba(250,250,250,0.85);
+    -moz-filter: blur(1px);
+    transition:             height 250ms ease;
+    -moz-transition:    height 250ms ease;
+    -ms-transition:     height 250ms ease;
+    -o-transition:      height 250ms ease;
+    -webkit-transition: height 250ms ease;}
+
+.data{
+    width: 100%;
+    z-index: 15;
+}
+
+thead tr{
+    width: 100%;
+    font-size: 12pt;
+    font-family: "Avenir";
+    font-variant-caps: small-caps;
+    font-style: normal;
+    color: rgba(0,0,0,0.75);
+    text-align: center;
+    font-: grey;
+    z-index: 20;
+}
+
+.dataDiv{
+    width: 250px;
+    margin-left: 6%;
+}
+
+.dataButtons{
+    width: 50%;
+    margin-left: 0;
+    left: 0;
+    pointer-events: all;
+/*    padding-right: 6%;*/
+}
+

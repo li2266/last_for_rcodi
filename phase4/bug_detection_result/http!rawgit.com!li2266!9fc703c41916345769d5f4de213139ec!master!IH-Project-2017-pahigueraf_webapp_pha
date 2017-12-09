@@ -1,0 +1,314 @@
+{
+  "js": {
+    "errors": [],
+    "resourceErrors": [],
+    "messages": []
+  },
+  "css": {
+    "errors": [
+      {
+        "line": "316",
+        "errorType": "parse-error",
+        "context": ".line",
+        "errorSubtype": "exp",
+        "skippedString": "none",
+        "type": "noexistence-at-all",
+        "message": "Property fill doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase4/style.css"
+      },
+      {
+        "line": "317",
+        "errorType": "parse-error",
+        "context": ".line",
+        "errorSubtype": "exp",
+        "skippedString": "steelblue",
+        "type": "noexistence-at-all",
+        "message": "Property stroke doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase4/style.css"
+      },
+      {
+        "line": "318",
+        "errorType": "parse-error",
+        "context": ".line",
+        "errorSubtype": "exp",
+        "skippedString": "2px",
+        "type": "noexistence-at-all",
+        "message": "Property stroke-width doesn't exist :",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase4/style.css"
+      },
+      {
+        "line": "4",
+        "errorType": "parse-error",
+        "context": ".fa",
+        "errorSubtype": "exp",
+        "skippedString": "auto",
+        "type": "noexistence-at-all",
+        "message": "Property text-rendering doesn't exist :",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "errorType": "invalidparam",
+        "message": "Sorry, the at-rule @-webkit-keyframes is not implemented.",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      }
+    ],
+    "warnings": [
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-font-smoothing is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -moz-osx-font-smoothing is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-animation is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-animation is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-filter is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -webkit-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "0",
+        "message": "Property -ms-transform is an unknown vendor extension",
+        "type": "vendor-extension",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of font-family",
+        "type": "redefinition",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of src",
+        "type": "redefinition",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of font-weight",
+        "type": "redefinition",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of font-style",
+        "type": "redefinition",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "Redefinition of font-size",
+        "context": ".fa",
+        "type": "redefinition",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "4",
+        "level": "2",
+        "message": "You have no background-color set (or background-color is set to transparent) but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-background-color",
+        "uri": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      },
+      {
+        "line": "62",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase4/style.css"
+      },
+      {
+        "line": "71",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase4/style.css"
+      },
+      {
+        "line": "157",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase4/style.css"
+      },
+      {
+        "line": "170",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase4/style.css"
+      },
+      {
+        "line": "194",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase4/style.css"
+      },
+      {
+        "line": "229",
+        "level": "2",
+        "message": "You have no color set (or color is set to transparent) but you have set a background-color. Make sure that cascading of colors keeps the text reasonably legible.",
+        "type": "no-color",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase4/style.css"
+      },
+      {
+        "line": "0",
+        "level": "2",
+        "message": "font-family: You are encouraged to offer a generic family as a last alternative",
+        "context": ".fa",
+        "type": "no-generic-family",
+        "uri": "http://rawgit.com/li2266/9fc703c41916345769d5f4de213139ec/master/IH-Project-2017-pahigueraf_webapp_phase4/style.css"
+      }
+    ]
+  },
+  "html": [
+    "error: Element “div” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)",
+    "error: Element “div” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)",
+    "error: Element “div” not allowed as child of element “ul” in this context. (Suppressing further errors from this subtree.)",
+    "error: Duplicate ID “label2”.",
+    "info: The first occurrence of ID “label2” was here.",
+    "error: The “for” attribute of the “label” element must refer to a non-hidden form control."
+  ]
+}

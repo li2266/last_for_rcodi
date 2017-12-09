@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #map {
+            height: 600px;
+            width: 50%;
+             }
+    </style>
+    
+  <title>NYU Housing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>
+     <span class="glyphicon glyphicon-tent"></span>
+      <b>Hounder</b>
+    </h1>
+<style>
+    .jumbotron
+{
+background-color:   #008fb3;
+margin-bottom: 0;
+}
+</style>
+
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">HOUNDER</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html" style = "font-size: 20px">Home</a></li>
+      <li class = "active"><a href="HousingProfile.html"  style = "font-size: 20px">Housing Search</a></li>
+      <li><a href="WishList.html" style = "font-size: 20px">Wish List</a></li>
+      <li><a href="Cart.html" style = "font-size: 20px">Cart</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+    .column {
+    float: left;
+    padding-left: 30px;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 50%;
+  padding-left: 15%;
+  padding-bottom: 30px;
+}
+
+
+</style>
+
+<div class="row">
+  <div class="column left">
+<div class="container">
+     <div id="map"></div>
+    <script>
+      function initMap() {
+        var NYU = {lat:  40.7291, lng: -73.9965};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: NYU
+        });
+        var marker = new google.maps.Marker({
+          position: NYU,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJevqR-Hz9MT56mTnIxQomdUI2U7oqGLY&callback=initMap">
+    </script> <br> 
+    </div>
+  </div>
+  
+  
+  <div class="column right" style="background-color:#bbb;">
+    <h2>
+        <b>Create a Housing Profile</b>
+        </h2>
+    
+         <script src="index.js"> </script>
+         
+         <style>
+             h2{
+                 padding-left: 60px;
+             }
+         </style>
+
+         <style>
+              .leftQuestion {
+                     width: 20%;
+                     float: left;
+                    text-align: right;
+                 }
+    
+                .rightQuestion {
+                     width: 70%;
+                     margin-left: 10px;
+                     float:left;
+                 }
+        
+                 .bottomQuestions
+                     {
+                         width: 70%;
+                         float: left;
+                        text-align: left;
+                     }
+         </style>
+    
+     <div class="leftQuestion">    
+    Username: <br><br>
+    Password: <br><br>
+    Confirm Password: <br><br>
+    Desired Rent: <br><br>
+    </div>
+
+    
+    <div class = "rightQuestion">
+    <input type="text" id="txtUsername"> <br><br>
+    <input type="text" id="txtPassword1"> <br><br>
+    <input type="text" id="txtPassword2"> <br><br>
+    <input type="text" id="txtPrice"> <br><br>
+    </div>
+   
+    
+    <div class = "bottomQuestions">
+    What is your desired method of transportation? <br>
+    <input type="checkbox" id="Walk" value="walk"> Walk<br>
+    <input type="checkbox" id="Car" value="car"> Car<br>
+    <input type="checkbox" id="Bus" value="bus"> Bus<br>
+    <input type="checkbox" id="Train" value="train"> Train<br>
+    <input type="checkbox" id="Bike" value="bike"> Bike<br>
+    <input type="checkbox" id="taxiService" value="taxi"> Taxi Service<br><br> 
+   
+    What is your view on safety vs. affordability? <br>
+    <input type="radio" id="moreSafe" value="moreSafe"> Safety is slightly more important but I still want a place that is affordable.<br>
+    <input type="radio" id="moreAffordable" value="moreAffordable"> Affordability is slightly more important but I still want a place that is safe.<br>
+    <input type="radio" id="both" value="both">Safety and affordability are a must and I need to have both.<br><br>
+    <button class="btn btn-primary center-block" onclick= "submitFunction()">Submit</button>
+    </div>
+ 
+  
+  </div>
+  
+</div>
+
+
+     <!--once button is clicked gets weather api data-->
+ <script src="index.js"> </script>   
+<input type="text" id="txtprice"> <br>
+<button onclick="weather()" id = "id_btn5">Weather Data</button> <br>
+<p id="show"></p>
+<p id="show2"></p>
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+   <script scr = "js3.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+ 

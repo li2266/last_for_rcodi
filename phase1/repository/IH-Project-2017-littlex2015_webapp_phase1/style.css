@@ -1,0 +1,10 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+   background-color: white
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}

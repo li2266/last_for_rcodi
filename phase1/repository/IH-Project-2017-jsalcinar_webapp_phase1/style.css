@@ -1,0 +1,31 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.fourseasons.com/content/dam/fourseasons_magazine/NYF/rockefeller-centers-top-of-the-rock-evening-view-new-york-1600x900.jpg/jcr:content/renditions/original');
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+
+.container1 {
+    position: relative;
+    top: 100px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 450px;
+    width: 100%;
+}
+
+.temp{
+    padding:0px;
+}

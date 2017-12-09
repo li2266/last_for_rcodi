@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Housing near nyu</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var sample = {lat: 40.7291, lng: -73.9965};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: sample
+        });
+        var marker = new google.maps.Marker({
+          position: sample,
+          map: map
+        });
+      }
+    </script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB5au2lOa0-qlz9JAq_B1zsbp1rH3_jp0&callback=initMap">
+</script>
+  </body>
+</html>
