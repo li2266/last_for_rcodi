@@ -72,7 +72,7 @@ def clone_repo():
 			print("fail to cloned repo: {0}".format(repo))
 
 def create_user2repo():
-	os.chdir(repository_folder_name)
+	#os.chdir(repository_folder_name)
 	repo_list = os.listdir(".")
 
 	#print(repo_list)
